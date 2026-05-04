@@ -21,14 +21,14 @@
 
 :root {
   color-scheme: dark light;
-  --bg: #071421;
+  --bg: #101418;
   --text: #e6edf3;
   --muted: #7890a8;
   --muted-2: #9fb3c8;
   --border: #28445f;
   --border-soft: #1f3a52;
-  --panel: rgba(8,24,38,.75);
-  --panel-strong: rgba(7,20,33,.95);
+  --panel: rgba(16,20,24,.82);
+  --panel-strong: rgba(16,20,24,.95);
   --surface: rgba(18,38,58,.85);
   --surface-soft: rgba(18,38,58,.45);
   --hover: rgba(255,255,255,.08);
@@ -56,14 +56,14 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #071421;
+  --bg: #101418;
   --text: #e6edf3;
   --muted: #7890a8;
   --muted-2: #9fb3c8;
   --border: #28445f;
   --border-soft: #1f3a52;
-  --panel: rgba(8,24,38,.75);
-  --panel-strong: rgba(7,20,33,.95);
+  --panel: rgba(16,20,24,.82);
+  --panel-strong: rgba(16,20,24,.95);
   --surface: rgba(18,38,58,.85);
   --surface-soft: rgba(18,38,58,.45);
   --hover: rgba(255,255,255,.08);
@@ -498,7 +498,7 @@ body {
 
 .entry-title {
   font-size: 34px;
-  font-style: bold;
+  font-style: italic;
   font-weight: 400;
   margin-bottom: 12px;
 }
@@ -532,7 +532,7 @@ body {
 
 .entry-ref {
   color: var(--accent);
-  font-style: regular;
+  font-style: italic;
   cursor: pointer;
 }
 
@@ -1209,6 +1209,107 @@ html[data-theme="light"] .search-icon {
   opacity: .85;
 }
 
+
+/* SIMPLE UI / SQUARE CORNERS / UPDATED DARK TONE */
+html[data-theme="dark"],
+:root {
+  --bg: #101418;
+}
+
+button,
+input,
+select,
+textarea,
+.filter-box,
+.filter-btn,
+.word,
+.bubble,
+.meta-pill,
+.back-btn,
+.home-results,
+.home-result-item,
+.home-toggle-section button,
+.mobile-dictionary-toggle,
+.theme-simple,
+.lang-simple,
+.theme-simple-btn,
+.lang-simple-btn,
+.declension-box,
+.entry-images img {
+  border-radius: 0 !important;
+}
+
+.theme-control,
+.lang-control {
+  gap: 8px;
+}
+
+.theme-simple,
+.lang-simple {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.theme-simple-btn,
+.lang-simple-btn {
+  height: 32px;
+  border: 0;
+  border-right: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted-2);
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.theme-simple-btn:last-child,
+.lang-simple-btn:last-child {
+  border-right: 0;
+}
+
+.theme-simple-btn:hover,
+.lang-simple-btn:hover,
+.theme-simple-btn.active,
+.lang-simple-btn.active {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+.theme-concept,
+.theme-auto,
+.theme-toggle,
+.theme-toggle-track,
+.theme-moon,
+.theme-sun,
+.theme-knob,
+.theme-switch,
+.theme-indicator,
+.lang-switch,
+.lang-indicator,
+.theme-option,
+.lang-option {
+  border-radius: 0 !important;
+}
+
+.header,
+.sidebar,
+.content,
+.filter-box,
+.search-main input,
+.search-wrapper select,
+.search-wrapper button {
+  box-shadow: none !important;
+}
+
+@media (max-width: 850px) {
+  .theme-simple-btn,
+  .lang-simple-btn {
+    padding: 0 8px;
+  }
+}
+
 </style>
 </head>
 
@@ -1219,23 +1320,17 @@ html[data-theme="light"] .search-icon {
   <strong>tioumpa.org</strong>
   <div class="theme-control" onclick="event.stopPropagation()">
     <label data-i18n="colorTheme">Color Theme</label>
-    <div class="theme-concept" id="themeSwitch">
-      <button class="theme-auto" type="button" data-theme-value="system" onclick="setTheme('system')" data-i18n="auto">Auto</button>
-      <button class="theme-toggle" type="button" id="themeToggle" onclick="toggleThemeMode()" aria-label="Toggle theme">
-        <span class="theme-toggle-track">
-          <span class="theme-moon">☾</span>
-          <span class="theme-sun">☀</span>
-          <span class="theme-knob"></span>
-        </span>
-      </button>
+    <div class="theme-simple" id="themeSwitch">
+      <button class="theme-simple-btn" type="button" data-theme-value="system" onclick="setTheme('system')" data-i18n="auto">Auto</button>
+      <button class="theme-simple-btn" type="button" data-theme-value="dark" onclick="setTheme('dark')" data-i18n="dark">Dark</button>
+      <button class="theme-simple-btn" type="button" data-theme-value="light" onclick="setTheme('light')" data-i18n="light">Light</button>
     </div>
   </div>
   <div class="lang-control" onclick="event.stopPropagation()">
     <label data-i18n="language">Γλώσσα</label>
-    <div class="lang-switch" id="langSwitch">
-      <span class="lang-indicator" id="langIndicator"></span>
-      <button class="lang-option" type="button" data-lang-value="el" onclick="setLanguage('el')">🇬🇷 Ελληνικά</button>
-      <button class="lang-option" type="button" data-lang-value="en" onclick="setLanguage('en')">🇬🇧 English</button>
+    <div class="lang-simple" id="langSwitch">
+      <button class="lang-simple-btn" type="button" data-lang-value="el" onclick="setLanguage('el')">🇬🇷 EL</button>
+      <button class="lang-simple-btn" type="button" data-lang-value="en" onclick="setLanguage('en')">🇬🇧 EN</button>
     </div>
   </div>
 </div>
@@ -1262,12 +1357,12 @@ html[data-theme="light"] .search-icon {
 const translations = {
   el: {
     colorTheme: "Color Theme", language: "Γλώσσα", auto: "Auto", dark: "Dark", light: "Light", filters: "filters",
-    searchPlaceholder: "Αναζήτηση...", clean: "Clean", trends: "🔥 Trends", favorites: "⭐ Favorites", randomWords: "ΤΥΧΑΙΕΣ ΛΕΞΕΙΣ",
+    searchPlaceholder: "Αναζήτηση...", clean: "Clean", trends: "🔥 Trends", favorites: "⭐ Αγαπημενα", randomWords: "ΤΥΧΑΙΕΣ ΛΕΞΕΙΣ",
     noTrending: "Δεν υπάρχουν ακόμα δεδομένα", noFavorites: "Δεν έχεις αποθηκεύσει ακόμα αγαπημένα",
-    dataTitle: "Δεν φορτώθηκε το data.txt", dataText: " cc <b>data.txt</b> kk index.html.",
+    dataTitle: "Δεν φορτώθηκε το data.txt", dataText: "Βεβαιώσου ότι το αρχείο λέγεται ακριβώς <b>data.txt</b> και είναι στον ίδιο φάκελο με το index.html.",
     micUnsupported: "Το μικρόφωνο δεν υποστηρίζεται σε αυτόν τον browser.", back: "← Επιστροφή", declension: "Κλίση",
     case: "Πτώση", singular: "Ενικός αριθμός", plural: "Πληθυντικός αριθμός", nominative: "Ονομαστική", genitive: "Γενική", accusative: "Αιτιατική", vocative: "Κλητική",
-    derivatives: "Παράγωγα:", synonyms: "Συνώνυμα:", antonyms: "Αντώνυμα:", searchCopy: "Αναζήτηση {count} ορών από το λεξικό του Teosty.",
+    derivatives: "Παράγωγα:", synonyms: "Συνώνυμα:", antonyms: "Αντώνυμα:", searchCopy: "Αναζήτηση {count} λέξεων από το λεξικό του Teosty.",
     subtitle: "ΤΟ ΛΕΞΙΚΟ ΤΟΥ TEOSTY", email: "Αν θέλετε να επικοινωνήσετε μαζί μας για οποιαδήποτε αλλαγή ή προσθήκη στείλτε στο: tioumpagr@gmail.com", showDictionary: "Εμφάνιση λεξικού", hideDictionary: "Απόκρυψη λεξικού", noResults: "Δεν βρέθηκαν αποτελέσματα", results: "results"
   },
   en: {
@@ -1342,24 +1437,20 @@ function effectiveThemeValue() {
 
 function updateThemeControl() {
   const value = localStorage.getItem("themeChoice") || "dark";
-  const effective = effectiveThemeValue();
-
-  const themeSwitch = document.getElementById("themeSwitch");
-  if (themeSwitch) {
-    themeSwitch.setAttribute("data-theme-state", value === "system" ? "system" : effective);
-  }
-
-  const auto = document.querySelector(".theme-auto");
-  if (auto) auto.classList.toggle("active", value === "system");
+  document.querySelectorAll(".theme-simple-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.getAttribute("data-theme-value") === value);
+  });
 }
 
 function toggleThemeMode() {
-  const effective = effectiveThemeValue();
-  setTheme(effective === "dark" ? "light" : "dark");
+  const value = localStorage.getItem("themeChoice") || "dark";
+  setTheme(value === "dark" ? "light" : "dark");
 }
 
 function updateLanguageControl() {
-  moveIndicator("langSwitch", "langIndicator", ".lang-option", "data-lang-value", currentLanguage);
+  document.querySelectorAll(".lang-simple-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.getAttribute("data-lang-value") === currentLanguage);
+  });
 }
 
 const savedTheme = localStorage.getItem("themeChoice") || "dark";
@@ -1534,6 +1625,51 @@ function normalizeGreekLetter(s) {
   return first.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
+function stripGreekTones(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ς/g, "σ")
+    .replace(/Σ/g, "σ")
+    .toLocaleLowerCase("el-GR");
+}
+
+function greekToGreeklish(value) {
+  const map = {
+    "α":"a","β":"v","γ":"g","δ":"d","ε":"e","ζ":"z","η":"i","θ":"th","ι":"i","κ":"k","λ":"l","μ":"m",
+    "ν":"n","ξ":"x","ο":"o","π":"p","ρ":"r","σ":"s","ς":"s","τ":"t","υ":"y","φ":"f","χ":"ch","ψ":"ps","ω":"o"
+  };
+
+  return stripGreekTones(value)
+    .split("")
+    .map(ch => map[ch] || ch)
+    .join("")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function normalizeSearchValue(value) {
+  return stripGreekTones(value)
+    .replace(/[^a-z0-9α-ω]+/gi, " ")
+    .trim();
+}
+
+function titleMatchesSearch(title, query) {
+  const q = String(query || "").trim();
+  if (!q) return true;
+
+  const titleGreek = normalizeSearchValue(title);
+  const queryGreek = normalizeSearchValue(q);
+
+  const titleGreeklish = greekToGreeklish(title);
+  const queryGreeklish = greekToGreeklish(q);
+
+  return titleGreek.includes(queryGreek) ||
+         titleGreeklish.includes(queryGreeklish) ||
+         titleGreeklish.includes(queryGreek) ||
+         titleGreek.includes(queryGreeklish);
+}
+
 function getEntryCleanText(entry) {
   let lines = entry.full.split(/\r?\n/);
   lines.shift();
@@ -1613,9 +1749,7 @@ function currentFilteredEntries() {
 
   return entries.filter(e => {
     const matchesType = activeFilter === "Όλα" || getEntryTypes(e).includes(activeFilter);
-    const matchesSearch =
-      !q ||
-      e.title.toLocaleLowerCase("el-GR").includes(q);
+    const matchesSearch = titleMatchesSearch(e.title, q);
 
     return matchesType && matchesSearch;
   });
@@ -1676,7 +1810,7 @@ function showHome() {
   document.getElementById("content").innerHTML = `
     <div class="home">
       <img class="home-logo" src="${getLogoFile()}">
-      <h1> </h1>
+      <h1>tioumpa.org</h1>
       <div class="subtitle">${t("subtitle")}</div>
       <div class="email">${t("email")}</div>
       <div class="search-copy">${t("searchCopy").replace("{count}", entries.length)}</div>
