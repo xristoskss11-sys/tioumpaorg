@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>tioumpa.org - λεξικό</title>
+<title>tioumpa.org - Το λεξικό του Teosty</title>
 
 <meta name="description" content="Το tioumpa.org είναι το λεξικό του Teosty με ατάκες, λέξεις, φράσεις και ορισμούς από το community του">
 
@@ -498,7 +498,7 @@ body {
 
 .entry-title {
   font-size: 34px;
-  font-style: regular;
+  font-style: italic;
   font-weight: 400;
   margin-bottom: 12px;
 }
@@ -532,7 +532,7 @@ body {
 
 .entry-ref {
   color: var(--accent);
-  font-style: regular;
+  font-style: italic;
   cursor: pointer;
 }
 
@@ -1310,6 +1310,16 @@ textarea,
   }
 }
 
+
+/* ENTRY PAGE TYPOGRAPHY ONLY */
+.entry-title {
+  font-family: "Linux Libertine", "Linux Libertine O", "Linux Libertine Display", Georgia, "Times New Roman", serif;
+}
+
+.entry-body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 </style>
 </head>
 
@@ -1356,14 +1366,14 @@ textarea,
 
 const translations = {
   el: {
-    colorTheme: "Θέμα", language: "Γλώσσα", auto: "Auto", dark: "Dark", light: "Light", filters: "filters",
-    searchPlaceholder: "Αναζήτηση...", clean: "Clean", trends: "🔥 Trends", favorites: "⭐ Favorites", randomWords: "ΤΥΧΑΙΕΣ ΛΕΞΕΙΣ",
-    noTrending: "Δεν υπάρχουν ακόμα δεδομένα", noFavorites: "No favorites",
+    colorTheme: "Color Theme", language: "Γλώσσα", auto: "Auto", dark: "Dark", light: "Light", filters: "filters",
+    searchPlaceholder: "Αναζήτηση...", clean: "Clean", trends: "🔥 Trends", favorites: "⭐ Αγαπημενα", randomWords: "ΤΥΧΑΙΕΣ ΛΕΞΕΙΣ",
+    noTrending: "Δεν υπάρχουν ακόμα δεδομένα", noFavorites: "Δεν έχεις αποθηκεύσει ακόμα αγαπημένα",
     dataTitle: "Δεν φορτώθηκε το data.txt", dataText: "Βεβαιώσου ότι το αρχείο λέγεται ακριβώς <b>data.txt</b> και είναι στον ίδιο φάκελο με το index.html.",
     micUnsupported: "Το μικρόφωνο δεν υποστηρίζεται σε αυτόν τον browser.", back: "← Επιστροφή", declension: "Κλίση",
     case: "Πτώση", singular: "Ενικός αριθμός", plural: "Πληθυντικός αριθμός", nominative: "Ονομαστική", genitive: "Γενική", accusative: "Αιτιατική", vocative: "Κλητική",
-    derivatives: "Παράγωγα:", synonyms: "Συνώνυμα:", antonyms: "Αντώνυμα:", searchCopy: "Αναζήτηση {count} λέξεων από το λεξικό.",
-    subtitle: "Λ Ε Ξ Ι Κ Ο", email: "Για οποιαδήποτε αλλαγή, προσθήκη ή διόρθωση στείλτε στο: tioumpagr@gmail.com", showDictionary: "Εμφάνιση", hideDictionary: "Απόκρυψη λεξικού", noResults: "No results", results: "results"
+    derivatives: "Παράγωγα:", synonyms: "Συνώνυμα:", antonyms: "Αντώνυμα:", searchCopy: "Αναζήτηση {count} λέξεων από το λεξικό του Teosty.",
+    subtitle: "ΤΟ ΛΕΞΙΚΟ ΤΟΥ TEOSTY", email: "Αν θέλετε να επικοινωνήσετε μαζί μας για οποιαδήποτε αλλαγή ή προσθήκη στείλτε στο: tioumpagr@gmail.com", showDictionary: "Εμφάνιση λεξικού", hideDictionary: "Απόκρυψη λεξικού", noResults: "Δεν βρέθηκαν αποτελέσματα", results: "results"
   },
   en: {
     colorTheme: "Color Theme", language: "Language", auto: "Auto", dark: "Dark", light: "Light", filters: "filters",
@@ -1373,7 +1383,7 @@ const translations = {
     micUnsupported: "Microphone is not supported in this browser.", back: "← Back", declension: "Declension",
     case: "Case", singular: "Singular", plural: "Plural", nominative: "Nominative", genitive: "Genitive", accusative: "Accusative", vocative: "Vocative",
     derivatives: "Derivatives:", synonyms: "Synonyms:", antonyms: "Antonyms:", searchCopy: "Search {count} words from Teosty's dictionary.",
-    subtitle: "DICTIONARY", email: "To contact us about any change or addition, send an email to: tioumpagr@gmail.com", showDictionary: "Show dictionary", hideDictionary: "Hide dictionary", noResults: "No results found", results: "results"
+    subtitle: "TEOSTY'S DICTIONARY", email: "To contact us about any change or addition, send an email to: tioumpagr@gmail.com", showDictionary: "Show dictionary", hideDictionary: "Hide dictionary", noResults: "No results found", results: "results"
   }
 };
 
