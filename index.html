@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>tioumpa.org - Το λεξικό του Teosty</title>
+
+<meta name="description" content="Το tioumpa.org είναι το λεξικό του Teosty με ατάκες, λέξεις, φράσεις και ορισμούς από το community του">
+
+<meta name="keywords" content="tioumpa, tioumpa.org, Teosty, λεξικό Teosty, ατάκες Teosty, λιγδας, ligdas, λιγειρος, booyah tv, booyah, μπουγια, hacky, χακι, τιουμπα, τουμπα, θεσσαλονικη, youtube, tiktok, instagram, insta, τικτοκ, τεοστυ, θοδωρης, αγορινα, clips, kick, κικ, drestvlog, its only, ιτς ονλυ">
+
+<meta name="author" content="tioumpa.org">
+<meta name="robots" content="index, follow">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; }
+
+:root {
+  color-scheme: dark light;
+  --bg: #101418;
+  --text: #809edc;
+  --muted: #7890a8;
+  --muted-2: #9fb3c8;
+  --border: #28445f;
+  --border-soft: #1f3a52;
+  --panel: rgba(8,24,38,.75);
+  --panel-strong: rgba(7,20,33,.95);
+  --surface: rgba(18,38,58,.85);
+  --surface-soft: rgba(18,38,58,.45);
+  --hover: rgba(255,255,255,.08);
+  --accent: #78a6ff;
+  --accent-soft: rgba(88,166,255,.22);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f4f7fb;
+    --text: #102033;
+    --muted: #5f7389;
+    --muted-2: #49647c;
+    --border: #c7d6e6;
+    --border-soft: #d7e2ee;
+    --panel: rgba(255,255,255,.78);
+    --panel-strong: rgba(255,255,255,.94);
+    --surface: rgba(235,242,250,.92);
+    --surface-soft: rgba(255,255,255,.72);
+    --hover: rgba(20,60,100,.08);
+    --accent: #1b63d8;
+    --accent-soft: rgba(27,99,216,.13);
+  }
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #101418;
+  --text: #809edc;
+  --muted: #7890a8;
+  --muted-2: #9fb3c8;
+  --border: #28445f;
+  --border-soft: #1f3a52;
+  --panel: rgba(8,24,38,.75);
+  --panel-strong: rgba(7,20,33,.95);
+  --surface: rgba(18,38,58,.85);
+  --surface-soft: rgba(18,38,58,.45);
+  --hover: rgba(255,255,255,.08);
+  --accent: #78a6ff;
+  --accent-soft: rgba(88,166,255,.22);
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f7fb;
+  --text: #102033;
+  --muted: #5f7389;
+  --muted-2: #49647c;
+  --border: #c7d6e6;
+  --border-soft: #d7e2ee;
+  --panel: rgba(255,255,255,.78);
+  --panel-strong: rgba(255,255,255,.94);
+  --surface: rgba(235,242,250,.92);
+  --surface-soft: rgba(255,255,255,.72);
+  --hover: rgba(20,60,100,.08);
+  --accent: #1b63d8;
+  --accent-soft: rgba(27,99,216,.13);
+}
+
+body {
+  margin: 0;
+    font-family: Inter, Helvetica, Segoe Ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--border), #5b7fa3);
+  border-radius: 999px;
+  border: 3px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+* { scrollbar-width: thin; scrollbar-color: #5b7fa3 var(--bg); }
+
+.header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 18px;
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--panel-strong);
+  cursor: pointer;
+}
+
+.header img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.header strong { font-size: 21px; }
+
+.theme-control {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-control label {
+  font-size: 12px;
+  color: var(--muted-2);
+}
+
+.theme-control select {
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.app {
+  display: flex;
+  height: calc(100vh - 64px);
+}
+
+.sidebar {
+  width: 380px;
+  min-width: 280px;
+  max-width: 620px;
+  padding: 18px;
+  overflow-y: auto;
+  border-right: 1px solid var(--border-soft);
+  background: var(--panel);
+}
+
+.resizer {
+  width: 8px;
+  cursor: col-resize;
+  background: linear-gradient(180deg, transparent, var(--border), transparent);
+  position: relative;
+}
+
+.resizer::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  width: 4px;
+  height: 70px;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: #5b7fa3;
+  opacity: .7;
+}
+
+.resizer:hover::after {
+  background: var(--accent);
+  opacity: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 36px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.filter-box {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  padding: 0 0 14px;
+  margin-bottom: 12px;
+  background: var(--panel-strong);
+  backdrop-filter: blur(12px);
+}
+
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+
+.filter-toggle {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  padding: 4px 9px;
+  cursor: pointer;
+}
+
+.filter-toggle:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.filter-box.collapsed .filters .filter-btn:not(.active) {
+  display: none;
+}
+
+.lang-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-control label {
+  font-size: 12px;
+  color: var(--muted-2);
+}
+
+.lang-control select {
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.filter-title {
+  font-size: 12px;
+  color: var(--muted-2);
+  margin-bottom: 9px;
+  letter-spacing: .08em;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.letter {
+  margin-top: 20px;
+  padding-bottom: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid #2a445c;
+}
+
+.word {
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height: 1.35;
+}
+
+.word:hover { background: var(--hover); }
+
+.home {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn .45s ease;
+}
+
+.home-logo {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  animation: none;
+}
+
+@keyframes logoFloat {
+  0%,100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+.home h1 {
+  margin: 18px 0 4px;
+  font-size: 42px;
+}
+
+.subtitle {
+  font-size: 14px;
+  letter-spacing: .08em;
+  color: var(--muted-2);
+}
+
+.email {
+  margin-top: 8px;
+  max-width: 720px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.search-copy {
+  margin-top: 18px;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.search-wrapper {
+  position: relative;
+  margin-top: 22px;
+  width: min(760px, 94%);
+  display: grid;
+  grid-template-columns: 1fr 145px 120px;
+  gap: 8px;
+  align-items: center;
+}
+
+.search-main {
+  position: relative;
+}
+
+.search-main input {
+  width: 100%;
+  padding: 15px 48px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  outline: none;
+  transition: transform .25s ease, box-shadow .25s ease, border .25s ease;
+}
+
+.search-main input:focus {
+  transform: scale(1.025);
+  border-color: #6aa3ff;
+  box-shadow: 0 0 30px var(--accent-soft);
+}
+
+.search-icon {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  filter: invert(1);
+  opacity: .85;
+}
+
+.mic {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-wrapper select,
+.search-wrapper button {
+  height: 49px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: white;
+  font-family: Inter, sans-serif;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.home-toggle-section { margin-top: 20px; }
+
+.home-toggle-section button {
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: white;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+}
+
+.home-toggle-section button:hover { background: var(--accent-soft); }
+
+.hidden-box {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 0;
+  transition: max-height .35s ease, opacity .25s ease, margin-top .25s ease;
+}
+
+.hidden-box.open {
+  max-height: 260px;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+.home-list-item {
+  cursor: pointer;
+  padding: 6px;
+}
+
+.home-list-item:hover { color: var(--accent); }
+
+.random-title {
+  margin-top: 34px;
+  font-size: 12px;
+  letter-spacing: .12em;
+  color: var(--muted-2);
+}
+
+.bubbles {
+  margin-top: 18px;
+  width: min(720px, 95%);
+  min-height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubbles.fade-in { animation: bubbleFade .8s ease; }
+
+@keyframes bubbleFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.bubble {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.18), 0 10px 25px rgba(0,0,0,.22);
+  cursor: pointer;
+}
+
+.entry {
+  animation: entryIn .45s ease;
+  max-width: 980px;
+  min-height: 100%;
+  position: relative;
+}
+
+@keyframes entryIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.entry-title {
+  font-size: 34px;
+  font-style: bold;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.entry-divider {
+  height: 1px;
+  background: #2a445c;
+  margin-bottom: 20px;
+}
+
+.entry-meta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px;
+}
+
+.meta-pill {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--text);
+}
+
+.entry-body {
+  white-space: pre-wrap;
+  line-height: 1.68;
+  font-size: 17px;
+}
+
+.entry-ref {
+  color: var(--accent);
+  font-style: regular;
+  cursor: pointer;
+}
+
+.entry-ref:hover { text-decoration: underline; }
+
+.entry-body iframe {
+  display: block;
+  margin-top: 30px;
+  max-width: 760px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+  border-radius: 14px;
+}
+
+.entry-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  margin-top: 26px;
+  width: 100%;
+}
+
+.entry-images img {
+  max-width: min(320px, 45%);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+.declension-box {
+  margin-top: 22px;
+  margin-left: auto;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-soft);
+}
+
+.declension-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.declension-box table {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.declension-box th,
+.declension-box td {
+  border: 1px solid var(--border);
+  padding: 6px 9px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.declension-box th { color: var(--muted-2); }
+
+.star {
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+
+.back-btn {
+  position: sticky;
+  top: 0;
+  float: right;
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.back-btn:hover { background: var(--accent-soft); }
+
+.socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-weight: 600;
+  transition: .2s;
+}
+
+.social:hover {
+  transform: translateY(-3px);
+  background: var(--accent-soft);
+}
+
+.social.youtube { color: #ff6b6b; }
+.social.instagram { color: #ff9bd2; }
+.social.tiktok { color: #f4f4f4; }
+.social.twitch { color: #b990ff; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 850px) {
+  body { overflow: auto; }
+
+  .app {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .resizer { display: none; }
+
+  .sidebar {
+    width: 100% !important;
+    min-width: 0;
+    max-width: none;
+    max-height: 310px;
+    border-right: none;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .content { padding: 24px 18px; }
+
+  .home {
+    justify-content: flex-start;
+    padding-top: 28px;
+  }
+
+  .home-logo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .home h1 { font-size: 32px; }
+
+  .search-wrapper {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .search-main input:focus { transform: none; }
+
+  .entry-title { font-size: 27px; }
+
+  .entry-images img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .declension-box {
+    width: 100%;
+    margin-left: 0;
+    overflow-x: auto;
+  }
+}
+
+/* LIGHT MODE FIX - πρόσθετο χωρίς αλλαγή στον υπάρχοντα κώδικα */
+html[data-theme="light"] .search-main input,
+html[data-theme="light"] .search-wrapper select,
+html[data-theme="light"] .search-wrapper button,
+html[data-theme="light"] .home-toggle-section button,
+html[data-theme="light"] .back-btn,
+html[data-theme="light"] .social {
+  color: var(--text);
+}
+
+html[data-theme="light"] .search-main input::placeholder {
+  color: var(--muted);
+}
+
+html[data-theme="light"] .search-icon {
+  filter: none;
+  opacity: .6;
+}
+
+/* Όταν είναι στο Auto και το σύστημα είναι light mode */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .search-main input,
+  :root:not([data-theme="dark"]) .search-wrapper select,
+  :root:not([data-theme="dark"]) .search-wrapper button,
+  :root:not([data-theme="dark"]) .home-toggle-section button,
+  :root:not([data-theme="dark"]) .back-btn,
+  :root:not([data-theme="dark"]) .social {
+    color: var(--text);
+  }
+
+  :root:not([data-theme="dark"]) .search-main input::placeholder {
+    color: var(--muted);
+  }
+
+  :root:not([data-theme="dark"]) .search-icon {
+    filter: none;
+    opacity: .6;
+  }
+}
+
+/* COMPACT FILTERS + ANIMATED CONTROLS */
+.filter-box {
+  border: 1px solid var(--border-soft);
+  border-radius: 22px;
+  padding: 10px;
+  overflow: hidden;
+  transition: max-height .35s ease, padding .25s ease, border-color .25s ease, background .25s ease, box-shadow .25s ease;
+  max-height: 520px;
+}
+
+.filter-box.collapsed {
+  max-height: 56px;
+  padding: 8px 10px;
+  box-shadow: 0 8px 22px rgba(0,0,0,.12);
+}
+
+.filter-header {
+  margin-bottom: 7px;
+}
+
+.filter-box.collapsed .filter-header {
+  margin-bottom: 0;
+}
+
+.filter-title {
+  font-size: 11px;
+  letter-spacing: .1em;
+}
+
+.filters {
+  max-height: 430px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: max-height .35s ease, opacity .25s ease, transform .25s ease;
+}
+
+.filter-box.collapsed .filters {
+  max-height: 35px;
+  opacity: 1;
+  transform: translateY(0);
+  overflow: hidden;
+}
+
+.filter-btn {
+  padding: 6px 9px;
+  font-size: 12px;
+  border-radius: 999px;
+  transition: transform .18s ease, background .2s ease, border-color .2s ease, opacity .2s ease;
+}
+
+.filter-btn:hover {
+  transform: translateY(-1px);
+}
+
+.filter-box.collapsed .filter-btn.active {
+  display: inline-flex;
+  animation: filterChipIn .28s ease;
+}
+
+.filter-toggle {
+  min-width: 31px;
+  height: 27px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .22s ease, background .2s ease, border-color .2s ease;
+}
+
+.filter-toggle:hover {
+  transform: scale(1.05);
+}
+
+.filter-toggle.open {
+  transform: rotate(180deg);
+}
+
+@keyframes filterChipIn {
+  from { opacity: 0; transform: scale(.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.theme-control,
+.lang-control {
+  gap: 8px;
+}
+
+.theme-switch,
+.lang-switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+.theme-option,
+.lang-option {
+  position: relative;
+  z-index: 2;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted-2);
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  height: 28px;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: color .2s ease, transform .18s ease;
+}
+
+.theme-option:hover,
+.lang-option:hover {
+  transform: translateY(-1px);
+  color: var(--text);
+}
+
+.theme-option.active,
+.lang-option.active {
+  color: var(--text);
+}
+
+.theme-indicator,
+.lang-indicator {
+  position: absolute;
+  top: 4px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  transition: left .28s cubic-bezier(.2,.8,.2,1), width .28s cubic-bezier(.2,.8,.2,1);
+  z-index: 1;
+}
+
+.theme-control label,
+.lang-control label {
+  white-space: nowrap;
+}
+
+@media (max-width: 850px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .theme-control {
+    margin-left: 0;
+  }
+
+  .theme-option,
+  .lang-option {
+    font-size: 11px;
+    padding: 0 8px;
+  }
+}
+
+
+/* SEARCH RESULTS UNDER SEARCH BAR */
+.home-results {
+  display: none;
+  width: min(760px, 94%);
+  margin-top: 14px;
+  text-align: left;
+  border: 1px solid var(--border-soft);
+  border-radius: 18px;
+  background: var(--surface-soft);
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+}
+
+.home-results.open {
+  display: block;
+  animation: fadeIn .25s ease;
+}
+
+.home-results-title {
+  padding: 10px 14px;
+  font-size: 12px;
+  letter-spacing: .08em;
+  color: var(--muted-2);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.home-result-item {
+  padding: 11px 14px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-soft);
+  color: var(--text);
+}
+
+.home-result-item:last-child {
+  border-bottom: none;
+}
+
+.home-result-item:hover {
+  background: var(--hover);
+}
+
+.home-result-empty {
+  padding: 12px 14px;
+  color: var(--muted);
+}
+
+@media (max-width: 850px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .content {
+    order: 1;
+  }
+
+  .sidebar {
+    order: 2;
+    display: none;
+  }
+
+  .home-results {
+    display: block;
+    width: 100%;
+  }
+
+  .home-results:not(.open) {
+    display: none;
+  }
+}
+
+
+/* MOBILE DICTIONARY TOGGLE UNDER SEARCH */
+.mobile-dictionary-toggle {
+  display: none;
+  width: min(760px, 94%);
+  margin-top: 12px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+}
+
+.mobile-dictionary-toggle:hover {
+  transform: translateY(-1px);
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+@media (max-width: 850px) {
+  .mobile-dictionary-toggle {
+    display: block;
+  }
+
+  .home-results.dictionary-open {
+    display: block;
+  }
+}
+
+
+/* RIGHT DICTIONARY PANEL + FILTER FIX */
+.sidebar {
+  border-right: none;
+  border-left: 1px solid var(--border-soft);
+}
+
+.resizer {
+  background: linear-gradient(180deg, transparent, var(--border), transparent);
+}
+
+.filter-box {
+  border-radius: 24px;
+  padding: 12px;
+  max-height: 620px;
+  overflow: hidden;
+}
+
+.filter-box.collapsed {
+  max-height: 92px;
+  padding: 12px;
+}
+
+.filter-box.collapsed .filters {
+  max-height: 38px;
+  overflow: hidden;
+  padding-bottom: 2px;
+}
+
+.filter-box.collapsed .filters .filter-btn.active {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+}
+
+.filter-header {
+  margin-bottom: 10px;
+}
+
+.filter-box.collapsed .filter-header {
+  margin-bottom: 8px;
+}
+
+.filter-toggle {
+  width: 34px;
+  height: 28px;
+  border-radius: 999px;
+}
+
+/* COLOR THEME CONCEPT */
+.theme-concept {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-auto {
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.theme-auto:hover,
+.theme-auto.active {
+  transform: translateY(-1px);
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(120,166,255,.12);
+}
+
+.theme-toggle {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.theme-toggle-track {
+  position: relative;
+  width: 106px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(29,61,98,.95), rgba(17,39,63,.9));
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.14), 0 8px 22px rgba(0,0,0,.22);
+  overflow: hidden;
+}
+
+.theme-moon,
+.theme-sun {
+  position: relative;
+  z-index: 2;
+  font-size: 24px;
+  line-height: 1;
+  transition: transform .28s ease, opacity .28s ease;
+}
+
+.theme-moon {
+  color: #bfe0ff;
+}
+
+.theme-sun {
+  color: #79c7ff;
+}
+
+.theme-knob {
+  position: absolute;
+  z-index: 1;
+  left: 4px;
+  top: 4px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(105,153,211,.72);
+  border: 1px solid rgba(180,215,255,.55);
+  box-shadow: 0 0 0 4px rgba(120,166,255,.18), inset 0 1px 0 rgba(255,255,255,.22);
+  transition: left .34s cubic-bezier(.2,.9,.2,1), transform .34s cubic-bezier(.2,.9,.2,1), background .28s ease;
+}
+
+.theme-concept[data-theme-state="light"] .theme-knob {
+  left: 68px;
+  background: rgba(95,184,230,.72);
+}
+
+.theme-concept[data-theme-state="light"] .theme-sun {
+  transform: scale(1.1) rotate(25deg);
+}
+
+.theme-concept[data-theme-state="dark"] .theme-moon {
+  transform: scale(1.1) rotate(-12deg);
+}
+
+.theme-concept[data-theme-state="system"] .theme-knob {
+  left: 36px;
+}
+
+.theme-concept[data-theme-state="system"] .theme-moon,
+.theme-concept[data-theme-state="system"] .theme-sun {
+  opacity: .8;
+}
+
+.theme-option,
+.theme-indicator {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .sidebar {
+    border-left: none;
+    border-bottom: 1px solid var(--border-soft);
+  }
+}
+
+
+/* CUSTOM DATA.TXT FORMATTING */
+.entry-small-notes {
+  margin-top: 26px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.entry-small-note {
+  margin-top: 5px;
+}
+
+.entry-custom-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.entry-custom-link:hover {
+  opacity: .85;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header" onclick="goHome()">
+  <img src="tioumpa.org.svg">
+  <strong>tioumpa.org</strong>
+  <div class="theme-control" onclick="event.stopPropagation()">
+    <label data-i18n="colorTheme">Color Theme</label>
+    <div class="theme-concept" id="themeSwitch">
+      <button class="theme-auto" type="button" data-theme-value="system" onclick="setTheme('system')" data-i18n="auto">Auto</button>
+      <button class="theme-toggle" type="button" id="themeToggle" onclick="toggleThemeMode()" aria-label="Toggle theme">
+        <span class="theme-toggle-track">
+          <span class="theme-moon">☾</span>
+          <span class="theme-sun">☀</span>
+          <span class="theme-knob"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="lang-control" onclick="event.stopPropagation()">
+    <label data-i18n="language">Γλώσσα</label>
+    <div class="lang-switch" id="langSwitch">
+      <span class="lang-indicator" id="langIndicator"></span>
+      <button class="lang-option" type="button" data-lang-value="el" onclick="setLanguage('el')">🇬🇷 Ελληνικά</button>
+      <button class="lang-option" type="button" data-lang-value="en" onclick="setLanguage('en')">🇬🇧 English</button>
+    </div>
+  </div>
+</div>
+
+<div class="app">
+  <main class="content" id="content"></main>
+
+  <div class="resizer" id="resizer" title="Σύρε για αλλαγή πλάτους"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="filter-box" id="filterBox">
+      <div class="filter-header">
+        <div class="filter-title" data-i18n="filters">filters</div>
+        <button class="filter-toggle" id="filterToggle" onclick="toggleFilters(event)">⌄</button>
+      </div>
+      <div class="filters" id="filters"></div>
+    </div>
+    <div id="list"></div>
+  </aside>
+</div>
+
+<script>
+
+const translations = {
+  el: {
+    colorTheme: "Color Theme", language: "Γλώσσα", auto: "Auto", dark: "Dark", light: "Light", filters: "filters",
+    searchPlaceholder: "Αναζήτηση...", clean: "Clean", trends: "🔥 Trends", favorites: "⭐ Favorites", randomWords: "ΤΥΧΑΙΕΣ ΛΕΞΕΙΣ",
+    noTrending: "Δεν υπάρχουν ακόμα δεδομένα", noFavorites: "Δεν έχεις αποθηκεύσει ακόμα αγαπημένα",
+    dataTitle: "Δεν φορτώθηκε το data.txt", dataText: "Βεβαιώσου ότι το αρχείο λέγεται ακριβώς <b>data.txt</b> και είναι στον ίδιο φάκελο με το index.html.",
+    micUnsupported: "Το μικρόφωνο δεν υποστηρίζεται σε αυτόν τον browser.", back: "← Επιστροφή", declension: "Κλίση",
+    case: "Πτώση", singular: "Ενικός αριθμός", plural: "Πληθυντικός αριθμός", nominative: "Ονομαστική", genitive: "Γενική", accusative: "Αιτιατική", vocative: "Κλητική",
+    derivatives: "Παράγωγα:", synonyms: "Συνώνυμα:", antonyms: "Αντώνυμα:", searchCopy: "Αναζήτηση {count} ορών από το λεξικό του Teosty.",
+    subtitle: "ΤΟ ΛΕΞΙΚΟ ΤΟΥ TEOSTY", email: "Αν θέλετε να επικοινωνήσετε μαζί μας για οποιαδήποτε αλλαγή ή προσθήκη στείλτε στο: tioumpagr@gmail.com", showDictionary: "Εμφάνιση λεξικού", hideDictionary: "Απόκρυψη λεξικού", noResults: "Δεν βρέθηκαν αποτελέσματα", results: "results"
+  },
+  en: {
+    colorTheme: "Color Theme", language: "Language", auto: "Auto", dark: "Dark", light: "Light", filters: "filters",
+    searchPlaceholder: "Search...", clean: "Clear", trends: "🔥 Trends", favorites: "⭐ Favorites", randomWords: "RANDOM WORDS",
+    noTrending: "No data yet", noFavorites: "You have not saved any favorites yet",
+    dataTitle: "data.txt did not load", dataText: "Make sure the file is named exactly <b>data.txt</b> and is in the same folder as index.html.",
+    micUnsupported: "Microphone is not supported in this browser.", back: "← Back", declension: "Declension",
+    case: "Case", singular: "Singular", plural: "Plural", nominative: "Nominative", genitive: "Genitive", accusative: "Accusative", vocative: "Vocative",
+    derivatives: "Derivatives:", synonyms: "Synonyms:", antonyms: "Antonyms:", searchCopy: "Search {count} words from Teosty's dictionary.",
+    subtitle: "TEOSTY'S DICTIONARY", email: "To contact us about any change or addition, send an email to: tioumpagr@gmail.com", showDictionary: "Show dictionary", hideDictionary: "Hide dictionary", noResults: "No results found", results: "results"
+  }
+};
+
+let currentLanguage = localStorage.getItem("languageChoice") || "el";
+let filtersCollapsed = localStorage.getItem("filtersCollapsed");
+filtersCollapsed = filtersCollapsed === null ? true : filtersCollapsed === "true";
+
+function t(key) { return translations[currentLanguage][key] || translations.el[key] || key; }
+
+function setLanguage(value) {
+  const currentHash = decodeURIComponent(location.hash.replace("#", ""));
+  const currentEntry = findEntryByAnyKey(currentHash);
+  currentEntryId = currentEntry && currentEntry.id ? currentEntry.id : currentEntryId;
+
+  currentLanguage = value;
+  localStorage.setItem("languageChoice", value);
+  applyLanguage();
+  updateLogo();
+  loadData();
+}
+
+function applyLanguage() {
+  document.documentElement.lang = currentLanguage;
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[currentLanguage][key]) el.textContent = translations[currentLanguage][key];
+  });
+  updateLanguageControl();
+  updateThemeControl();
+  updateLogo();
+}
+
+function getDataFile() {
+  return currentLanguage === "en" ? "engdata.txt" : "data.txt";
+}
+
+
+function moveIndicator(containerId, indicatorId, selector, valueAttr, value) {
+  const container = document.getElementById(containerId);
+  const indicator = document.getElementById(indicatorId);
+  if (!container || !indicator) return;
+
+  const buttons = [...container.querySelectorAll(selector)];
+  let active = buttons.find(btn => btn.getAttribute(valueAttr) === value) || buttons[0];
+
+  buttons.forEach(btn => {
+    btn.classList.toggle("active", btn === active);
+  });
+
+  requestAnimationFrame(() => {
+    indicator.style.left = active.offsetLeft + "px";
+    indicator.style.width = active.offsetWidth + "px";
+  });
+}
+
+function effectiveThemeValue() {
+  const value = localStorage.getItem("themeChoice") || "dark";
+  if (value !== "system") return value;
+  return window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+}
+
+function updateThemeControl() {
+  const value = localStorage.getItem("themeChoice") || "dark";
+  const effective = effectiveThemeValue();
+
+  const themeSwitch = document.getElementById("themeSwitch");
+  if (themeSwitch) {
+    themeSwitch.setAttribute("data-theme-state", value === "system" ? "system" : effective);
+  }
+
+  const auto = document.querySelector(".theme-auto");
+  if (auto) auto.classList.toggle("active", value === "system");
+}
+
+function toggleThemeMode() {
+  const effective = effectiveThemeValue();
+  setTheme(effective === "dark" ? "light" : "dark");
+}
+
+function updateLanguageControl() {
+  moveIndicator("langSwitch", "langIndicator", ".lang-option", "data-lang-value", currentLanguage);
+}
+
+const savedTheme = localStorage.getItem("themeChoice") || "dark";
+applyTheme(savedTheme);
+
+window.addEventListener("DOMContentLoaded", () => {
+  applyLanguage();
+  const filterBox = document.getElementById("filterBox");
+  if (filterBox) filterBox.classList.toggle("collapsed", filtersCollapsed);
+  const filterToggle = document.getElementById("filterToggle");
+  if (filterToggle) {
+    filterToggle.textContent = filtersCollapsed ? "⌄" : "⌃";
+    filterToggle.classList.toggle("open", !filtersCollapsed);
+  }
+  updateThemeControl();
+  updateLanguageControl();
+});
+
+function applyTheme(value) {
+  if (value === "system") {
+    document.documentElement.removeAttribute("data-theme");
+  } else {
+    document.documentElement.setAttribute("data-theme", value);
+  }
+  updateThemeControl();
+}
+
+function setTheme(value) {
+  localStorage.setItem("themeChoice", value);
+  applyTheme(value);
+}
+
+window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => {
+  const choice = localStorage.getItem("themeChoice") || "system";
+  if (choice === "system") applyTheme("system");
+  updateThemeControl();
+});
+
+let entries = [];
+let clicks = JSON.parse(localStorage.getItem("clicks") || "{}");
+let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+let bubbleTimer = null;
+let activeFilter = "Όλα";
+let searchQuery = "";
+let dictionaryOpen = false;
+let currentEntryId = null;
+let titleIdMap = JSON.parse(localStorage.getItem("titleIdMap") || "{}");
+
+function getLogoFile() {
+  return currentLanguage === "en" ? "engtioumpa.org.svg" : "tioumpa.org.svg";
+}
+
+function updateLogo() {
+  const logo = getLogoFile();
+  const headerLogo = document.querySelector(".header img");
+  if (headerLogo) headerLogo.src = logo;
+  const homeLogo = document.querySelector(".home-logo");
+  if (homeLogo) homeLogo.src = logo;
+}
+
+function entryKey(entry) {
+  return entry && entry.id ? "id-" + entry.id : entry.title;
+}
+
+function entryHash(entry) {
+  return encodeURIComponent(entryKey(entry));
+}
+
+function saveTitleMap() {
+  entries.forEach(e => {
+    if (e.id) titleIdMap[currentLanguage + ":" + e.title] = e.id;
+  });
+  localStorage.setItem("titleIdMap", JSON.stringify(titleIdMap));
+}
+
+function findEntryByAnyKey(key) {
+  if (!key) return null;
+
+  if (key.startsWith("id-")) {
+    const id = key.replace(/^id-/, "");
+    return entries.find(e => String(e.id) === String(id)) || null;
+  }
+
+  let found = entries.find(e => e.title === key);
+  if (found) return found;
+
+  const mappedId = titleIdMap["el:" + key] || titleIdMap["en:" + key];
+  if (mappedId) {
+    return entries.find(e => String(e.id) === String(mappedId)) || null;
+  }
+
+  return null;
+}
+
+function displayWordFromKey(key) {
+  const found = findEntryByAnyKey(key);
+  return found ? found.title : key.replace(/^id-/, "");
+}
+
+function normalizeStoredKey(key) {
+  if (String(key).startsWith("id-")) return key;
+  const mappedId = titleIdMap["el:" + key] || titleIdMap["en:" + key];
+  return mappedId ? "id-" + mappedId : key;
+}
+
+loadData();
+
+function loadData() {
+  fetch(getDataFile())
+  .then(r => {
+    if (!r.ok) throw new Error(getDataFile() + " not found");
+    return r.text();
+  })
+  .then(text => init(text))
+  .catch(err => {
+    document.getElementById("content").innerHTML = `
+      <h2>Δεν φορτώθηκε το ${getDataFile()}</h2>
+      <p>Βεβαιώσου ότι το αρχείο λέγεται ακριβώς <b>${getDataFile()}</b> και είναι στον ίδιο φάκελο με το index.html.</p>
+    `;
+    console.error(err);
+  });
+}
+
+function init(text) {
+  applyLanguage();
+  updateThemeControl();
+  updateLanguageControl();
+  const filterBox = document.getElementById("filterBox");
+  if (filterBox) filterBox.classList.toggle("collapsed", filtersCollapsed);
+  const filterToggle = document.getElementById("filterToggle");
+  if (filterToggle) {
+    filterToggle.textContent = filtersCollapsed ? "⌄" : "⌃";
+    filterToggle.classList.toggle("open", !filtersCollapsed);
+  }
+
+  entries = text
+    .split(/\r?\n(?=Ατάκα\s*\d+\s*:|Ατακα\s*\d+\s*:|Ατάκα\d+\s*:|Ατακα\d+\s*:|Ατάκα\s*\d+\s+|Ατακα\s*\d+\s+)/g)
+    .map(block => {
+      const firstLine = block.split(/\r?\n/)[0] || "";
+      const idMatch = firstLine.match(/(?:Ατάκα|Ατακα)\s*(\d+)/i);
+      const id = idMatch ? idMatch[1] : "";
+      const title = firstLine
+        .replace(/^Ατάκα\s*\d+\s*:?\s*/i, "")
+        .replace(/^Ατακα\s*\d+\s*:?\s*/i, "")
+        .replace(/(^|\s)\+[^+\n.,;:!?]+/g, " ")
+        .trim();
+      return { id, title, full: block };
+    })
+    .filter(e => e.title);
+
+  saveTitleMap();
+  updateLogo();
+
+  if (currentEntryId) {
+    const translatedEntry = entries.find(e => String(e.id) === String(currentEntryId));
+    if (translatedEntry) {
+      location.hash = entryHash(translatedEntry);
+    }
+  }
+
+  setupResizer();
+  renderFilters();
+  renderList();
+  route();
+  startBubbles();
+}
+
+window.addEventListener("hashchange", route);
+
+function normalizeGreekLetter(s) {
+  const first = (s || "").trim().charAt(0).toLocaleUpperCase("el-GR");
+  return first.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+function getEntryCleanText(entry) {
+  let lines = entry.full.split(/\r?\n/);
+  lines.shift();
+  return lines.join("\n")
+    .replace("Περιγραφή:", "")
+    .replace("Περγιφραφή:", "")
+    .replace(/(^|\s)\+[^+\n.,;:!?]+/g, " ")
+    .trim();
+}
+
+function detectTypes(title, text = "") {
+  const all = title + " " + text;
+  const matches = [...all.matchAll(/(?:^|\s)\+([^+\n.,;:!?]+)/g)];
+  return [...new Set(matches.map(m => m[1].trim()).filter(Boolean))];
+}
+
+function detectType(title, text = "") {
+  return detectTypes(title, text)[0] || "";
+}
+
+function getEntryTypes(entry) {
+  return detectTypes(entry.title, entry.full);
+}
+
+function getEntryType(entry) {
+  return getEntryTypes(entry)[0] || "";
+}
+
+function toggleFilters(event) {
+  event.stopPropagation();
+  filtersCollapsed = !filtersCollapsed;
+  localStorage.setItem("filtersCollapsed", String(filtersCollapsed));
+  const filterBox = document.getElementById("filterBox");
+  if (filterBox) filterBox.classList.toggle("collapsed", filtersCollapsed);
+  const filterToggle = document.getElementById("filterToggle");
+  if (filterToggle) {
+    filterToggle.textContent = filtersCollapsed ? "⌄" : "⌃";
+    filterToggle.classList.toggle("open", !filtersCollapsed);
+  }
+}
+
+function renderFilters() {
+  const types = ["Όλα", ...new Set(entries.flatMap(getEntryTypes))].sort((a,b) => {
+    if (a === "Όλα") return -1;
+    if (b === "Όλα") return 1;
+    return a.localeCompare(b, "el");
+  });
+
+  const box = document.getElementById("filters");
+  box.innerHTML = "";
+
+  types.forEach(type => {
+    const btn = document.createElement("button");
+    btn.className = "filter-btn" + (type === activeFilter ? " active" : "");
+    btn.textContent = type;
+    btn.onclick = () => {
+      activeFilter = type;
+      syncHomeFilter();
+      renderFilters();
+      renderList();
+      renderHomeResults();
+    };
+    box.appendChild(btn);
+  });
+
+  const filterBox = document.getElementById("filterBox");
+  if (filterBox) filterBox.classList.toggle("collapsed", filtersCollapsed);
+  const filterToggle = document.getElementById("filterToggle");
+  if (filterToggle) {
+    filterToggle.textContent = filtersCollapsed ? "⌄" : "⌃";
+    filterToggle.classList.toggle("open", !filtersCollapsed);
+  }
+}
+
+function currentFilteredEntries() {
+  const q = searchQuery.toLocaleLowerCase("el-GR").trim();
+
+  return entries.filter(e => {
+    const matchesType = activeFilter === "Όλα" || getEntryTypes(e).includes(activeFilter);
+    const matchesSearch =
+      !q ||
+      e.title.toLocaleLowerCase("el-GR").includes(q);
+
+    return matchesType && matchesSearch;
+  });
+}
+
+function renderList() {
+  const sorted = currentFilteredEntries().sort((a,b) =>
+    a.title.localeCompare(b.title, "el", { sensitivity: "base" })
+  );
+
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+
+  let current = "";
+
+  sorted.forEach(item => {
+    const letter = normalizeGreekLetter(item.title);
+
+    if (letter !== current) {
+      current = letter;
+      const l = document.createElement("div");
+      l.className = "letter";
+      l.textContent = letter;
+      list.appendChild(l);
+    }
+
+    const w = document.createElement("div");
+    w.className = "word";
+    w.textContent = item.title;
+    w.onclick = () => {
+      location.hash = entryHash(item);
+    };
+    list.appendChild(w);
+  });
+}
+
+function route() {
+  const key = decodeURIComponent(location.hash.replace("#", ""));
+
+  if (!key) {
+    currentEntryId = null;
+    showHome();
+    return;
+  }
+
+  const entry = findEntryByAnyKey(key);
+
+  if (!entry) {
+    showHome();
+    return;
+  }
+
+  currentEntryId = entry.id || null;
+  openEntry(entry);
+}
+
+function showHome() {
+  document.getElementById("content").innerHTML = `
+    <div class="home">
+      <img class="home-logo" src="${getLogoFile()}">
+      <h1> </h1>
+      <div class="subtitle">${t("subtitle")}</div>
+      <div class="email">${t("email")}</div>
+      <div class="search-copy">${t("searchCopy").replace("{count}", entries.length)}</div>
+
+      <div class="search-wrapper">
+        <div class="search-main">
+          <img class="search-icon" src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png">
+          <input id="searchMain" placeholder="${escapeAttr(t("searchPlaceholder"))}" value="${escapeAttr(searchQuery)}">
+          <span class="mic" onclick="voiceSearch(event)">🎤</span>
+        </div>
+        <select id="searchCategory"></select>
+        <button onclick="clearSearch()">${t("clean")}</button>
+      </div>
+
+      <button class="mobile-dictionary-toggle" id="mobileDictionaryToggle" onclick="toggleDictionaryResults()">${t("showDictionary")}</button>
+      <div class="home-results" id="homeResults"></div>
+
+      <div class="home-toggle-section">
+        <button onclick="toggleHomeList('favoritesBox')">${t("favorites")}</button>
+        <div id="favoritesBox" class="hidden-box">${getFavoritesHTML()}</div>
+      </div>
+
+      <div class="random-title">${t("randomWords")}</div>
+      <div class="bubbles" id="bubbles"></div>
+
+
+    </div>
+  `;
+
+  const input = document.getElementById("searchMain");
+  input.addEventListener("input", e => {
+    searchQuery = e.target.value;
+    renderList();
+    renderHomeResults();
+  });
+
+  buildHomeCategorySelect();
+  renderBubbles();
+  renderHomeResults();
+}
+
+
+function toggleDictionaryResults() {
+  dictionaryOpen = !dictionaryOpen;
+  renderHomeResults();
+}
+
+function renderHomeResults() {
+  const box = document.getElementById("homeResults");
+  const toggle = document.getElementById("mobileDictionaryToggle");
+  if (!box) return;
+
+  const q = searchQuery.toLocaleLowerCase("el-GR").trim();
+  const shouldShow = q || activeFilter !== "Όλα" || dictionaryOpen;
+
+  if (toggle) toggle.textContent = dictionaryOpen ? t("hideDictionary") : t("showDictionary");
+
+  if (!shouldShow) {
+    box.classList.remove("open", "dictionary-open");
+    box.innerHTML = "";
+    return;
+  }
+
+  const results = currentFilteredEntries()
+    .sort((a,b) => a.title.localeCompare(b.title, "el", { sensitivity: "base" }))
+    .slice(0, dictionaryOpen && !q ? entries.length : 40);
+
+  box.classList.add("open");
+  box.classList.toggle("dictionary-open", dictionaryOpen);
+
+  if (!results.length) {
+    box.innerHTML = `<div class="home-result-empty">${t("noResults")}</div>`;
+    return;
+  }
+
+  box.innerHTML = `
+    <div class="home-results-title">${t("results")}</div>
+    ${results.map(item => `
+      <div class="home-result-item" onclick="location.hash='${entryHash(item)}'">
+        ${escapeHTML(item.title)}
+      </div>
+    `).join("")}
+  `;
+}
+
+function buildHomeCategorySelect() {
+  const select = document.getElementById("searchCategory");
+  if (!select) return;
+
+  const types = ["Όλα", ...new Set(entries.flatMap(getEntryTypes))].sort((a,b) => {
+    if (a === "Όλα") return -1;
+    if (b === "Όλα") return 1;
+    return a.localeCompare(b, "el");
+  });
+
+  select.innerHTML = types.map(type =>
+    `<option value="${escapeAttr(type)}" ${type === activeFilter ? "selected" : ""}>${escapeHTML(type)}</option>`
+  ).join("");
+
+  select.onchange = e => {
+    activeFilter = e.target.value;
+    renderFilters();
+    renderList();
+    renderHomeResults();
+  };
+}
+
+function syncHomeFilter() {
+  const select = document.getElementById("searchCategory");
+  if (select) select.value = activeFilter;
+}
+
+function clearSearch() {
+  searchQuery = "";
+  activeFilter = "Όλα";
+  dictionaryOpen = false;
+  renderFilters();
+  renderList();
+  showHome();
+}
+
+function getTrendingHTML() {
+  const trending = Object.entries(clicks)
+    .map(([key, count]) => [normalizeStoredKey(key), count])
+    .sort((a,b) => b[1] - a[1])
+    .slice(0,5)
+    .map(([key]) => {
+      const word = displayWordFromKey(key);
+      return `<div class="home-list-item" onclick="location.hash='${encodeURIComponent(key)}'">${escapeHTML(word)}</div>`;
+    })
+    .join("");
+
+  return trending || `<div class="home-list-item">${t("noTrending")}</div>`;
+}
+
+function getFavoritesHTML() {
+  return favorites
+    .map(normalizeStoredKey)
+    .map(key => {
+      const word = displayWordFromKey(key);
+      return `<div class="home-list-item" onclick="location.hash='${encodeURIComponent(key)}'">${escapeHTML(word)}</div>`;
+    })
+    .join("") || `<div class="home-list-item">${t("noFavorites")}</div>`;
+}
+
+function toggleHomeList(id) {
+  const box = document.getElementById(id);
+  if (box) box.classList.toggle("open");
+}
+
+function renderBubbles() {
+  const c = document.getElementById("bubbles");
+  if (!c || !entries.length) return;
+
+  c.classList.remove("fade-in");
+
+  setTimeout(() => {
+    c.innerHTML = "";
+
+    const shuffled = [...entries].sort(() => Math.random() - 0.5).slice(0, 7);
+
+    shuffled.forEach(item => {
+      const isFav = favorites.map(normalizeStoredKey).includes(entryKey(item));
+
+      const b = document.createElement("div");
+      b.className = "bubble";
+      b.innerHTML = `${isFav ? "⭐ " : ""}${escapeHTML(item.title)}`;
+      b.onclick = () => {
+        location.hash = entryHash(item);
+      };
+
+      c.appendChild(b);
+    });
+
+    c.classList.add("fade-in");
+  }, 200);
+}
+
+function startBubbles() {
+  if (bubbleTimer) clearInterval(bubbleTimer);
+  bubbleTimer = setInterval(renderBubbles, 6000);
+}
+
+function detectSynonyms(text) {
+  const match = text.match(/Συν:\s*([^\n.]+)/i);
+  return match ? match[1].trim() : "";
+}
+
+function detectDerivatives(title) {
+  const map = {
+    "Τιούμπα": "Τιούμπε",
+    "Ξεδίπλωμα": "ξεδιπλώνω, ξεδιπλωμένος",
+    "Χόντρεμα": "χοντραίνω",
+    "Καφεδίνκος": "καφές, καφεδάκι"
+  };
+  return map[title] || "";
+}
+
+function detectAntonyms(title) {
+  return "";
+}
+
+function buildMeta(title, text) {
+  const rows = [];
+
+  const types = detectTypes(title, text);
+  types.forEach(type => {
+    rows.push(`<span class="meta-pill">${escapeHTML(type)}</span>`);
+  });
+
+  const derivatives = detectDerivatives(title);
+  if (derivatives) rows.push(`<span class="meta-pill"><b>${t("derivatives")}</b> ${escapeHTML(derivatives)}</span>`);
+
+  const synonyms = detectSynonyms(text);
+  if (synonyms) rows.push(`<span class="meta-pill"><b>${t("synonyms")}</b> ${escapeHTML(synonyms)}</span>`);
+
+  const antonyms = detectAntonyms(title);
+  if (antonyms) rows.push(`<span class="meta-pill"><b>${t("antonyms")}</b> ${escapeHTML(antonyms)}</span>`);
+
+  if (!rows.length) return "";
+  return `<div class="entry-meta">${rows.join("")}</div>`;
+}
+
+function getDeclension(title) {
+  let word = title.split(/[ ,;/!]/)[0].trim();
+
+  const known = {
+    "Τάταρος": ["ο Τάταρος", "του Τάταρου", "τον Τάταρο", "Τάταρε", "οι Τάταροι", "των Τατάρων", "τους Τάταρους", "Τάταροι"],
+    "Χιμπατζής": ["ο Χιμπατζής", "του Χιμπατζή", "τον Χιμπατζή", "Χιμπατζή", "οι Χιμπατζήδες", "των Χιμπατζήδων", "τους Χιμπατζήδες", "Χιμπατζήδες"],
+    "Βατραχομούρης": ["ο Βατραχομούρης", "του Βατραχομούρη", "τον Βατραχομούρη", "Βατραχομούρη", "οι Βατραχομούρηδες", "των Βατραχομούρηδων", "τους Βατραχομούρηδες", "Βατραχομούρηδες"],
+    "Λίγδας": ["ο Λίγδας", "του Λίγδα", "τον Λίγδα", "Λίγδα", "οι Λίγδες", "των Λίγδων", "τους Λίγδες", "Λίγδες"],
+    "Γιαταγάνι": ["το Γιαταγάνι", "του Γιαταγανιού", "το Γιαταγάνι", "Γιαταγάνι", "τα Γιαταγάνια", "των Γιαταγανιών", "τα Γιαταγάνια", "Γιαταγάνια"],
+    "Ροδέλα": ["η Ροδέλα", "της Ροδέλας", "τη Ροδέλα", "Ροδέλα", "οι Ροδέλες", "των Ροδελών", "τις Ροδέλες", "Ροδέλες"],
+    "Κλανοβαλβίδα": ["η Κλανοβαλβίδα", "της Κλανοβαλβίδας", "την Κλανοβαλβίδα", "Κλανοβαλβίδα", "οι Κλανοβαλβίδες", "των Κλανοβαλβίδων", "τις Κλανοβαλβίδες", "Κλανοβαλβίδες"],
+    "Πριμαντόνα": ["η Πριμαντόνα", "της Πριμαντόνας", "την Πριμαντόνα", "Πριμαντόνα", "οι Πριμαντόνες", "των Πριμαντόνων", "τις Πριμαντόνες", "Πριμαντόνες"],
+    "Τρύπα": ["η Τρύπα", "της Τρύπας", "την Τρύπα", "Τρύπα", "οι Τρύπες", "των Τρυπών", "τις Τρύπες", "Τρύπες"],
+    "Σωληνίσκος": ["ο Σωληνίσκος", "του Σωληνίσκου", "τον Σωληνίσκο", "Σωληνίσκε", "οι Σωληνίσκοι", "των Σωληνίσκων", "τους Σωληνίσκους", "Σωληνίσκοι"],
+    "Μουσλούκι": ["το Μουσλούκι", "του Μουσλουκιού", "το Μουσλούκι", "Μουσλούκι", "τα Μουσλούκια", "των Μουσλουκιών", "τα Μουσλούκια", "Μουσλούκια"]
+  };
+
+  return known[word] || null;
+}
+
+
+function normalizeDeclensionForm(form) {
+  return String(form).replace(/^(ο|η|το|του|της|τον|την|οι|τα|των|τους|τις)\s+(.)(.*)$/u, (m, art, first, rest) => {
+    return art + " " + first.toLocaleLowerCase("el-GR") + rest;
+  }).replace(/^(.)(.*)$/u, (m, first, rest) => first.toLocaleLowerCase("el-GR") + rest);
+}
+
+function buildDeclensionTable(title) {
+  const d = getDeclension(title);
+  if (!d) return "";
+  const n = d.map(normalizeDeclensionForm);
+
+  return `
+    <div class="declension-box">
+      <div class="declension-title">${t("declension")}</div>
+      <table>
+        <tr><th>${t("case")}</th><th>${t("singular")}</th><th>${t("plural")}</th></tr>
+        <tr><td>${t("nominative")}</td><td>${escapeHTML(n[0])}</td><td>${escapeHTML(n[4])}</td></tr>
+        <tr><td>${t("genitive")}</td><td>${escapeHTML(n[1])}</td><td>${escapeHTML(n[5])}</td></tr>
+        <tr><td>${t("accusative")}</td><td>${escapeHTML(n[2])}</td><td>${escapeHTML(n[6])}</td></tr>
+        <tr><td>${t("vocative")}</td><td>${escapeHTML(n[3])}</td><td>${escapeHTML(n[7])}</td></tr>
+      </table>
+    </div>
+  `;
+}
+
+
+function protectHTMLParts(text) {
+  const protectedParts = [];
+  const pattern = /<(iframe|a|b|strong|i|em|span)\b[\s\S]*?<\/\1>/gi;
+
+  const result = String(text).replace(pattern, match => {
+    protectedParts.push(match);
+    return `@@HTML_PART_${protectedParts.length - 1}@@`;
+  });
+
+  return { result, protectedParts };
+}
+
+function restoreHTMLParts(text, protectedParts) {
+  let result = text;
+  protectedParts.forEach((part, i) => {
+    result = result.replace(`@@HTML_PART_${i}@@`, part);
+  });
+  return result;
+}
+
+function makeExternalLink(url, label) {
+  const safeUrl = escapeAttr(url);
+  const safeLabel = escapeHTML(label);
+  return `<a class="entry-custom-link" href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeLabel}</a>`;
+}
+
+function applyCustomDataFormatting(text) {
+  let result = String(text);
+
+  result = result.replace(/\[\[([^\]|]+)\|((?:https?:\/\/|www\.)[^\]\s]+)\]\]/gi, (m, label, url) => {
+    if (url.startsWith("www.")) url = "https://" + url;
+    return makeExternalLink(url, label.trim());
+  });
+
+  result = result.replace(/((?:https?:\/\/|www\.)[^\s"'<>]+)\s*\[\[([^\]]+)\]\]/gi, (m, url, label) => {
+    if (url.startsWith("www.")) url = "https://" + url;
+    return makeExternalLink(url, label.trim());
+  });
+
+  result = result.replace(/\[\[([^\]]+)\]\]\s*((?:https?:\/\/|www\.)[^\s"'<>]+)/gi, (m, label, url) => {
+    if (url.startsWith("www.")) url = "https://" + url;
+    return makeExternalLink(url, label.trim());
+  });
+
+  result = result.replace(/([\p{L}\p{N}_Ά-ώϊϋΐΰA-Za-z0-9.-]+)\*bold\b/gu, "<b>$1</b>");
+  result = result.replace(/([\p{L}\p{N}_Ά-ώϊϋΐΰA-Za-z0-9.-]+)\*italic\b/gu, "<i>$1</i>");
+
+  return result;
+}
+
+function formatEntryContent(text, currentTitle) {
+  const smallNotes = [];
+  let mainText = String(text).replace(/\*\s*\(([^)]+)\)/g, (match, note) => {
+    smallNotes.push(note.trim());
+    return "";
+  }).trim();
+
+  mainText = applyCustomDataFormatting(mainText);
+  mainText = linkReferences(mainText, currentTitle);
+
+  const notesHTML = smallNotes.length
+    ? `<div class="entry-small-notes">${smallNotes.map(note => `<div class="entry-small-note">${escapeHTML(note)}</div>`).join("")}</div>`
+    : "";
+
+  return {
+    body: mainText,
+    notes: notesHTML
+  };
+}
+
+function linkReferences(text, currentTitle) {
+  let result = text;
+
+  const htmlProtected = protectHTMLParts(result);
+  result = htmlProtected.result;
+  const protectedParts = htmlProtected.protectedParts;
+
+  const sortedEntries = [...entries]
+    .filter(e => e.title !== currentTitle && e.title.length > 2)
+    .sort((a,b) => b.title.length - a.title.length);
+
+  sortedEntries.forEach(e => {
+    const escaped = e.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regex = new RegExp(escaped, "gi");
+
+    result = result.replace(regex, match => {
+      return `<span class="entry-ref" onclick="location.hash='${entryHash(e)}'">${match}</span>`;
+    });
+  });
+
+  result = restoreHTMLParts(result, protectedParts);
+
+  return result;
+}
+
+function openEntry(entry) {
+  const key = entryKey(entry);
+  clicks[key] = (clicks[key] || 0) + 1;
+  localStorage.setItem("clicks", JSON.stringify(clicks));
+
+  const isFav = favorites.map(normalizeStoredKey).includes(key);
+
+  let clean = getEntryCleanText(entry);
+
+  const imageRegex = /(https?:\/\/[^\s"'<>]+\.(?:png|jpg|jpeg|gif|webp))/gi;
+  const images = clean.match(imageRegex) || [];
+
+  images.forEach(img => {
+    clean = clean.replace(img, "");
+  });
+
+  let imageHTML = "";
+  if (images.length) {
+    imageHTML = `
+      <div class="entry-images">
+        ${images.map(src => `<img src="${src}">`).join("")}
+      </div>
+    `;
+  }
+
+  const formatted = formatEntryContent(clean, entry.title);
+
+  document.getElementById("content").innerHTML = `
+    <button class="back-btn" onclick="goHome()">${t("back")}</button>
+
+    <article class="entry">
+      <div class="entry-title">
+        ${escapeHTML(entry.title)}
+        <span class="star" onclick="toggleFav(event, '${escapeQuotes(entryKey(entry))}')">${isFav ? "⭐" : "☆"}</span>
+      </div>
+
+      <div class="entry-divider"></div>
+
+      ${buildMeta(entry.title, entry.full)}
+
+      <div class="entry-body">${formatted.body}${imageHTML}${buildDeclensionTable(entry.title)}${formatted.notes}</div>
+    </article>
+  `;
+}
+
+function toggleFav(event, word) {
+  event.stopPropagation();
+
+  const key = normalizeStoredKey(word);
+  favorites = favorites.map(normalizeStoredKey);
+
+  if (favorites.includes(key)) {
+    favorites = favorites.filter(f => f !== key);
+  } else {
+    favorites.push(key);
+  }
+
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+  route();
+}
+
+function voiceSearch(event) {
+  event.stopPropagation();
+
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  if (!SpeechRecognition) {
+    alert(t("micUnsupported"));
+    return;
+  }
+
+  const r = new SpeechRecognition();
+  r.lang = "el-GR";
+
+  r.onresult = e => {
+    const text = e.results[0][0].transcript;
+    searchQuery = text;
+    const input = document.getElementById("searchMain");
+    if (input) input.value = text;
+    renderList();
+    renderHomeResults();
+  };
+
+  r.start();
+}
+
+function goHome() {
+  activeFilter = "Όλα";
+  searchQuery = "";
+  dictionaryOpen = false;
+  currentEntryId = null;
+  history.pushState("", document.title, window.location.pathname + window.location.search);
+  renderFilters();
+  renderList();
+  showHome();
+}
+
+function setupResizer() {
+  const sidebar = document.getElementById("sidebar");
+  const resizer = document.getElementById("resizer");
+  if (!sidebar || !resizer) return;
+
+  const saved = localStorage.getItem("sidebarWidth");
+  if (saved) sidebar.style.width = saved + "px";
+
+  let dragging = false;
+
+  const start = e => {
+    dragging = true;
+    document.body.style.userSelect = "none";
+    e.preventDefault();
+  };
+
+  const move = e => {
+    if (!dragging || window.innerWidth <= 850) return;
+    const x = e.touches ? e.touches[0].clientX : e.clientX;
+    const width = Math.min(620, Math.max(280, window.innerWidth - x));
+    sidebar.style.width = width + "px";
+    localStorage.setItem("sidebarWidth", width);
+  };
+
+  const end = () => {
+    dragging = false;
+    document.body.style.userSelect = "";
+  };
+
+  resizer.addEventListener("mousedown", start);
+  resizer.addEventListener("touchstart", start);
+  window.addEventListener("mousemove", move);
+  window.addEventListener("touchmove", move);
+  window.addEventListener("mouseup", end);
+  window.addEventListener("touchend", end);
+}
+
+function escapeQuotes(str) {
+  return String(str).replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+}
+
+function escapeHTML(str) {
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
+function escapeAttr(str) {
+  return escapeHTML(str).replaceAll('"', "&quot;");
+}
+</script>
+
+</body>
+</html>
