@@ -268,7 +268,7 @@
 Ατάκα89: Αααα η Ντούβλη! +φράση
 Περιγραφή: Ατάκα του Mr. Μπούτια στη Μαριάννα Ντούβλη. <iframe width="560" height="315" src="https://www.youtube.com/embed/VJNcSEAphxw?si=2JUpHOKkGuFSyEdj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Ατάκα90: εισροή-εισχωρή +ουσιαστικό
+Ατάκα90: εισροή-εκροή +ουσιαστικό
 Περιγραφή: Όταν μπαίνουμε σε ένα θέμα/κατάσταση/αντικείμενο. Μερικές φορές και όταν η ροδέλα/κλανοβαλβίδα δέχεται βαθιές επιθέσεις.
 
 Ατάκα91: πυροδοτώ +ρήμα
