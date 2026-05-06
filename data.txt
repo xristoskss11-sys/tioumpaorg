@@ -10,7 +10,7 @@
 Περιγραφή: Κατ' αυτόν τον τρόπο, με αυτό τον τρόπο. Συν: Τοιουτοτρόπως
 
 Ατάκα4: Βουτς Βουτς Βουτς +ήχος
-Περιγραφή: Μιμητικός ήχος της μηχανής / scooter.
+Περιγραφή: Μιμητικός ήχος της μηχανής / αμαξιού κ.λ.π.. Προέρχεται από τον Hayate. <iframe width="560" height="315" src="https://www.youtube.com/embed/X46iGtM5E2Y?si=vI6QWdUPYpHdYrmK&amp;start=355" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Ατάκα5: Δάκρυα χαράς +φράση
 Περιγραφή: Το σπέρμα / χύσια / φλόκια / άσπρη ενυδατική ουσία που εξέρχεται από χειρόφρενο / ανδρικό μόριο (τιούμπα;).
