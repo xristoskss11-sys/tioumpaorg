@@ -494,3 +494,9 @@
 
 Ατάκα163: W (του Teosty)
 Περιγραφή: Γίνομαι αρσενικός. Προχωρώ μπορστά και γίνομαι όλο και πιο αρρενωπός. Άντρας που θεωρείται ηγετικός, διεκδικητικός, σίγουρος για τον εαυτό του και κυρίαρχος, αναλαμβάνοντας συχνά την ευθύνη σε κοινωνικές ή επαγγελματικές καταστάσεις.
+
+Ατάκα164: Έλα χριθτέ και απόθτολε +ατάκα
+Περιγραφή: Ατάκα του Γρηγόρη Κόκκινου και του Κωστή Ραπτόπουλου.
+
+Ατάκα165: Θα σε πάρω να φύγουμε, σ' άλλη γη σ' άλλα μέρη, που κανέναν δεν ξέρουμε, και κανείς δε μας ξέρει +τραγούδι'
+Περιγραφή: Προέρχεται από το τραγούδι "Θα σε πάρω να φύγουμε" της Μαρινέλλας: <iframe width="560" height="315" src="https://www.youtube.com/embed/NQZjIvZWls8?si=AHd0kUXLwcP0i0Hy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
