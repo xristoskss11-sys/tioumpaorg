@@ -13,8 +13,9 @@
 <meta name="author" content="tioumpa.org">
 <meta name="robots" content="index, follow">
 
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776590348454956"
      crossorigin="anonymous"></script>
@@ -93,7 +94,7 @@ html[data-theme="light"] {
 
 body {
   margin: 0;
-    font-family: Segoe UI, Arial, Segoe Ui, sans-serif;
+    font-family: Sofia Sans, Arial, Segoe Ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   overflow: hidden;
@@ -1342,6 +1343,55 @@ html[data-theme="light"] .mic-img {
   }
 }
 
+
+/* ADS - added only, keeps your existing code unchanged */
+.left-ad {
+  width: 180px;
+  min-width: 180px;
+  padding: 18px 10px;
+  border-right: 1px solid var(--border-soft);
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.left-ad-box {
+  position: sticky;
+  top: 18px;
+  width: 160px;
+  min-height: 300px;
+}
+
+.left-ad-box .adsbygoogle {
+  display: block;
+  width: 160px;
+  min-height: 300px;
+}
+
+.entry-ad-wrap {
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-soft);
+  width: 100%;
+  max-width: 728px;
+  min-height: 90px;
+}
+
+.entry-ad-wrap .adsbygoogle {
+  display: block;
+  width: 100%;
+  min-height: 90px;
+}
+
+@media (max-width: 850px) {
+  .left-ad {
+    display: none;
+  }
+
+  .entry-ad-wrap {
+    max-width: 100%;
+  }
+}
+
 </style>
 </head>
 
@@ -1368,6 +1418,16 @@ html[data-theme="light"] .mic-img {
 </div>
 
 <div class="app">
+  <aside class="left-ad">
+    <div class="left-ad-box">
+      <ins class="adsbygoogle"
+           data-ad-client="ca-pub-2776590348454956"
+           data-ad-slot="2969940544"
+           data-ad-format="auto"
+           data-full-width-responsive="false"></ins>
+    </div>
+  </aside>
+
   <main class="content" id="content"></main>
 
   <div class="resizer" id="resizer" title="Σύρε για αλλαγή πλάτους"></div>
@@ -2356,6 +2416,57 @@ function escapeHTML(str) {
 function escapeAttr(str) {
   return escapeHTML(str).replaceAll('"', "&quot;");
 }
+</script>
+
+
+<script>
+/* ADS - added only, keeps your existing functions unchanged */
+function tioumpaPushAds() {
+  setTimeout(() => {
+    document.querySelectorAll("ins.adsbygoogle:not([data-adsbygoogle-status])").forEach(ad => {
+      if (ad.offsetParent !== null) {
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+          console.warn("AdSense not ready yet", e);
+        }
+      }
+    });
+  }, 100);
+}
+
+function tioumpaEntryAdHTML() {
+  return `
+    <div class="entry-ad-wrap">
+      <ins class="adsbygoogle"
+           data-ad-client="ca-pub-2776590348454956"
+           data-ad-slot="2969940544"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+  `;
+}
+
+(function addTIOUMPAAdsWithoutChangingExistingCode() {
+  const originalOpenEntry = window.openEntry;
+
+  if (typeof originalOpenEntry === "function") {
+    window.openEntry = function(entry) {
+      originalOpenEntry(entry);
+
+      const article = document.querySelector("article.entry");
+      if (article && !article.querySelector(".entry-ad-wrap")) {
+        article.insertAdjacentHTML("beforeend", tioumpaEntryAdHTML());
+      }
+
+      tioumpaPushAds();
+    };
+  }
+
+  window.addEventListener("load", tioumpaPushAds);
+  window.addEventListener("resize", tioumpaPushAds);
+  tioumpaPushAds();
+})();
 </script>
 
 </body>
