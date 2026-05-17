@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>tioumpa.org - λεξικό</title>
+<title>tioumpa.org — OpenAI-inspired λεξικό</title>
 
-<meta name="description" content="Το tioumpa.org είναι το λεξικό του Teosty με ατάκες, λέξεις, φράσεις και ορισμούς από το community του">
+<meta name="description" content="tioumpa.org — ένα καθαρό, premium community dictionary για ατάκες, λέξεις, φράσεις και ορισμούς.">
 
 <meta name="keywords" content="tioumpa, tioumpa.org, Teosty, λεξικό Teosty, ατάκες Teosty, λιγδας, ligdas, λιγειρος, booyah tv, booyah, μπουγια, hacky, χακι, τιουμπα, τουμπα, θεσσαλονικη, youtube, tiktok, instagram, insta, τικτοκ, τεοστυ, θοδωρης, αγορινα, clips, kick, κικ, drestvlog, its only, ιτς ονλυ">
 
@@ -1393,6 +1393,12 @@ html[data-theme="light"] .mic-img {
 }
 
 </style>
+
+<!-- Inter font for compact OpenAI-style UI -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -1450,18 +1456,18 @@ const translations = {
   el: {
     colorTheme: "Θέμα", language: "Γλώσσα", auto: "Auto", dark: "Dark", light: "Light", filters: "filters",
     searchPlaceholder: "Αναζήτηση...", clean: "Clean", trends: "🔥 Trends", favorites: "⭐ Favorites", randomWords: "ΤΥΧΑΙΕΣ ΛΕΞΕΙΣ",
-    noTrending: "Δεν υπάρχουν ακόμα δεδομένα", noFavorites: "-",
+    noTrending: "Error", noFavorites: "-",
     dataTitle: "load data.txt", dataText: "load... <b>data.txt</b> load... index.html.",
-    micUnsupported: "mic not supported on this browser.", back: "← Επιστροφή", declension: "Κλίση",
+    micUnsupported: "mic not supported on this browser.", back: "← Back", declension: "Κλίση",
     case: "Πτώση", singular: "Ενικός αριθμός", plural: "Πληθυντικός αριθμός", nominative: "Ονομαστική", genitive: "Γενική", accusative: "Αιτιατική", vocative: "Κλητική",
     derivatives: "Παράγωγα:", synonyms: "Συνώνυμα:", antonyms: "Αντώνυμα:", searchCopy: "Αναζήτηση {count} ορών από το λεξικό.",
-    subtitle: "Λ Ε Ξ Ι Κ Ο", email: "Για οποιαδήποτε αλλαγή, προσθήκη, ή διόρθωση στείλτε στο: tioumpagr@gmail.com", showDictionary: "Εμφάνιση λεξικού", hideDictionary: "Απόκρυψη λεξικού", noResults: "Δεν βρέθηκαν αποτελέσματα", results: "results"
+    subtitle: "Λ Ε Ξ Ι Κ Ο", email: "Για οποιαδήποτε αλλαγή, προσθήκη, ή διόρθωση στείλτε στο: tioumpagr@gmail.com", showDictionary: "Εμφάνιση λεξικού", hideDictionary: "Απόκρυψη λεξικού", noResults: "No results", results: "results"
   },
   en: {
     colorTheme: "Color Theme", language: "Language", auto: "Auto", dark: "Dark", light: "Light", filters: "filters",
     searchPlaceholder: "Search...", clean: "Clear", trends: "🔥 Trends", favorites: "⭐ Favorites", randomWords: "RANDOM WORDS",
-    noTrending: "No data yet", noFavorites: "You have not saved any favorites yet",
-    dataTitle: "data.txt did not load", dataText: "Make sure the file is named exactly <b>data.txt</b> and is in the same folder as index.html.",
+    noTrending: "No data yet", noFavorites: "-",
+    dataTitle: "data.txt loading", dataText: "Error <b>data.txt</b> index.html.",
     micUnsupported: "Microphone is not supported in this browser.", back: "← Back", declension: "Declension",
     case: "Case", singular: "Singular", plural: "Plural", nominative: "Nominative", genitive: "Genitive", accusative: "Accusative", vocative: "Vocative",
     derivatives: "Derivatives:", synonyms: "Synonyms:", antonyms: "Antonyms:", searchCopy: "Search {count} words from Teosty's dictionary.",
@@ -2466,6 +2472,2778 @@ function tioumpaEntryAdHTML() {
   window.addEventListener("load", tioumpaPushAds);
   window.addEventListener("resize", tioumpaPushAds);
   tioumpaPushAds();
+})();
+</script>
+
+
+<!-- =========================================================
+  TIOUMPA.ORG — OPENAI-INSPIRED PREMIUM REBRAND
+  Added by ChatGPT. Keeps your existing data.txt, engdata.txt,
+  search, filters, favorites, routing, ads scripts and entries.
+  No OpenAI logos/assets/trademarks are copied.
+========================================================== -->
+<style id="tioumpa-openai-inspired-rebrand">
+:root {
+  --oa-bg: #f4f2ee;
+  --oa-ink: #10100f;
+  --oa-ink-soft: rgba(16,16,15,.70);
+  --oa-muted: rgba(16,16,15,.55);
+  --oa-line: rgba(16,16,15,.14);
+  --oa-line-strong: rgba(16,16,15,.24);
+  --oa-card: rgba(255,255,255,.62);
+  --oa-card-strong: rgba(255,255,255,.86);
+  --oa-elevated: #ffffff;
+  --oa-hover: rgba(16,16,15,.06);
+  --oa-accent: #10100f;
+  --oa-accent-2: #6b6257;
+  --oa-radius: 24px;
+  --oa-radius-lg: 36px;
+  --oa-shadow: 0 24px 70px rgba(16,16,15,.10);
+  --oa-font: "Roboto Flex", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --bg: var(--oa-bg);
+  --text: var(--oa-ink);
+  --muted: var(--oa-muted);
+  --muted-2: var(--oa-ink-soft);
+  --border: var(--oa-line-strong);
+  --border-soft: var(--oa-line);
+  --panel: rgba(244,242,238,.78);
+  --panel-strong: rgba(244,242,238,.92);
+  --surface: rgba(255,255,255,.68);
+  --surface-soft: rgba(255,255,255,.46);
+  --hover: var(--oa-hover);
+  --accent: var(--oa-accent);
+  --accent-soft: rgba(16,16,15,.08);
+}
+
+html[data-theme="dark"] {
+  --oa-bg: #0f0f0e;
+  --oa-ink: #f5f2ea;
+  --oa-ink-soft: rgba(245,242,234,.72);
+  --oa-muted: rgba(245,242,234,.52);
+  --oa-line: rgba(245,242,234,.14);
+  --oa-line-strong: rgba(245,242,234,.24);
+  --oa-card: rgba(255,255,255,.065);
+  --oa-card-strong: rgba(255,255,255,.105);
+  --oa-elevated: #171716;
+  --oa-hover: rgba(255,255,255,.08);
+  --oa-accent: #f5f2ea;
+  --oa-accent-2: #c7bfb0;
+  --oa-shadow: 0 24px 70px rgba(0,0,0,.42);
+
+  --bg: var(--oa-bg);
+  --text: var(--oa-ink);
+  --muted: var(--oa-muted);
+  --muted-2: var(--oa-ink-soft);
+  --border: var(--oa-line-strong);
+  --border-soft: var(--oa-line);
+  --panel: rgba(15,15,14,.72);
+  --panel-strong: rgba(15,15,14,.88);
+  --surface: rgba(255,255,255,.075);
+  --surface-soft: rgba(255,255,255,.055);
+  --hover: var(--oa-hover);
+  --accent: var(--oa-accent);
+  --accent-soft: rgba(245,242,234,.10);
+}
+
+html[data-theme="light"] {
+  --oa-bg: #f4f2ee;
+  --oa-ink: #10100f;
+  --oa-ink-soft: rgba(16,16,15,.70);
+  --oa-muted: rgba(16,16,15,.55);
+  --oa-line: rgba(16,16,15,.14);
+  --oa-line-strong: rgba(16,16,15,.24);
+  --oa-card: rgba(255,255,255,.62);
+  --oa-card-strong: rgba(255,255,255,.86);
+  --oa-elevated: #ffffff;
+  --oa-hover: rgba(16,16,15,.06);
+  --oa-accent: #10100f;
+  --oa-accent-2: #6b6257;
+  --oa-shadow: 0 24px 70px rgba(16,16,15,.10);
+
+  --bg: var(--oa-bg);
+  --text: var(--oa-ink);
+  --muted: var(--oa-muted);
+  --muted-2: var(--oa-ink-soft);
+  --border: var(--oa-line-strong);
+  --border-soft: var(--oa-line);
+  --panel: rgba(244,242,238,.78);
+  --panel-strong: rgba(244,242,238,.92);
+  --surface: rgba(255,255,255,.68);
+  --surface-soft: rgba(255,255,255,.46);
+  --hover: var(--oa-hover);
+  --accent: var(--oa-accent);
+  --accent-soft: rgba(16,16,15,.08);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--oa-font);
+  background:
+    radial-gradient(circle at 14% 2%, rgba(255,255,255,.38), transparent 28%),
+    radial-gradient(circle at 90% 10%, rgba(170,158,140,.16), transparent 34%),
+    var(--oa-bg) !important;
+  color: var(--oa-ink) !important;
+  letter-spacing: -.01em;
+}
+
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at 14% 2%, rgba(255,255,255,.10), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(190,170,140,.10), transparent 34%),
+    var(--oa-bg) !important;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--oa-line-strong);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+* { scrollbar-color: var(--oa-line-strong) transparent; }
+
+.header {
+  height: 74px !important;
+  padding: 0 28px !important;
+  gap: 18px !important;
+  border-bottom: 1px solid var(--oa-line) !important;
+  background: color-mix(in srgb, var(--oa-bg) 88%, transparent) !important;
+  backdrop-filter: blur(24px) saturate(1.35);
+  -webkit-backdrop-filter: blur(24px) saturate(1.35);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: none !important;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--oa-line-strong), transparent);
+  opacity: .32;
+  pointer-events: none;
+}
+
+.header img {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 999px !important;
+  padding: 4px;
+  border: 1px solid var(--oa-line);
+  background: var(--oa-card);
+}
+
+.header strong {
+  font-size: 15px !important;
+  font-weight: 650 !important;
+  letter-spacing: -.02em;
+}
+
+.oa-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-left: 22px;
+}
+
+.oa-nav a {
+  color: var(--oa-ink-soft);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 520;
+  cursor: pointer;
+}
+
+.oa-nav a:hover {
+  color: var(--oa-ink);
+}
+
+.theme-control {
+  margin-left: auto !important;
+}
+
+.theme-control label,
+.lang-control label,
+.filter-title {
+  color: var(--oa-muted) !important;
+  font-size: 11px !important;
+  font-weight: 600;
+  letter-spacing: .04em !important;
+  text-transform: uppercase;
+}
+
+.theme-simple,
+.lang-simple,
+.theme-simple-btn,
+.lang-simple-btn,
+button,
+input,
+select,
+textarea,
+.filter-box,
+.filter-btn,
+.word,
+.bubble,
+.meta-pill,
+.back-btn,
+.home-results,
+.home-result-item,
+.home-toggle-section button,
+.mobile-dictionary-toggle,
+.declension-box,
+.entry-images img {
+  border-radius: var(--oa-radius) !important;
+}
+
+.theme-simple,
+.lang-simple {
+  border: 1px solid var(--oa-line) !important;
+  background: var(--oa-card) !important;
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.theme-simple-btn,
+.lang-simple-btn {
+  height: 34px !important;
+  border-color: var(--oa-line) !important;
+  color: var(--oa-muted) !important;
+  font-weight: 600;
+}
+
+.theme-simple-btn:hover,
+.lang-simple-btn:hover,
+.theme-simple-btn.active,
+.lang-simple-btn.active {
+  background: var(--oa-ink) !important;
+  color: var(--oa-bg) !important;
+}
+
+.app {
+  height: calc(100vh - 74px) !important;
+}
+
+.left-ad {
+  display: none !important;
+}
+
+.content {
+  padding: clamp(22px, 4vw, 56px) !important;
+  background: transparent !important;
+}
+
+.sidebar {
+  width: 360px !important;
+  border-left: 1px solid var(--oa-line) !important;
+  background: color-mix(in srgb, var(--oa-bg) 78%, transparent) !important;
+  backdrop-filter: blur(22px);
+  padding: 18px !important;
+}
+
+.resizer {
+  width: 1px !important;
+  background: var(--oa-line) !important;
+}
+
+.resizer::after {
+  display: none !important;
+}
+
+.filter-box {
+  background: var(--oa-card) !important;
+  border: 1px solid var(--oa-line) !important;
+  padding: 14px !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(18px);
+}
+
+.filter-box.collapsed {
+  max-height: 104px !important;
+}
+
+.filter-toggle,
+.filter-btn,
+.word {
+  border: 1px solid var(--oa-line) !important;
+  background: transparent !important;
+  color: var(--oa-ink-soft) !important;
+}
+
+.filter-btn:hover,
+.filter-btn.active,
+.filter-toggle:hover {
+  color: var(--oa-bg) !important;
+  background: var(--oa-ink) !important;
+  border-color: var(--oa-ink) !important;
+}
+
+.letter {
+  border-bottom: 1px solid var(--oa-line) !important;
+  color: var(--oa-muted) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+
+.word {
+  padding: 12px 13px !important;
+  font-size: 14px;
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+
+.word:hover {
+  background: var(--oa-card-strong) !important;
+  color: var(--oa-ink) !important;
+  transform: translateX(3px);
+}
+
+.home.openai-home {
+  min-height: auto !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(34px, 6vw, 86px) 0 44px;
+  animation: oaFadeUp .6s cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes oaFadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.oa-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+}
+
+.oa-eyebrow {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 9px;
+  color: var(--oa-muted);
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: .04em;
+}
+
+.oa-eyebrow::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--oa-ink);
+  border-radius: 999px;
+  background: var(--oa-ink);
+  box-shadow: 0 0 0 6px var(--oa-accent-soft);
+}
+
+.oa-hero h1 {
+  max-width: 1030px;
+  margin: 0 !important;
+  font-size: clamp(54px, 9.5vw, 138px) !important;
+  line-height: .92;
+  letter-spacing: -.075em;
+  font-weight: 640;
+  color: var(--oa-ink);
+}
+
+.oa-hero h1 .soft {
+  color: var(--oa-muted);
+  font-weight: 520;
+}
+
+.oa-subhead {
+  max-width: 760px;
+  color: var(--oa-ink-soft);
+  font-size: clamp(18px, 2vw, 27px);
+  line-height: 1.28;
+  letter-spacing: -.035em;
+  margin: 0;
+}
+
+.oa-command {
+  width: min(920px, 100%);
+  margin-top: 4px;
+  border: 1px solid var(--oa-line);
+  border-radius: var(--oa-radius-lg) !important;
+  background: var(--oa-card-strong);
+  box-shadow: var(--oa-shadow);
+  overflow: hidden;
+  backdrop-filter: blur(22px);
+}
+
+.search-wrapper {
+  width: 100% !important;
+  margin: 0 !important;
+  grid-template-columns: minmax(0, 1fr) 160px 120px !important;
+  gap: 0 !important;
+  align-items: stretch !important;
+}
+
+.search-main {
+  display: flex;
+  align-items: center;
+}
+
+.search-main input {
+  height: 68px;
+  padding: 0 54px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--oa-ink) !important;
+  font-family: var(--oa-font) !important;
+  font-size: 18px !important;
+  font-weight: 520;
+  box-shadow: none !important;
+}
+
+.search-main input::placeholder {
+  color: var(--oa-muted) !important;
+}
+
+.search-main input:focus {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.search-icon {
+  left: 24px !important;
+  opacity: .55 !important;
+  filter: none !important;
+  mix-blend-mode: difference;
+}
+
+html[data-theme="light"] .search-icon {
+  mix-blend-mode: normal;
+  filter: none !important;
+}
+
+.mic-img {
+  right: 22px !important;
+  opacity: .58;
+  filter: none !important;
+  mix-blend-mode: difference;
+}
+
+html[data-theme="light"] .mic-img {
+  mix-blend-mode: normal;
+  filter: none !important;
+}
+
+.search-wrapper select,
+.search-wrapper button {
+  height: 68px !important;
+  border: 0 !important;
+  border-left: 1px solid var(--oa-line) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--oa-ink) !important;
+  font-family: var(--oa-font) !important;
+  font-weight: 650;
+  box-shadow: none !important;
+}
+
+.search-wrapper button:hover,
+.search-wrapper select:hover {
+  background: var(--oa-hover) !important;
+}
+
+.oa-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.oa-chip,
+.home-toggle-section button,
+.mobile-dictionary-toggle {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid var(--oa-line) !important;
+  background: transparent !important;
+  color: var(--oa-ink-soft) !important;
+  padding: 0 16px !important;
+  font-family: var(--oa-font) !important;
+  font-weight: 610;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.oa-chip:hover,
+.home-toggle-section button:hover,
+.mobile-dictionary-toggle:hover {
+  transform: translateY(-1px);
+  background: var(--oa-ink) !important;
+  color: var(--oa-bg) !important;
+}
+
+.home-toggle-section {
+  margin-top: 0 !important;
+}
+
+.hidden-box.open {
+  border: 1px solid var(--oa-line);
+  background: var(--oa-card);
+  padding: 10px;
+  border-radius: var(--oa-radius) !important;
+}
+
+.home-results {
+  width: min(920px, 100%) !important;
+  margin-top: 16px !important;
+  border: 1px solid var(--oa-line) !important;
+  background: var(--oa-card) !important;
+  backdrop-filter: blur(22px);
+  box-shadow: none !important;
+}
+
+.home-results-title {
+  color: var(--oa-muted) !important;
+  border-bottom: 1px solid var(--oa-line) !important;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.home-result-item {
+  color: var(--oa-ink-soft) !important;
+  border-bottom: 1px solid var(--oa-line) !important;
+}
+
+.home-result-item:hover {
+  color: var(--oa-ink) !important;
+  background: var(--oa-hover) !important;
+}
+
+.oa-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: clamp(42px, 7vw, 92px);
+}
+
+.oa-card {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px;
+  border: 1px solid var(--oa-line);
+  border-radius: var(--oa-radius-lg);
+  background: var(--oa-card);
+  backdrop-filter: blur(22px);
+  transition: transform .22s ease, background .22s ease, border-color .22s ease;
+}
+
+.oa-card:hover {
+  transform: translateY(-3px);
+  background: var(--oa-card-strong);
+  border-color: var(--oa-line-strong);
+}
+
+.oa-card-kicker {
+  color: var(--oa-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+
+.oa-card h2 {
+  margin: 0;
+  color: var(--oa-ink);
+  font-size: clamp(24px, 2.7vw, 38px);
+  line-height: 1.01;
+  letter-spacing: -.055em;
+  font-weight: 620;
+}
+
+.oa-card p {
+  margin: 20px 0 0;
+  color: var(--oa-ink-soft);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.random-title {
+  margin-top: 54px !important;
+  color: var(--oa-muted) !important;
+  font-size: 12px !important;
+  font-weight: 700;
+  letter-spacing: .12em !important;
+}
+
+.bubbles {
+  width: min(920px, 100%) !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  min-height: 0 !important;
+}
+
+.bubble {
+  background: transparent !important;
+  border: 1px solid var(--oa-line) !important;
+  box-shadow: none !important;
+  color: var(--oa-ink-soft);
+  padding: 11px 15px !important;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.bubble:hover {
+  transform: translateY(-2px);
+  background: var(--oa-ink) !important;
+  color: var(--oa-bg) !important;
+}
+
+.back-btn {
+  float: none !important;
+  position: sticky !important;
+  top: 18px !important;
+  margin: 0 0 28px auto;
+  display: flex;
+  width: fit-content;
+  border: 1px solid var(--oa-line) !important;
+  background: var(--oa-card-strong) !important;
+  color: var(--oa-ink) !important;
+  backdrop-filter: blur(18px);
+}
+
+.back-btn:hover {
+  background: var(--oa-ink) !important;
+  color: var(--oa-bg) !important;
+}
+
+.entry {
+  max-width: 980px !important;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 72px);
+  border: 1px solid var(--oa-line);
+  border-radius: var(--oa-radius-lg);
+  background: var(--oa-card);
+  backdrop-filter: blur(22px);
+  box-shadow: var(--oa-shadow);
+}
+
+.entry-title {
+  font-family: var(--oa-font) !important;
+  font-size: clamp(46px, 7vw, 92px) !important;
+  line-height: .96;
+  letter-spacing: -.07em;
+  font-weight: 620 !important;
+  color: var(--oa-ink);
+}
+
+.star {
+  font-size: clamp(26px, 3vw, 38px) !important;
+  color: var(--oa-ink);
+}
+
+.entry-divider {
+  background: var(--oa-line) !important;
+  margin: 30px 0 !important;
+}
+
+.entry-meta {
+  gap: 10px !important;
+  margin-bottom: 28px !important;
+}
+
+.meta-pill {
+  border: 1px solid var(--oa-line) !important;
+  background: transparent !important;
+  color: var(--oa-ink-soft) !important;
+  font-weight: 600;
+}
+
+.entry-body {
+  font-family: var(--oa-font) !important;
+  color: var(--oa-ink-soft);
+  font-size: clamp(18px, 1.8vw, 23px) !important;
+  line-height: 1.55 !important;
+  letter-spacing: -.025em;
+}
+
+.entry-ref,
+.entry-custom-link {
+  color: var(--oa-ink) !important;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.entry-body iframe,
+.entry-images img,
+.declension-box {
+  border-radius: var(--oa-radius) !important;
+  border: 1px solid var(--oa-line) !important;
+  box-shadow: none !important;
+}
+
+.declension-box {
+  background: var(--oa-card-strong) !important;
+  padding: 16px !important;
+}
+
+.declension-title {
+  color: var(--oa-ink) !important;
+}
+
+.declension-box th,
+.declension-box td {
+  border-color: var(--oa-line) !important;
+}
+
+.entry-ad-wrap {
+  display: none !important;
+}
+
+@media (max-width: 1080px) {
+  .oa-nav { display: none; }
+  .sidebar { width: 320px !important; }
+  .oa-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 850px) {
+  body { overflow: auto !important; }
+  .header {
+    height: auto !important;
+    min-height: 74px;
+    padding: 12px 16px !important;
+  }
+  .theme-control,
+  .lang-control {
+    margin-left: 0 !important;
+  }
+  .app {
+    height: auto !important;
+  }
+  .content {
+    padding: 18px !important;
+  }
+  .home.openai-home {
+    padding-top: 34px;
+  }
+  .oa-hero h1 {
+    font-size: clamp(48px, 15vw, 76px) !important;
+    letter-spacing: -.065em;
+  }
+  .oa-subhead {
+    font-size: 18px;
+  }
+  .oa-command {
+    border-radius: 26px !important;
+  }
+  .search-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+  .search-wrapper select,
+  .search-wrapper button {
+    border-left: 0 !important;
+    border-top: 1px solid var(--oa-line) !important;
+  }
+  .search-main input {
+    height: 62px;
+  }
+  .sidebar {
+    display: none !important;
+  }
+  .mobile-dictionary-toggle {
+    display: inline-flex !important;
+    width: fit-content !important;
+    margin-top: 16px !important;
+  }
+  .entry {
+    padding: 26px;
+    border-radius: 28px !important;
+  }
+}
+</style>
+
+<script id="tioumpa-openai-inspired-rebrand-script">
+(function() {
+  function getLang() {
+    try {
+      return (typeof currentLanguage !== "undefined" && currentLanguage) ? currentLanguage : (window.currentLanguage || "el");
+    } catch (e) {
+      return window.currentLanguage || "el";
+    }
+  }
+
+  function getEntriesCount() {
+    try {
+      return (typeof entries !== "undefined" && Array.isArray(entries)) ? entries.length : (Array.isArray(window.entries) ? window.entries.length : 0);
+    } catch (e) {
+      return Array.isArray(window.entries) ? window.entries.length : 0;
+    }
+  }
+
+  function rebrandText(el, en) {
+    return getLang() === "en" ? en : el;
+  }
+
+  function ensureHeaderNav() {
+    const header = document.querySelector(".header");
+    if (!header || header.querySelector(".oa-nav")) return;
+
+    const strong = header.querySelector("strong");
+    if (strong) {
+      strong.textContent = "tioumpa.org";
+      strong.insertAdjacentHTML("afterend", `
+        <nav class="oa-nav" onclick="event.stopPropagation()">
+          <a data-oa-nav="home" onclick="goHome()">Home</a>
+          <a data-oa-nav="search" onclick="document.getElementById('searchMain')?.focus()">Search</a>
+          <a data-oa-nav="filters" onclick="toggleFilters(event)">Filters</a>
+          <a data-oa-nav="submit" href="mailto:tioumpagr@gmail.com">Submit</a>
+        </nav>
+      `);
+    }
+  }
+
+  function updateHeaderNavText() {
+    const labels = getLang() === "en"
+      ? { home: "Home", search: "Search", filters: "Filters", submit: "Submit" }
+      : { home: "Αρχική", search: "Αναζήτηση", filters: "Φίλτρα", submit: "Προσθήκη" };
+    document.querySelectorAll("[data-oa-nav]").forEach(link => {
+      const key = link.getAttribute("data-oa-nav");
+      if (labels[key]) link.textContent = labels[key];
+    });
+  }
+
+  const originalApplyLanguage = window.applyLanguage;
+  window.applyLanguage = function() {
+    if (typeof originalApplyLanguage === "function") originalApplyLanguage();
+    ensureHeaderNav();
+    updateHeaderNavText();
+  };
+
+  const originalRoute = window.route;
+  window.route = function() {
+    ensureHeaderNav();
+    updateHeaderNavText();
+    if (typeof originalRoute === "function") originalRoute();
+  };
+
+  window.showHome = function() {
+    const count = getEntriesCount();
+    const titleA = rebrandText("Το λεξικό", "The dictionary");
+    const titleB = rebrandText("του community.", "for the community.");
+    const subhead = rebrandText(
+      `Αναζήτησε ${count} όρους, ατάκες και inside jokes με καθαρό, γρήγορο, premium interface.`,
+      `Search ${count} words, quotes and inside jokes with a clean, fast, premium interface.`
+    );
+    const cards = getLang() === "en"
+      ? [
+          ["Search-first", "Find the phrase before the clip ends.", "Greek, Greeklish and categories work together so the dictionary feels instant."],
+          ["Community archive", "A cleaner home for every quote.", "Favorites, trending words and random discovery stay exactly where you need them."],
+          ["Minimal by default", "No noise. Just meaning.", "A calmer interface inspired by modern research/product pages, adapted for tioumpa.org."]
+        ]
+      : [
+          ["Search-first", "Βρες την ατάκα πριν τελειώσει το clip.", "Ελληνικά, Greeklish και κατηγορίες δουλεύουν μαζί ώστε το λεξικό να φαίνεται άμεσο."],
+          ["Community archive", "Πιο καθαρό σπίτι για κάθε φράση.", "Favorites, τυχαίες λέξεις και ανακάλυψη μένουν μέσα στο flow χωρίς βαβούρα."],
+          ["Minimal by default", "Όχι θόρυβος. Μόνο νόημα.", "Ήρεμο premium interface, εμπνευσμένο από μοντέρνες research/product σελίδες, φτιαγμένο για tioumpa.org."]
+        ];
+
+    document.getElementById("content").innerHTML = `
+      <div class="home openai-home">
+        <section class="oa-hero">
+          <div class="oa-eyebrow">TIOUMPA RESEARCH DICTIONARY</div>
+          <h1>${titleA}<br><span class="soft">${titleB}</span></h1>
+          <p class="oa-subhead">${subhead}</p>
+
+          <div class="oa-command">
+            <div class="search-wrapper">
+              <div class="search-main">
+                <img class="search-icon" src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt="">
+                <input id="searchMain" placeholder="${escapeAttr(t("searchPlaceholder"))}" value="${escapeAttr(searchQuery)}">
+                <img class="mic mic-img" src="https://freepngimg.com/download/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png" onclick="voiceSearch(event)" alt="Microphone">
+              </div>
+              <select id="searchCategory"></select>
+              <button onclick="clearSearch()">${t("clean")}</button>
+            </div>
+          </div>
+
+          <div class="oa-actions">
+            <button class="oa-chip" onclick="renderBubbles()">↻ ${rebrandText("Τυχαίες λέξεις", "Random words")}</button>
+            <div class="home-toggle-section">
+              <button onclick="toggleHomeList('favoritesBox')">${t("favorites")}</button>
+              <div id="favoritesBox" class="hidden-box">${getFavoritesHTML()}</div>
+            </div>
+            <button class="mobile-dictionary-toggle" id="mobileDictionaryToggle" onclick="toggleDictionaryResults()">${t("showDictionary")}</button>
+          </div>
+
+          <div class="home-results" id="homeResults"></div>
+        </section>
+
+        <section class="oa-grid" aria-label="Highlights">
+          ${cards.map(card => `
+            <article class="oa-card">
+              <div class="oa-card-kicker">${escapeHTML(card[0])}</div>
+              <div>
+                <h2>${escapeHTML(card[1])}</h2>
+                <p>${escapeHTML(card[2])}</p>
+              </div>
+            </article>
+          `).join("")}
+        </section>
+
+        <div class="random-title">${t("randomWords")}</div>
+        <div class="bubbles" id="bubbles"></div>
+      </div>
+    `;
+
+    const input = document.getElementById("searchMain");
+    if (input) {
+      input.addEventListener("input", e => {
+        searchQuery = e.target.value;
+        renderList();
+        renderHomeResults();
+      });
+    }
+
+    buildHomeCategorySelect();
+    renderBubbles();
+    renderHomeResults();
+  };
+
+  function refreshRebrand() {
+    ensureHeaderNav();
+    updateHeaderNavText();
+    document.documentElement.classList.add("tioumpa-openai-inspired");
+  }
+
+  window.addEventListener("DOMContentLoaded", refreshRebrand);
+  window.addEventListener("load", function() {
+    refreshRebrand();
+    if (!location.hash && typeof window.showHome === "function") window.showHome();
+  });
+  refreshRebrand();
+})();
+</script>
+
+
+
+<!-- =========================================================
+
+========================================================== -->
+<style id="tioumpa-compact-openai-pass">
+:root,
+html[data-theme="dark"],
+html[data-theme="light"] {
+  --oa-font: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --oa-radius: 14px !important;
+  --oa-radius-lg: 20px !important;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--oa-font) !important;
+}
+
+body {
+  font-size: 14px !important;
+  letter-spacing: -.006em !important;
+}
+
+.header {
+  height: 58px !important;
+  min-height: 58px !important;
+  padding: 0 24px !important;
+  gap: 20px !important;
+}
+
+.header::after {
+  left: 24px !important;
+  right: 24px !important;
+  opacity: .18 !important;
+}
+
+.header img,
+.home-logo {
+  display: none !important;
+}
+
+.header strong {
+  font-family: var(--oa-font) !important;
+  font-size: 17px !important;
+  line-height: 1 !important;
+  font-weight: 650 !important;
+  letter-spacing: -.035em !important;
+  white-space: nowrap !important;
+}
+
+.oa-nav {
+  gap: 24px !important;
+  margin-left: 22px !important;
+}
+
+.oa-nav a {
+  font-size: 13px !important;
+  line-height: 1 !important;
+  font-weight: 600 !important;
+  color: var(--oa-ink-soft) !important;
+}
+
+.theme-control,
+.lang-control {
+  gap: 6px !important;
+}
+
+.theme-control label,
+.lang-control label {
+  display: none !important;
+}
+
+.theme-simple,
+.lang-simple {
+  background: transparent !important;
+  border-color: var(--oa-line) !important;
+}
+
+.theme-simple-btn,
+.lang-simple-btn {
+  height: 30px !important;
+  padding: 0 9px !important;
+  font-size: 11px !important;
+  font-weight: 650 !important;
+  line-height: 30px !important;
+}
+
+.app {
+  height: calc(100vh - 58px) !important;
+}
+
+.content {
+  padding: clamp(18px, 2.8vw, 34px) !important;
+}
+
+.sidebar {
+  width: 300px !important;
+  min-width: 260px !important;
+  padding: 14px !important;
+}
+
+.filter-box {
+  padding: 10px !important;
+  border-radius: 16px !important;
+  max-height: 420px !important;
+}
+
+.filter-box.collapsed {
+  max-height: 76px !important;
+  padding: 10px !important;
+}
+
+.filter-header {
+  margin-bottom: 6px !important;
+}
+
+.filter-title,
+.letter,
+.home-results-title,
+.oa-card-kicker,
+.random-title {
+  font-size: 10px !important;
+  letter-spacing: .08em !important;
+}
+
+.filter-toggle {
+  width: 28px !important;
+  height: 24px !important;
+  font-size: 12px !important;
+}
+
+.filters {
+  gap: 6px !important;
+}
+
+.filter-btn {
+  min-height: 26px !important;
+  padding: 4px 8px !important;
+  font-size: 11px !important;
+}
+
+.letter {
+  margin-top: 14px !important;
+  padding-bottom: 5px !important;
+}
+
+.word {
+  padding: 8px 9px !important;
+  font-size: 12.5px !important;
+  line-height: 1.28 !important;
+}
+
+.home.openai-home {
+  max-width: 980px !important;
+  padding: clamp(26px, 5vw, 58px) 0 30px !important;
+}
+
+.oa-hero {
+  gap: 18px !important;
+}
+
+.oa-eyebrow {
+  gap: 7px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: .06em !important;
+}
+
+.oa-eyebrow::before {
+  width: 7px !important;
+  height: 7px !important;
+  box-shadow: 0 0 0 4px var(--oa-accent-soft) !important;
+}
+
+.oa-hero h1 {
+  max-width: 780px !important;
+  font-size: clamp(38px, 6.4vw, 78px) !important;
+  line-height: .98 !important;
+  letter-spacing: -.06em !important;
+  font-weight: 640 !important;
+}
+
+.oa-subhead {
+  max-width: 640px !important;
+  font-size: clamp(15px, 1.55vw, 19px) !important;
+  line-height: 1.36 !important;
+  letter-spacing: -.018em !important;
+}
+
+.oa-command {
+  width: min(760px, 100%) !important;
+  margin-top: 2px !important;
+  border-radius: 20px !important;
+  box-shadow: 0 16px 45px rgba(0,0,0,.20) !important;
+}
+
+html[data-theme="light"] .oa-command {
+  box-shadow: 0 14px 36px rgba(16,16,15,.08) !important;
+}
+
+.search-wrapper {
+  grid-template-columns: minmax(0, 1fr) 132px 92px !important;
+}
+
+.search-main input {
+  height: 54px !important;
+  padding: 0 44px !important;
+  font-size: 14px !important;
+  font-weight: 520 !important;
+}
+
+.search-icon {
+  left: 18px !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.mic-img {
+  right: 17px !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.search-wrapper select,
+.search-wrapper button {
+  height: 54px !important;
+  padding: 0 10px !important;
+  font-size: 12.5px !important;
+  font-weight: 650 !important;
+}
+
+.oa-actions {
+  gap: 8px !important;
+  margin-top: 10px !important;
+}
+
+.oa-chip,
+.home-toggle-section button,
+.mobile-dictionary-toggle {
+  min-height: 34px !important;
+  padding: 0 12px !important;
+  gap: 7px !important;
+  font-size: 12px !important;
+  font-weight: 650 !important;
+}
+
+.home-results {
+  width: min(760px, 100%) !important;
+  margin-top: 12px !important;
+  border-radius: 16px !important;
+}
+
+.home-results-title,
+.home-result-item,
+.home-result-empty {
+  padding: 9px 12px !important;
+  font-size: 12px !important;
+}
+
+.oa-grid {
+  gap: 10px !important;
+  margin-top: clamp(28px, 5vw, 56px) !important;
+}
+
+.oa-card {
+  min-height: 150px !important;
+  padding: 16px !important;
+  border-radius: 18px !important;
+}
+
+.oa-card h2 {
+  font-size: clamp(18px, 2.1vw, 25px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.038em !important;
+}
+
+.oa-card p {
+  margin-top: 12px !important;
+  font-size: 12.5px !important;
+  line-height: 1.42 !important;
+}
+
+.random-title {
+  margin-top: 34px !important;
+}
+
+.bubbles {
+  width: min(760px, 100%) !important;
+  gap: 8px !important;
+}
+
+.bubble {
+  padding: 8px 11px !important;
+  font-size: 12px !important;
+  border-radius: 999px !important;
+}
+
+.back-btn {
+  top: 12px !important;
+  margin-bottom: 18px !important;
+  padding: 7px 11px !important;
+  font-size: 12px !important;
+  border-radius: 999px !important;
+}
+
+.entry {
+  max-width: 820px !important;
+  padding: clamp(22px, 4vw, 42px) !important;
+  border-radius: 22px !important;
+}
+
+.entry-title {
+  font-size: clamp(32px, 5vw, 56px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.055em !important;
+}
+
+.star {
+  font-size: clamp(20px, 2.4vw, 28px) !important;
+}
+
+.entry-divider {
+  margin: 18px 0 !important;
+}
+
+.entry-meta {
+  gap: 7px !important;
+  margin-bottom: 18px !important;
+}
+
+.meta-pill {
+  padding: 6px 9px !important;
+  font-size: 12px !important;
+}
+
+.entry-body {
+  font-size: clamp(15px, 1.45vw, 18px) !important;
+  line-height: 1.58 !important;
+  letter-spacing: -.012em !important;
+}
+
+.declension-box {
+  padding: 12px !important;
+}
+
+.declension-box table {
+  font-size: 12px !important;
+}
+
+.tioumpa-coming-soon {
+  min-height: calc(100vh - 160px) !important;
+  display: grid !important;
+  place-items: center !important;
+  text-align: center !important;
+  padding: 24px !important;
+}
+
+.tioumpa-coming-soon-card {
+  width: min(560px, 100%) !important;
+  border: 1px solid var(--oa-line) !important;
+  background: var(--oa-card) !important;
+  border-radius: 22px !important;
+  padding: clamp(30px, 5vw, 48px) !important;
+  backdrop-filter: blur(22px) !important;
+}
+
+.tioumpa-coming-soon-card h1 {
+  margin: 0 0 10px !important;
+  font-size: clamp(38px, 7vw, 72px) !important;
+  line-height: .95 !important;
+  letter-spacing: -.06em !important;
+}
+
+.tioumpa-coming-soon-card p {
+  margin: 0 auto 22px !important;
+  max-width: 360px !important;
+  color: var(--oa-ink-soft) !important;
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+}
+
+.tioumpa-coming-soon-card button {
+  min-height: 36px !important;
+  padding: 0 14px !important;
+  border: 1px solid var(--oa-line) !important;
+  background: var(--oa-ink) !important;
+  color: var(--oa-bg) !important;
+  font-family: var(--oa-font) !important;
+  font-weight: 650 !important;
+  cursor: pointer !important;
+  border-radius: 999px !important;
+}
+
+@media (max-width: 1080px) {
+  .sidebar { width: 280px !important; }
+}
+
+@media (max-width: 850px) {
+  .header {
+    min-height: 56px !important;
+    padding: 10px 14px !important;
+    gap: 10px !important;
+  }
+
+  .header strong {
+    font-size: 16px !important;
+  }
+
+  .theme-simple-btn,
+  .lang-simple-btn {
+    height: 28px !important;
+    padding: 0 7px !important;
+    font-size: 10.5px !important;
+  }
+
+  .app {
+    height: auto !important;
+  }
+
+  .content {
+    padding: 16px !important;
+  }
+
+  .home.openai-home {
+    padding-top: 26px !important;
+  }
+
+  .oa-hero h1 {
+    font-size: clamp(36px, 11vw, 58px) !important;
+  }
+
+  .oa-subhead {
+    font-size: 15px !important;
+  }
+
+  .search-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+
+  .search-main input {
+    height: 50px !important;
+    font-size: 14px !important;
+  }
+
+  .search-wrapper select,
+  .search-wrapper button {
+    height: 42px !important;
+    border-left: 0 !important;
+    border-top: 1px solid var(--oa-line) !important;
+  }
+
+  .oa-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .oa-card {
+    min-height: 122px !important;
+  }
+
+  .entry {
+    padding: 20px !important;
+    border-radius: 18px !important;
+  }
+}
+</style>
+
+<script id="tioumpa-compact-openai-pass-script">
+(function() {
+  const greekLabels = { home: "Αρχική", search: "Αναζήτηση", filters: "Φίλτρα", submit: "Προσθήκη" };
+
+  function compactHeader() {
+    const header = document.querySelector(".header");
+    if (!header) return;
+
+    const logo = header.querySelector("img");
+    if (logo) logo.remove();
+
+    const brand = header.querySelector("strong");
+    if (brand) brand.textContent = "Tioumpa";
+
+    document.querySelectorAll("[data-oa-nav]").forEach(link => {
+      const key = link.getAttribute("data-oa-nav");
+      if (greekLabels[key]) link.textContent = greekLabels[key];
+    });
+
+    document.querySelectorAll(".lang-simple-btn[data-lang-value='en']").forEach(btn => {
+      btn.textContent = "EN";
+      btn.title = "Coming soon";
+    });
+  }
+
+  function renderEnglishComingSoon() {
+    compactHeader();
+    const content = document.getElementById("content");
+    if (!content) return;
+
+    content.innerHTML = `
+      <div class="home openai-home tioumpa-coming-soon">
+        <section class="tioumpa-coming-soon-card" aria-label="English coming soon">
+          <h1>Coming soon</h1>
+          <p>The English version of Tioumpa is being prepared. The Greek dictionary is available now.</p>
+          <button type="button" onclick="setLanguage('el')">Back to Greek</button>
+        </section>
+      </div>
+    `;
+
+    document.querySelectorAll(".lang-simple-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-value") === "en");
+    });
+  }
+
+  const originalSetLanguage = window.setLanguage;
+  window.setLanguage = function(value) {
+    if (value === "en") {
+      try {
+        window.currentLanguage = "el";
+        if (typeof currentLanguage !== "undefined") currentLanguage = "el";
+        localStorage.setItem("languageChoice", "el");
+      } catch (e) {}
+
+      if (typeof window.applyLanguage === "function") window.applyLanguage();
+      setTimeout(renderEnglishComingSoon, 0);
+      return;
+    }
+
+    if (typeof originalSetLanguage === "function") {
+      originalSetLanguage(value);
+    }
+    setTimeout(compactHeader, 0);
+  };
+
+  const originalApplyLanguageCompact = window.applyLanguage;
+  window.applyLanguage = function() {
+    if (typeof originalApplyLanguageCompact === "function") originalApplyLanguageCompact();
+    compactHeader();
+  };
+
+  const originalShowHomeCompact = window.showHome;
+  window.showHome = function() {
+    if (typeof originalShowHomeCompact === "function") originalShowHomeCompact();
+    compactHeader();
+  };
+
+  window.showEnglishComingSoon = renderEnglishComingSoon;
+
+  if (localStorage.getItem("languageChoice") === "en") {
+    localStorage.setItem("languageChoice", "el");
+    try {
+      window.currentLanguage = "el";
+      if (typeof currentLanguage !== "undefined") currentLanguage = "el";
+    } catch (e) {}
+  }
+
+  compactHeader();
+  window.addEventListener("DOMContentLoaded", compactHeader);
+  window.addEventListener("load", compactHeader);
+})();
+</script>
+
+
+
+<!-- =========================================================
+  TIOUMPA — FINAL CLEANUP PASS
+  Requested changes:
+  - neutral/white dark-mode lighting
+  - wordmark: Tioumpa Λεξικό
+  - header nav: Email only
+  - Greek hero copy updates
+  - remove highlight cards and filters
+  - notification center from notif.txt
+========================================================== -->
+<style id="tioumpa-final-cleanup-pass">
+:root,
+html[data-theme="dark"],
+html[data-theme="light"] {
+  --oa-font: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+html[data-theme="dark"] {
+  --oa-bg: #090909 !important;
+  --oa-ink: #f6f6f3 !important;
+  --oa-ink-soft: rgba(246,246,243,.74) !important;
+  --oa-muted: rgba(246,246,243,.52) !important;
+  --oa-line: rgba(255,255,255,.13) !important;
+  --oa-line-strong: rgba(255,255,255,.24) !important;
+  --oa-card: rgba(255,255,255,.055) !important;
+  --oa-card-strong: rgba(255,255,255,.09) !important;
+  --oa-elevated: #151515 !important;
+  --oa-accent: #f6f6f3 !important;
+  --oa-accent-2: #deded8 !important;
+  --oa-shadow: 0 18px 60px rgba(0,0,0,.42), 0 0 90px rgba(255,255,255,.035) !important;
+  --bg: var(--oa-bg) !important;
+  --text: var(--oa-ink) !important;
+  --muted: var(--oa-muted) !important;
+  --muted-2: var(--oa-ink-soft) !important;
+  --border: var(--oa-line-strong) !important;
+  --border-soft: var(--oa-line) !important;
+  --panel: rgba(9,9,9,.74) !important;
+  --panel-strong: rgba(9,9,9,.90) !important;
+  --surface: rgba(255,255,255,.07) !important;
+  --surface-soft: rgba(255,255,255,.05) !important;
+  --accent: var(--oa-accent) !important;
+  --accent-soft: rgba(255,255,255,.09) !important;
+}
+
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at 14% 0%, rgba(255,255,255,.115), transparent 25%),
+    radial-gradient(circle at 86% 8%, rgba(255,255,255,.075), transparent 30%),
+    radial-gradient(circle at 48% 100%, rgba(255,255,255,.045), transparent 34%),
+    #090909 !important;
+}
+
+html[data-theme="light"] body,
+body {
+  font-family: var(--oa-font) !important;
+}
+
+html[data-theme="light"] body {
+  background:
+    radial-gradient(circle at 14% 0%, rgba(255,255,255,.65), transparent 26%),
+    radial-gradient(circle at 88% 6%, rgba(0,0,0,.045), transparent 32%),
+    #f4f2ee !important;
+}
+
+.header strong {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: -.035em !important;
+}
+
+.oa-nav {
+  margin-left: 18px !important;
+  gap: 0 !important;
+}
+
+.oa-nav a:not([data-oa-nav="submit"]) {
+  display: none !important;
+}
+
+.oa-nav a[data-oa-nav="submit"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  height: 30px !important;
+  padding: 0 12px !important;
+  border: 1px solid var(--oa-line) !important;
+  border-radius: 999px !important;
+  color: var(--oa-ink-soft) !important;
+  background: transparent !important;
+  font-size: 12px !important;
+  font-weight: 650 !important;
+  text-decoration: none !important;
+}
+
+.oa-nav a[data-oa-nav="submit"]:hover {
+  color: var(--oa-bg) !important;
+  background: var(--oa-ink) !important;
+  border-color: var(--oa-ink) !important;
+}
+
+.filter-box,
+#filterBox,
+#filters,
+.filter-header,
+.search-wrapper select,
+#searchCategory {
+  display: none !important;
+}
+
+.sidebar {
+  padding-top: 14px !important;
+}
+
+.search-wrapper {
+  grid-template-columns: minmax(0, 1fr) 92px !important;
+}
+
+.search-wrapper button {
+  border-left: 1px solid var(--oa-line) !important;
+}
+
+.oa-grid {
+  display: none !important;
+}
+
+.oa-eyebrow::before {
+  background: var(--oa-ink) !important;
+  border-color: var(--oa-ink) !important;
+  box-shadow: 0 0 0 4px rgba(255,255,255,.08) !important;
+}
+
+html[data-theme="light"] .oa-eyebrow::before {
+  box-shadow: 0 0 0 4px rgba(16,16,15,.08) !important;
+}
+
+.oa-subhead {
+  max-width: 520px !important;
+}
+
+.mobile-dictionary-toggle {
+  display: none !important;
+}
+
+.tioumpa-notification-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+}
+
+.tioumpa-notification-btn {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--oa-line);
+  border-radius: 999px !important;
+  background: transparent;
+  color: var(--oa-ink);
+  cursor: pointer;
+  padding: 0;
+  transition: background .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.tioumpa-notification-btn:hover {
+  background: var(--oa-card-strong);
+  transform: translateY(-1px);
+}
+
+.tioumpa-notification-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+  opacity: .82;
+  filter: none;
+}
+
+html[data-theme="dark"] .tioumpa-notification-icon {
+  filter: invert(1);
+}
+
+.tioumpa-notification-dot {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #ff3b30;
+  border: 1.5px solid var(--oa-bg);
+  display: none;
+}
+
+.tioumpa-notification-wrap.has-new .tioumpa-notification-dot {
+  display: block;
+}
+
+.tioumpa-notification-panel {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: min(360px, calc(100vw - 24px));
+  max-height: min(430px, calc(100vh - 88px));
+  overflow: auto;
+  border: 1px solid var(--oa-line);
+  border-radius: 18px !important;
+  background: color-mix(in srgb, var(--oa-bg) 92%, transparent);
+  color: var(--oa-ink);
+  box-shadow: 0 22px 80px rgba(0,0,0,.38);
+  backdrop-filter: blur(24px) saturate(1.2);
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  padding: 8px;
+  display: none;
+  z-index: 200;
+}
+
+html[data-theme="light"] .tioumpa-notification-panel {
+  box-shadow: 0 22px 70px rgba(16,16,15,.16);
+}
+
+.tioumpa-notification-wrap.open .tioumpa-notification-panel {
+  display: block;
+  animation: tioumpaNotifIn .18s ease;
+}
+
+@keyframes tioumpaNotifIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tioumpa-notification-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 10px 11px;
+  border-bottom: 1px solid var(--oa-line);
+  margin-bottom: 6px;
+}
+
+.tioumpa-notification-head strong {
+  font-size: 13px !important;
+  font-weight: 750 !important;
+  letter-spacing: -.02em !important;
+}
+
+.tioumpa-notification-count {
+  color: var(--oa-muted);
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.tioumpa-notification-item {
+  padding: 11px 10px;
+  border-bottom: 1px solid var(--oa-line);
+}
+
+.tioumpa-notification-item:last-child {
+  border-bottom: 0;
+}
+
+.tioumpa-notification-title {
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: -.015em;
+}
+
+.tioumpa-notification-body {
+  margin-top: 6px;
+  color: var(--oa-ink-soft);
+  font-size: 12px;
+  line-height: 1.42;
+  white-space: pre-wrap;
+}
+
+.tioumpa-notification-date {
+  margin-top: 7px;
+  color: var(--oa-muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.tioumpa-notification-empty {
+  padding: 18px 10px;
+  color: var(--oa-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+html[data-theme="dark"] .oa-command {
+  box-shadow: 0 18px 56px rgba(0,0,0,.34), 0 0 70px rgba(255,255,255,.035) !important;
+}
+
+@media (max-width: 850px) {
+  .header {
+    gap: 8px !important;
+  }
+
+  .header strong {
+    font-size: 14px !important;
+  }
+
+  .oa-nav {
+    margin-left: 4px !important;
+  }
+
+  .oa-nav a[data-oa-nav="submit"] {
+    height: 28px !important;
+    padding: 0 9px !important;
+    font-size: 11px !important;
+  }
+
+  .tioumpa-notification-btn {
+    width: 29px;
+    height: 29px;
+  }
+
+  .tioumpa-notification-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .mobile-dictionary-toggle {
+    display: inline-flex !important;
+  }
+
+  .search-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+
+  .search-wrapper button {
+    border-left: 0 !important;
+  }
+}
+</style>
+
+<script id="tioumpa-final-cleanup-script">
+(function() {
+  const NOTIF_ICON_URL = "https://iconape.com/wp-content/files/cy/368009/svg/notifications-outline-logo-icon-png-svg.png";
+  const EMAIL = "tioumpagr@gmail.com";
+  let notifications = [];
+  let notifSignature = "";
+
+  function getLangSafe() {
+    try {
+      return (typeof currentLanguage !== "undefined" && currentLanguage) ? currentLanguage : "el";
+    } catch (e) {
+      return "el";
+    }
+  }
+
+  function getCountSafe() {
+    try {
+      return Array.isArray(entries) ? entries.length : 0;
+    } catch (e) {
+      return 0;
+    }
+  }
+
+  function safeText(value) {
+    return String(value == null ? "" : value);
+  }
+
+  function escapeHTMLFinal(value) {
+    if (typeof escapeHTML === "function") return escapeHTML(value);
+    return safeText(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function escapeAttrFinal(value) {
+    if (typeof escapeAttr === "function") return escapeAttr(value);
+    return escapeHTMLFinal(value);
+  }
+
+  function ensureEmailNav() {
+    const header = document.querySelector(".header");
+    if (!header) return;
+
+    const logo = header.querySelector("img");
+    if (logo) logo.remove();
+
+    const brand = header.querySelector("strong");
+    if (brand) brand.textContent = "Tioumpa Λεξικό";
+
+    let nav = header.querySelector(".oa-nav");
+    if (!nav && brand) {
+      nav = document.createElement("nav");
+      nav.className = "oa-nav";
+      nav.setAttribute("onclick", "event.stopPropagation()");
+      brand.insertAdjacentElement("afterend", nav);
+    }
+
+    if (nav) {
+      nav.innerHTML = `<a data-oa-nav="submit" href="mailto:${EMAIL}" onclick="event.stopPropagation()">Email</a>`;
+    }
+  }
+
+  function ensureNotificationUI() {
+    const header = document.querySelector(".header");
+    if (!header || header.querySelector("#tioumpaNotificationWrap")) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "tioumpa-notification-wrap";
+    wrap.id = "tioumpaNotificationWrap";
+    wrap.setAttribute("onclick", "event.stopPropagation()");
+    wrap.innerHTML = `
+      <button class="tioumpa-notification-btn" type="button" aria-label="Ειδοποιήσεις" onclick="toggleTioumpaNotifications(event)">
+        <img class="tioumpa-notification-icon" src="${NOTIF_ICON_URL}" alt="">
+        <span class="tioumpa-notification-dot" aria-hidden="true"></span>
+      </button>
+      <div class="tioumpa-notification-panel" id="tioumpaNotificationPanel" role="dialog" aria-label="Ειδοποιήσεις"></div>
+    `;
+
+    const langControl = header.querySelector(".lang-control");
+    if (langControl) {
+      langControl.insertAdjacentElement("afterend", wrap);
+    } else {
+      header.appendChild(wrap);
+    }
+
+    renderNotificationPanel();
+    updateNotificationDot();
+  }
+
+  function parseNotifications(text) {
+    const lines = safeText(text).replace(/\r/g, "").split("\n");
+    const items = [];
+    let current = null;
+
+    for (const rawLine of lines) {
+      const line = rawLine.trim();
+      if (!line) continue;
+
+      const notMatch = line.match(/^Not\s*\d+\s*:\s*(.*)$/i);
+      const dateMatch = line.match(/^Date\s*:\s*(.*)$/i);
+
+      if (notMatch) {
+        if (current) items.push(current);
+        current = { title: notMatch[1].trim() || "Νέα ανακοίνωση", body: [], date: "" };
+      } else if (dateMatch) {
+        if (!current) current = { title: "Νέα ανακοίνωση", body: [], date: "" };
+        current.date = dateMatch[1].trim();
+      } else {
+        if (!current) current = { title: "Νέα ανακοίνωση", body: [], date: "" };
+        current.body.push(line);
+      }
+    }
+
+    if (current) items.push(current);
+    return items.filter(item => item.title || item.body.length || item.date);
+  }
+
+  function renderNotificationPanel() {
+    const panel = document.getElementById("tioumpaNotificationPanel");
+    if (!panel) return;
+
+    const countLabel = notifications.length === 1 ? "1 νέα" : `${notifications.length} νέες`;
+
+    if (!notifications.length) {
+      panel.innerHTML = `
+        <div class="tioumpa-notification-head">
+          <strong>Ειδοποιήσεις</strong>
+          <span class="tioumpa-notification-count">0</span>
+        </div>
+        <div class="tioumpa-notification-empty">Δεν υπάρχουν ειδοποιήσεις ακόμα.</div>
+      `;
+      return;
+    }
+
+    panel.innerHTML = `
+      <div class="tioumpa-notification-head">
+        <strong>Ειδοποιήσεις</strong>
+        <span class="tioumpa-notification-count">${countLabel}</span>
+      </div>
+      ${notifications.map(item => `
+        <article class="tioumpa-notification-item">
+          <div class="tioumpa-notification-title">${escapeHTMLFinal(item.title)}</div>
+          ${item.body.length ? `<div class="tioumpa-notification-body">${escapeHTMLFinal(item.body.join("\n"))}</div>` : ""}
+          ${item.date ? `<div class="tioumpa-notification-date">${escapeHTMLFinal(item.date)}</div>` : ""}
+        </article>
+      `).join("")}
+    `;
+  }
+
+  function updateNotificationDot() {
+    const wrap = document.getElementById("tioumpaNotificationWrap");
+    if (!wrap) return;
+    const seen = localStorage.getItem("tioumpaNotifSeenSignature") || "";
+    wrap.classList.toggle("has-new", Boolean(notifications.length && notifSignature && notifSignature !== seen));
+  }
+
+  async function loadNotifications() {
+    try {
+      const response = await fetch("notif.txt?ts=" + Date.now(), { cache: "no-store" });
+      if (!response.ok) throw new Error("notif.txt not found");
+      const text = await response.text();
+      notifications = parseNotifications(text);
+      notifSignature = notifications.map(item => `${item.title}|${item.body.join("/")}|${item.date}`).join("||");
+    } catch (e) {
+      notifications = [];
+      notifSignature = "";
+    }
+    renderNotificationPanel();
+    updateNotificationDot();
+  }
+
+  window.toggleTioumpaNotifications = function(event) {
+    if (event) event.stopPropagation();
+    const wrap = document.getElementById("tioumpaNotificationWrap");
+    if (!wrap) return;
+    const willOpen = !wrap.classList.contains("open");
+    wrap.classList.toggle("open", willOpen);
+    if (willOpen && notifSignature) {
+      localStorage.setItem("tioumpaNotifSeenSignature", notifSignature);
+      updateNotificationDot();
+    }
+  };
+
+  document.addEventListener("click", function() {
+    const wrap = document.getElementById("tioumpaNotificationWrap");
+    if (wrap) wrap.classList.remove("open");
+  });
+
+  function removeFiltersState() {
+    try {
+      if (typeof activeFilter !== "undefined") activeFilter = "Όλα";
+      if (typeof searchQuery === "undefined") return;
+    } catch (e) {}
+  }
+
+  function finalHeaderPass() {
+    ensureEmailNav();
+    ensureNotificationUI();
+  }
+
+  const previousShowHome = window.showHome;
+  window.showHome = function() {
+    removeFiltersState();
+    const count = getCountSafe();
+    const content = document.getElementById("content");
+    if (!content) {
+      if (typeof previousShowHome === "function") previousShowHome();
+      finalHeaderPass();
+      return;
+    }
+
+    content.innerHTML = `
+      <div class="home openai-home">
+        <section class="oa-hero">
+          <div class="oa-eyebrow">TIOUMPA ΛΕΞΙΚΟ</div>
+          <h1>Το λεξικό<br><span class="soft">του Teosty.</span></h1>
+          <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
+
+          <div class="oa-command">
+            <div class="search-wrapper">
+              <div class="search-main">
+                <img class="search-icon" src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt="">
+                <input id="searchMain" placeholder="${escapeAttrFinal(typeof t === "function" ? t("searchPlaceholder") : "Αναζήτηση...")}" value="${escapeAttrFinal(typeof searchQuery !== "undefined" ? searchQuery : "")}">
+                <img class="mic mic-img" src="https://freepngimg.com/download/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png" onclick="voiceSearch(event)" alt="Microphone">
+              </div>
+              <button onclick="clearSearch()">${typeof t === "function" ? t("clean") : "Clean"}</button>
+            </div>
+          </div>
+
+          <div class="oa-actions">
+            <button class="oa-chip" onclick="renderBubbles()">↻ Τυχαίες λέξεις</button>
+            <div class="home-toggle-section">
+              <button onclick="toggleHomeList('favoritesBox')">${typeof t === "function" ? t("favorites") : "⭐ Favorites"}</button>
+              <div id="favoritesBox" class="hidden-box">${typeof getFavoritesHTML === "function" ? getFavoritesHTML() : ""}</div>
+            </div>
+            <button class="mobile-dictionary-toggle" id="mobileDictionaryToggle" onclick="toggleDictionaryResults()">${typeof t === "function" ? t("showDictionary") : "Εμφάνιση λεξικού"}</button>
+          </div>
+
+          <div class="home-results" id="homeResults"></div>
+        </section>
+
+        <div class="random-title">${typeof t === "function" ? t("randomWords") : "ΤΥΧΑΙΕΣ ΛΕΞΕΙΣ"}</div>
+        <div class="bubbles" id="bubbles"></div>
+      </div>
+    `;
+
+    const input = document.getElementById("searchMain");
+    if (input) {
+      input.addEventListener("input", e => {
+        try { searchQuery = e.target.value; } catch (err) {}
+        if (typeof renderList === "function") renderList();
+        if (typeof renderHomeResults === "function") renderHomeResults();
+      });
+    }
+
+    if (typeof renderBubbles === "function") renderBubbles();
+    if (typeof renderHomeResults === "function") renderHomeResults();
+    finalHeaderPass();
+  };
+
+  const previousApplyLanguage = window.applyLanguage;
+  window.applyLanguage = function() {
+    if (typeof previousApplyLanguage === "function") previousApplyLanguage();
+    setTimeout(finalHeaderPass, 0);
+  };
+
+  const previousRoute = window.route;
+  window.route = function() {
+    if (typeof previousRoute === "function") previousRoute();
+    removeFiltersState();
+    setTimeout(finalHeaderPass, 0);
+  };
+
+  const previousSetLanguage = window.setLanguage;
+  window.setLanguage = function(value) {
+    if (value === "en") {
+      try {
+        currentLanguage = "el";
+        localStorage.setItem("languageChoice", "el");
+      } catch (e) {}
+      if (typeof window.applyLanguage === "function") window.applyLanguage();
+      const content = document.getElementById("content");
+      if (content) {
+        content.innerHTML = `
+          <div class="home openai-home tioumpa-coming-soon">
+            <section class="tioumpa-coming-soon-card" aria-label="English coming soon">
+              <h1>Coming soon</h1>
+              <p>The English version of Tioumpa is being prepared. The Greek dictionary is available now.</p>
+              <button type="button" onclick="setLanguage('el')">Back to Greek</button>
+            </section>
+          </div>
+        `;
+      }
+      document.querySelectorAll(".lang-simple-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.getAttribute("data-lang-value") === "en");
+      });
+      finalHeaderPass();
+      return;
+    }
+
+    if (typeof previousSetLanguage === "function") previousSetLanguage(value);
+    setTimeout(finalHeaderPass, 0);
+  };
+
+  const previousBuildHomeCategorySelect = window.buildHomeCategorySelect;
+  window.buildHomeCategorySelect = function() {
+    removeFiltersState();
+    const select = document.getElementById("searchCategory");
+    if (select) select.remove();
+    if (typeof previousBuildHomeCategorySelect === "function") {
+      try { previousBuildHomeCategorySelect(); } catch (e) {}
+    }
+    const selectAfter = document.getElementById("searchCategory");
+    if (selectAfter) selectAfter.remove();
+  };
+
+  function bootFinalPass() {
+    finalHeaderPass();
+    loadNotifications();
+    if (!location.hash && typeof window.showHome === "function") window.showHome();
+  }
+
+  window.addEventListener("DOMContentLoaded", bootFinalPass);
+  window.addEventListener("load", bootFinalPass);
+  setInterval(loadNotifications, 120000);
+  bootFinalPass();
+})();
+</script>
+
+
+
+<!-- =========================================================
+  TIOUMPA — NO-GLOW + NOTIFICATION/SYSTEM THEME FIX
+  Requested changes:
+  - no dark-mode light effects / glows
+  - reliable inline notification icon
+  - search/mic icons inherit theme color
+  - add author line Γ. ΜΠΑΜΠΙΝΙΩΤΗ
+  - Auto theme follows browser/OS preference
+========================================================== -->
+<style id="tioumpa-no-glow-fix-pass">
+:root,
+html[data-theme="dark"],
+html[data-theme="light"] {
+  --oa-font: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark !important;
+  --oa-bg: #090909 !important;
+  --oa-ink: #f7f7f4 !important;
+  --oa-ink-soft: rgba(247,247,244,.74) !important;
+  --oa-muted: rgba(247,247,244,.55) !important;
+  --oa-line: rgba(255,255,255,.13) !important;
+  --oa-line-strong: rgba(255,255,255,.22) !important;
+  --oa-card: rgba(255,255,255,.055) !important;
+  --oa-card-strong: rgba(255,255,255,.075) !important;
+  --oa-elevated: #151515 !important;
+  --oa-hover: rgba(255,255,255,.07) !important;
+  --oa-accent: #f7f7f4 !important;
+  --oa-accent-2: #d8d8d2 !important;
+  --oa-shadow: none !important;
+  --bg: var(--oa-bg) !important;
+  --text: var(--oa-ink) !important;
+  --muted: var(--oa-muted) !important;
+  --muted-2: var(--oa-ink-soft) !important;
+  --border: var(--oa-line-strong) !important;
+  --border-soft: var(--oa-line) !important;
+  --panel: rgba(9,9,9,.92) !important;
+  --panel-strong: rgba(9,9,9,.96) !important;
+  --surface: rgba(255,255,255,.06) !important;
+  --surface-soft: rgba(255,255,255,.045) !important;
+  --hover: var(--oa-hover) !important;
+  --accent: var(--oa-accent) !important;
+  --accent-soft: rgba(255,255,255,.08) !important;
+}
+
+html[data-theme="light"] {
+  color-scheme: light !important;
+  --oa-bg: #f4f2ee !important;
+  --oa-ink: #10100f !important;
+  --oa-ink-soft: rgba(16,16,15,.70) !important;
+  --oa-muted: rgba(16,16,15,.55) !important;
+  --oa-line: rgba(16,16,15,.14) !important;
+  --oa-line-strong: rgba(16,16,15,.24) !important;
+  --oa-card: rgba(255,255,255,.64) !important;
+  --oa-card-strong: rgba(255,255,255,.86) !important;
+  --oa-elevated: #ffffff !important;
+  --oa-hover: rgba(16,16,15,.06) !important;
+  --oa-accent: #10100f !important;
+  --oa-accent-2: #6b6257 !important;
+  --oa-shadow: 0 14px 34px rgba(16,16,15,.08) !important;
+  --bg: var(--oa-bg) !important;
+  --text: var(--oa-ink) !important;
+  --muted: var(--oa-muted) !important;
+  --muted-2: var(--oa-ink-soft) !important;
+  --border: var(--oa-line-strong) !important;
+  --border-soft: var(--oa-line) !important;
+  --panel: rgba(244,242,238,.82) !important;
+  --panel-strong: rgba(244,242,238,.94) !important;
+  --surface: rgba(255,255,255,.70) !important;
+  --surface-soft: rgba(255,255,255,.50) !important;
+  --hover: var(--oa-hover) !important;
+  --accent: var(--oa-accent) !important;
+  --accent-soft: rgba(16,16,15,.08) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    color-scheme: dark !important;
+    --oa-bg: #090909 !important;
+    --oa-ink: #f7f7f4 !important;
+    --oa-ink-soft: rgba(247,247,244,.74) !important;
+    --oa-muted: rgba(247,247,244,.55) !important;
+    --oa-line: rgba(255,255,255,.13) !important;
+    --oa-line-strong: rgba(255,255,255,.22) !important;
+    --oa-card: rgba(255,255,255,.055) !important;
+    --oa-card-strong: rgba(255,255,255,.075) !important;
+    --oa-elevated: #151515 !important;
+    --oa-hover: rgba(255,255,255,.07) !important;
+    --oa-accent: #f7f7f4 !important;
+    --oa-accent-2: #d8d8d2 !important;
+    --oa-shadow: none !important;
+    --bg: var(--oa-bg) !important;
+    --text: var(--oa-ink) !important;
+    --muted: var(--oa-muted) !important;
+    --muted-2: var(--oa-ink-soft) !important;
+    --border: var(--oa-line-strong) !important;
+    --border-soft: var(--oa-line) !important;
+    --panel: rgba(9,9,9,.92) !important;
+    --panel-strong: rgba(9,9,9,.96) !important;
+    --surface: rgba(255,255,255,.06) !important;
+    --surface-soft: rgba(255,255,255,.045) !important;
+    --hover: var(--oa-hover) !important;
+    --accent: var(--oa-accent) !important;
+    --accent-soft: rgba(255,255,255,.08) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-theme="dark"]) {
+    color-scheme: light !important;
+    --oa-bg: #f4f2ee !important;
+    --oa-ink: #10100f !important;
+    --oa-ink-soft: rgba(16,16,15,.70) !important;
+    --oa-muted: rgba(16,16,15,.55) !important;
+    --oa-line: rgba(16,16,15,.14) !important;
+    --oa-line-strong: rgba(16,16,15,.24) !important;
+    --oa-card: rgba(255,255,255,.64) !important;
+    --oa-card-strong: rgba(255,255,255,.86) !important;
+    --oa-elevated: #ffffff !important;
+    --oa-hover: rgba(16,16,15,.06) !important;
+    --oa-accent: #10100f !important;
+    --oa-accent-2: #6b6257 !important;
+    --oa-shadow: 0 14px 34px rgba(16,16,15,.08) !important;
+    --bg: var(--oa-bg) !important;
+    --text: var(--oa-ink) !important;
+    --muted: var(--oa-muted) !important;
+    --muted-2: var(--oa-ink-soft) !important;
+    --border: var(--oa-line-strong) !important;
+    --border-soft: var(--oa-line) !important;
+    --panel: rgba(244,242,238,.82) !important;
+    --panel-strong: rgba(244,242,238,.94) !important;
+    --surface: rgba(255,255,255,.70) !important;
+    --surface-soft: rgba(255,255,255,.50) !important;
+    --hover: var(--oa-hover) !important;
+    --accent: var(--oa-accent) !important;
+    --accent-soft: rgba(16,16,15,.08) !important;
+  }
+}
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] .content,
+html[data-theme="dark"] .app,
+html[data-theme="dark"] .home.openai-home,
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .header {
+  background-image: none !important;
+}
+
+html[data-theme="dark"] body {
+  background: #090909 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) body,
+  html:not([data-theme="light"]) .content,
+  html:not([data-theme="light"]) .app,
+  html:not([data-theme="light"]) .home.openai-home,
+  html:not([data-theme="light"]) .sidebar,
+  html:not([data-theme="light"]) .header {
+    background-image: none !important;
+  }
+
+  html:not([data-theme="light"]) body {
+    background: #090909 !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-theme="dark"]) body {
+    background: #f4f2ee !important;
+  }
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--oa-font) !important;
+}
+
+html[data-theme="dark"] .oa-command,
+html[data-theme="dark"] .search-main input,
+html[data-theme="dark"] .bubble,
+html[data-theme="dark"] .home-results,
+html[data-theme="dark"] .hidden-box.open,
+html[data-theme="dark"] .tioumpa-notification-panel {
+  box-shadow: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .oa-command,
+  html:not([data-theme="light"]) .search-main input,
+  html:not([data-theme="light"]) .bubble,
+  html:not([data-theme="light"]) .home-results,
+  html:not([data-theme="light"]) .hidden-box.open,
+  html:not([data-theme="light"]) .tioumpa-notification-panel {
+    box-shadow: none !important;
+  }
+}
+
+.oa-eyebrow::before {
+  box-shadow: none !important;
+}
+
+.oa-author-line {
+  margin: -8px 0 0 !important;
+  color: var(--oa-muted) !important;
+  font-size: clamp(13px, 1.2vw, 16px) !important;
+  font-weight: 700 !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+}
+
+.search-main {
+  color: var(--oa-muted) !important;
+}
+
+.search-main input {
+  color: var(--oa-ink) !important;
+}
+
+.search-main input::placeholder {
+  color: var(--oa-muted) !important;
+}
+
+.search-icon.tioumpa-search-svg {
+  position: absolute !important;
+  left: 24px !important;
+  top: 50% !important;
+  width: 18px !important;
+  height: 18px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transform: translateY(-50%) !important;
+  color: var(--oa-muted) !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  pointer-events: none !important;
+}
+
+.search-icon.tioumpa-search-svg svg,
+.tioumpa-mic-btn svg,
+.tioumpa-notification-icon svg {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+.tioumpa-mic-btn {
+  position: absolute !important;
+  right: 15px !important;
+  top: 50% !important;
+  width: 36px !important;
+  height: 36px !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transform: translateY(-50%) !important;
+  border: 0 !important;
+  border-left: 0 !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: var(--oa-muted) !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+}
+
+.tioumpa-mic-btn:hover {
+  background: var(--oa-hover) !important;
+  color: var(--oa-ink) !important;
+}
+
+.tioumpa-notification-wrap {
+  margin-left: 4px !important;
+  flex: 0 0 auto !important;
+}
+
+.tioumpa-notification-btn {
+  width: 32px !important;
+  height: 32px !important;
+  color: var(--oa-ink) !important;
+}
+
+.tioumpa-notification-icon {
+  width: 18px !important;
+  height: 18px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: currentColor !important;
+  opacity: .86 !important;
+  filter: none !important;
+}
+
+.header .tioumpa-notification-icon,
+.header .tioumpa-notification-icon svg {
+  display: inline-flex !important;
+}
+
+.header .tioumpa-notification-icon img,
+.header img.tioumpa-notification-icon {
+  display: none !important;
+}
+
+@media (max-width: 850px) {
+  .oa-author-line {
+    margin-top: -4px !important;
+    font-size: 12px !important;
+  }
+
+  .tioumpa-notification-btn {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .tioumpa-notification-icon {
+    width: 17px !important;
+    height: 17px !important;
+  }
+}
+</style>
+
+<script id="tioumpa-no-glow-fix-script">
+(function() {
+  const NOTIFICATION_SVG = `
+    <span class="tioumpa-notification-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.5 17H8.5M18 10.5C18 7.186 15.314 4.5 12 4.5C8.686 4.5 6 7.186 6 10.5V13.25C6 13.842 5.812 14.419 5.462 14.896L4.65 16.003C4.286 16.499 4.64 17.2 5.255 17.2H18.745C19.36 17.2 19.714 16.499 19.35 16.003L18.538 14.896C18.188 14.419 18 13.842 18 13.25V10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 17.5C13.84 18.514 13.034 19.25 12 19.25C10.966 19.25 10.16 18.514 10 17.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </span>`;
+
+  const SEARCH_SVG = `
+    <span class="search-icon tioumpa-search-svg" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.75 18.5C15.03 18.5 18.5 15.03 18.5 10.75C18.5 6.47 15.03 3 10.75 3C6.47 3 3 6.47 3 10.75C3 15.03 6.47 18.5 10.75 18.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M16.45 16.45L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </span>`;
+
+  const MIC_SVG = `
+    <button class="mic tioumpa-mic-btn" type="button" onclick="voiceSearch(event)" aria-label="Microphone search">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 14.25C10.48 14.25 9.25 13.02 9.25 11.5V6.75C9.25 5.23 10.48 4 12 4C13.52 4 14.75 5.23 14.75 6.75V11.5C14.75 13.02 13.52 14.25 12 14.25Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M6.75 11.25C6.75 14.15 9.1 16.5 12 16.5C14.9 16.5 17.25 14.15 17.25 11.25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M12 16.75V20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M9.25 20H14.75" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>`;
+
+  function escapeAttrSafe(value) {
+    if (typeof escapeAttr === "function") return escapeAttr(value);
+    return String(value == null ? "" : value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/\"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function countEntriesSafe() {
+    try { return Array.isArray(entries) ? entries.length : 0; } catch (e) { return 0; }
+  }
+
+  function textSafe(key, fallback) {
+    try { return typeof t === "function" ? t(key) : fallback; } catch (e) { return fallback; }
+  }
+
+  function applyThemeChoice(value) {
+    const choice = value || localStorage.getItem("themeChoice") || "system";
+    if (choice === "system") {
+      document.documentElement.removeAttribute("data-theme");
+    } else {
+      document.documentElement.setAttribute("data-theme", choice);
+    }
+
+    try {
+      document.querySelectorAll(".theme-simple-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.getAttribute("data-theme-value") === choice);
+      });
+    } catch (e) {}
+  }
+
+  window.applyTheme = function(value) {
+    applyThemeChoice(value || localStorage.getItem("themeChoice") || "system");
+  };
+
+  window.setTheme = function(value) {
+    const choice = value || "system";
+    localStorage.setItem("themeChoice", choice);
+    applyThemeChoice(choice);
+  };
+
+  window.updateThemeControl = function() {
+    applyThemeChoice(localStorage.getItem("themeChoice") || "system");
+  };
+
+  function syncThemeWithSystem() {
+    if ((localStorage.getItem("themeChoice") || "system") === "system") applyThemeChoice("system");
+  }
+
+  if (!localStorage.getItem("themeChoice")) localStorage.setItem("themeChoice", "system");
+  applyThemeChoice(localStorage.getItem("themeChoice") || "system");
+
+  try {
+    const lightMQ = window.matchMedia("(prefers-color-scheme: light)");
+    const darkMQ = window.matchMedia("(prefers-color-scheme: dark)");
+    lightMQ.addEventListener ? lightMQ.addEventListener("change", syncThemeWithSystem) : lightMQ.addListener(syncThemeWithSystem);
+    darkMQ.addEventListener ? darkMQ.addEventListener("change", syncThemeWithSystem) : darkMQ.addListener(syncThemeWithSystem);
+  } catch (e) {}
+
+  window.ensureTioumpaNotificationInlineIcon = function() {
+    const header = document.querySelector(".header");
+    if (!header) return;
+
+    let wrap = document.getElementById("tioumpaNotificationWrap");
+    if (!wrap) {
+      wrap = document.createElement("div");
+      wrap.className = "tioumpa-notification-wrap";
+      wrap.id = "tioumpaNotificationWrap";
+      wrap.setAttribute("onclick", "event.stopPropagation()");
+      const langControl = header.querySelector(".lang-control");
+      if (langControl) langControl.insertAdjacentElement("afterend", wrap);
+      else header.appendChild(wrap);
+    }
+
+    wrap.innerHTML = `
+      <button class="tioumpa-notification-btn" type="button" aria-label="Ειδοποιήσεις" onclick="toggleTioumpaNotifications(event)">
+        ${NOTIFICATION_SVG}
+        <span class="tioumpa-notification-dot" aria-hidden="true"></span>
+      </button>
+      <div class="tioumpa-notification-panel" id="tioumpaNotificationPanel" role="dialog" aria-label="Ειδοποιήσεις"></div>
+    `;
+
+    try { if (typeof renderNotificationPanel === "function") renderNotificationPanel(); } catch (e) {}
+    try { if (typeof updateNotificationDot === "function") updateNotificationDot(); } catch (e) {}
+  };
+
+  function polishHeader() {
+    const header = document.querySelector(".header");
+    if (!header) return;
+    const logo = header.querySelector(":scope > img");
+    if (logo) logo.remove();
+    const brand = header.querySelector("strong");
+    if (brand) brand.textContent = "Tioumpa Λεξικό";
+    window.ensureTioumpaNotificationInlineIcon();
+  }
+
+  const previousFinalHeaderPass = window.finalHeaderPass;
+  window.finalHeaderPass = function() {
+    try { if (typeof previousFinalHeaderPass === "function") previousFinalHeaderPass(); } catch (e) {}
+    polishHeader();
+  };
+
+  const oldShowHome = window.showHome;
+  window.showHome = function() {
+    try { if (typeof activeFilter !== "undefined") activeFilter = "Όλα"; } catch (e) {}
+    const count = countEntriesSafe();
+    const content = document.getElementById("content");
+    if (!content) {
+      if (typeof oldShowHome === "function") oldShowHome();
+      polishHeader();
+      return;
+    }
+
+    const queryValue = (() => { try { return searchQuery || ""; } catch (e) { return ""; } })();
+
+    content.innerHTML = `
+      <div class="home openai-home">
+        <section class="oa-hero">
+          <div class="oa-eyebrow">TIOUMPA ΛΕΞΙΚΟ</div>
+          <h1>Το λεξικό<br><span class="soft">του Teosty.</span></h1>
+          <p class="oa-author-line">Γ. ΜΠΑΜΠΙΝΙΩΤΗ</p>
+          <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
+
+          <div class="oa-command">
+            <div class="search-wrapper">
+              <div class="search-main">
+                ${SEARCH_SVG}
+                <input id="searchMain" placeholder="${escapeAttrSafe(textSafe("searchPlaceholder", "Αναζήτηση..."))}" value="${escapeAttrSafe(queryValue)}">
+                ${MIC_SVG}
+              </div>
+              <button onclick="clearSearch()">${textSafe("clean", "Clean")}</button>
+            </div>
+          </div>
+
+          <div class="oa-actions">
+            <button class="oa-chip" onclick="renderBubbles()">↻ Τυχαίες λέξεις</button>
+            <div class="home-toggle-section">
+              <button onclick="toggleHomeList('favoritesBox')">${textSafe("favorites", "⭐ Favorites")}</button>
+              <div id="favoritesBox" class="hidden-box">${typeof getFavoritesHTML === "function" ? getFavoritesHTML() : ""}</div>
+            </div>
+            <button class="mobile-dictionary-toggle" id="mobileDictionaryToggle" onclick="toggleDictionaryResults()">${textSafe("showDictionary", "Εμφάνιση λεξικού")}</button>
+          </div>
+
+          <div class="home-results" id="homeResults"></div>
+        </section>
+
+        <div class="random-title">${textSafe("randomWords", "ΤΥΧΑΙΕΣ ΛΕΞΕΙΣ")}</div>
+        <div class="bubbles" id="bubbles"></div>
+      </div>
+    `;
+
+    const input = document.getElementById("searchMain");
+    if (input) {
+      input.addEventListener("input", e => {
+        try { searchQuery = e.target.value; } catch (err) {}
+        if (typeof renderList === "function") renderList();
+        if (typeof renderHomeResults === "function") renderHomeResults();
+      });
+    }
+
+    if (typeof renderBubbles === "function") renderBubbles();
+    if (typeof renderHomeResults === "function") renderHomeResults();
+    polishHeader();
+  };
+
+  const oldSetLanguage = window.setLanguage;
+  window.setLanguage = function(value) {
+    if (value === "en") {
+      try {
+        currentLanguage = "el";
+        localStorage.setItem("languageChoice", "el");
+      } catch (e) {}
+      try { if (typeof applyLanguage === "function") applyLanguage(); } catch (e) {}
+      const content = document.getElementById("content");
+      if (content) {
+        content.innerHTML = `
+          <div class="home openai-home tioumpa-coming-soon">
+            <section class="tioumpa-coming-soon-card" aria-label="English coming soon">
+              <h1>Coming soon</h1>
+              <p>The English version of Tioumpa is being prepared. The Greek dictionary is available now.</p>
+              <button type="button" onclick="setLanguage('el')">Back to Greek</button>
+            </section>
+          </div>
+        `;
+      }
+      document.querySelectorAll(".lang-simple-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.getAttribute("data-lang-value") === "en");
+      });
+      polishHeader();
+      return;
+    }
+
+    if (typeof oldSetLanguage === "function") oldSetLanguage(value);
+    setTimeout(polishHeader, 0);
+  };
+
+  document.addEventListener("DOMContentLoaded", function() {
+    polishHeader();
+    applyThemeChoice(localStorage.getItem("themeChoice") || "system");
+    if (!location.hash && typeof window.showHome === "function") window.showHome();
+  });
+
+  window.addEventListener("load", function() {
+    polishHeader();
+    applyThemeChoice(localStorage.getItem("themeChoice") || "system");
+    if (!location.hash && typeof window.showHome === "function") window.showHome();
+  });
+
+  polishHeader();
+  if (!location.hash && typeof window.showHome === "function") window.showHome();
 })();
 </script>
 
