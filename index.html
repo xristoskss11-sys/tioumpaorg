@@ -1392,9 +1392,24 @@ html[data-theme="light"] .mic-img {
   }
 }
 
+
+
+/* FINAL FIX: smaller dictionary entry title */
+.entry-title {
+  font-size: clamp(26px, 3.8vw, 42px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.035em !important;
+}
+
+@media (max-width: 850px) {
+  .entry-title {
+    font-size: clamp(24px, 8vw, 36px) !important;
+  }
+}
+
 </style>
 
-<!-- Inter font for compact OpenAI-style UI -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
@@ -1467,8 +1482,8 @@ const translations = {
     colorTheme: "Color Theme", language: "Language", auto: "Auto", dark: "Dark", light: "Light", filters: "filters",
     searchPlaceholder: "Search...", clean: "Clear", trends: "🔥 Trends", favorites: "⭐ Favorites", randomWords: "RANDOM WORDS",
     noTrending: "No data yet", noFavorites: "You have not saved any favorites yet",
-    dataTitle: "data.txt error", dataText: "  <b>data.txt</b>  .",
-    micUnsupported: "microphone is not supported in this browser.", back: "← Back", declension: "Declension",
+    dataTitle: "data.txt did not load", dataText: "Make sure the file is named exactly <b>data.txt</b> and is in the same folder as index.html.",
+    micUnsupported: "Microphone is not supported in this browser.", back: "← Back", declension: "Declension",
     case: "Case", singular: "Singular", plural: "Plural", nominative: "Nominative", genitive: "Genitive", accusative: "Accusative", vocative: "Vocative",
     derivatives: "Derivatives:", synonyms: "Synonyms:", antonyms: "Antonyms:", searchCopy: "Search {count} words from Teosty's dictionary.",
     subtitle: "TIOUMPA DICTIONARY", email: "To contact us about any change or addition, send an email to: tioumpagr@gmail.com", showDictionary: "Show dictionary", hideDictionary: "Hide dictionary", noResults: "No results found", results: "results"
@@ -1665,8 +1680,8 @@ function loadData() {
   .then(text => init(text))
   .catch(err => {
     document.getElementById("content").innerHTML = `
-      <h2>Δεν φορτώθηκε το ${getDataFile()}</h2>
-      <p>Βεβαιώσου ότι το αρχείο λέγεται ακριβώς <b>${getDataFile()}</b> και είναι στον ίδιο φάκελο με το index.html.</p>
+      <h2> Error ${getDataFile()}</h2>
+      <p>error <b>${getDataFile()}</b> data.</p>
     `;
     console.error(err);
   });
@@ -2477,10 +2492,7 @@ function tioumpaEntryAdHTML() {
 
 
 <!-- =========================================================
-  TIOUMPA.ORG — OPENAI-INSPIRED PREMIUM REBRAND
-  Added by ChatGPT. Keeps your existing data.txt, engdata.txt,
-  search, filters, favorites, routing, ads scripts and entries.
-  No OpenAI logos/assets/trademarks are copied.
+
 ========================================================== -->
 <style id="tioumpa-openai-inspired-rebrand">
 :root {
@@ -3440,12 +3452,7 @@ html[data-theme="light"] .mic-img {
 
 
 <!-- =========================================================
-  TIOUMPA — COMPACT OPENAI-STYLE PASS
-  Requested changes:
-  - smaller UI scale
-  - Inter typography
-  - no logo image, text wordmark only
-  - EN button shows Coming soon instead of loading engdata.txt
+
 ========================================================== -->
 <style id="tioumpa-compact-openai-pass">
 :root,
@@ -3759,7 +3766,7 @@ html[data-theme="light"] .oa-command {
 }
 
 .entry-title {
-  font-size: clamp(22px, 5vw, 56px) !important;
+  font-size: clamp(32px, 5vw, 56px) !important;
   line-height: 1.02 !important;
   letter-spacing: -.055em !important;
 }
@@ -4009,14 +4016,7 @@ html[data-theme="light"] .oa-command {
 
 
 <!-- =========================================================
-  TIOUMPA — FINAL CLEANUP PASS
-  Requested changes:
-  - neutral/white dark-mode lighting
-  - wordmark: Tioumpa Λεξικό
-  - header nav: Email only
-  - Greek hero copy updates
-  - remove highlight cards and filters
-  - notification center from notif.txt
+
 ========================================================== -->
 <style id="tioumpa-final-cleanup-pass">
 :root,
@@ -4397,7 +4397,7 @@ html[data-theme="dark"] .oa-command {
     if (logo) logo.remove();
 
     const brand = header.querySelector("strong");
-    if (brand) brand.textContent = "Tioumpa Λεξικό";
+    if (brand) brand.textContent = "      Tioumpa.org";
 
     let nav = header.querySelector(".oa-nav");
     if (!nav && brand) {
@@ -4564,7 +4564,7 @@ html[data-theme="dark"] .oa-command {
     content.innerHTML = `
       <div class="home openai-home">
         <section class="oa-hero">
-          <div class="oa-eyebrow">Γ. ΜΠΑΜΠΙΝΙΩΤΗ</div>
+          <div class="oa-eyebrow">TIOUMPA ΛΕΞΙΚΟ</div>
           <h1>Το λεξικό<br><span class="soft">του Teosty.</span></h1>
           <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
 
@@ -5159,6 +5159,7 @@ html[data-theme="dark"] .tioumpa-notification-panel {
         <section class="oa-hero">
           <div class="oa-eyebrow">TIOUMPA ΛΕΞΙΚΟ</div>
           <h1>Το λεξικό<br><span class="soft">του Teosty.</span></h1>
+          <p class="oa-author-line">Γ. ΜΠΑΜΠΙΝΙΩΤΗ</p>
           <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
 
           <div class="oa-command">
@@ -5258,12 +5259,12 @@ html[data-theme="dark"] .tioumpa-notification-panel {
 /* Keep the entire UI in Inter, but use the requested dictionary-reading fonts only inside entries. */
 .entry .entry-title {
   font-family: "Linux Libertine", "Linux Libertine O", "Linux Libertine Display", Georgia, "Times New Roman", serif !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   letter-spacing: -.045em !important;
 }
 
 .entry .entry-body {
-  font-family: Calibri, , "Segoe UI", Arial, sans-serif !important;
+  font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif !important;
   font-weight: 400 !important;
   letter-spacing: -.01em !important;
 }
