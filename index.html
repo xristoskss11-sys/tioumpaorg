@@ -6,7 +6,7 @@
 
 <title>tioumpa.org - λεξικό</title>
 
-<meta name="description" content="tioumpa.org — ένα καθαρό, premium community dictionary για ατάκες, λέξεις, φράσεις και ορισμούς.">
+<meta name="description" content="tioumpa.org — Το λεξικό του Teosty. Όλες οι ατάκες, λέξεις, φράσεις κ.λ.π. σε ένα site.">
 
 <meta name="keywords" content="tioumpa, tioumpa.org, Teosty, λεξικό Teosty, ατάκες Teosty, λιγδας, ligdas, λιγειρος, booyah tv, booyah, μπουγια, hacky, χακι, τιουμπα, τουμπα, θεσσαλονικη, youtube, tiktok, instagram, insta, τικτοκ, τεοστυ, θοδωρης, αγορινα, clips, kick, κικ, drestvlog, its only, ιτς ονλυ">
 
@@ -1409,7 +1409,7 @@ html[data-theme="light"] .mic-img {
 
 </style>
 
-
+<!-- Inter font for compact OpenAI-style UI -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
@@ -1680,8 +1680,8 @@ function loadData() {
   .then(text => init(text))
   .catch(err => {
     document.getElementById("content").innerHTML = `
-      <h2> Error ${getDataFile()}</h2>
-      <p>error <b>${getDataFile()}</b> data.</p>
+      <h2>  ${getDataFile()}</h2>
+      <p>error loading <b>${getDataFile()}</b> ℹ️ Restart your browser.</p>
     `;
     console.error(err);
   });
@@ -2492,7 +2492,10 @@ function tioumpaEntryAdHTML() {
 
 
 <!-- =========================================================
-
+  TIOUMPA.ORG — OPENAI-INSPIRED PREMIUM REBRAND
+  Added by ChatGPT. Keeps your existing data.txt, engdata.txt,
+  search, filters, favorites, routing, ads scripts and entries.
+  No OpenAI logos/assets/trademarks are copied.
 ========================================================== -->
 <style id="tioumpa-openai-inspired-rebrand">
 :root {
@@ -3452,7 +3455,12 @@ html[data-theme="light"] .mic-img {
 
 
 <!-- =========================================================
-
+  TIOUMPA — COMPACT OPENAI-STYLE PASS
+  Requested changes:
+  - smaller UI scale
+  - Inter typography
+  - no logo image, text wordmark only
+  - EN button shows Coming soon instead of loading engdata.txt
 ========================================================== -->
 <style id="tioumpa-compact-openai-pass">
 :root,
@@ -3932,7 +3940,7 @@ html[data-theme="light"] .oa-command {
     if (logo) logo.remove();
 
     const brand = header.querySelector("strong");
-    if (brand) brand.textContent = "Tioumpa.org";
+    if (brand) brand.textContent = "Tioumpa";
 
     document.querySelectorAll("[data-oa-nav]").forEach(link => {
       const key = link.getAttribute("data-oa-nav");
@@ -3954,7 +3962,7 @@ html[data-theme="light"] .oa-command {
       <div class="home openai-home tioumpa-coming-soon">
         <section class="tioumpa-coming-soon-card" aria-label="English coming soon">
           <h1>Coming soon</h1>
-          <p>The English version of tioumpa org is being prepared. The Greek dictionary is available now.</p>
+          <p>The English version of Tioumpa is being prepared. The Greek dictionary is available now.</p>
           <button type="button" onclick="setLanguage('el')">Back to Greek</button>
         </section>
       </div>
@@ -4016,7 +4024,14 @@ html[data-theme="light"] .oa-command {
 
 
 <!-- =========================================================
-
+  TIOUMPA — FINAL CLEANUP PASS
+  Requested changes:
+  - neutral/white dark-mode lighting
+  - wordmark: Tioumpa Λεξικό
+  - header nav: Email only
+  - Greek hero copy updates
+  - remove highlight cards and filters
+  - notification center from notif.txt
 ========================================================== -->
 <style id="tioumpa-final-cleanup-pass">
 :root,
@@ -4397,7 +4412,7 @@ html[data-theme="dark"] .oa-command {
     if (logo) logo.remove();
 
     const brand = header.querySelector("strong");
-    if (brand) brand.textContent = "      Tioumpa.org";
+    if (brand) brand.textContent = "Tioumpa.org";
 
     let nav = header.querySelector(".oa-nav");
     if (!nav && brand) {
@@ -5131,7 +5146,7 @@ html[data-theme="dark"] .tioumpa-notification-panel {
     const logo = header.querySelector(":scope > img");
     if (logo) logo.remove();
     const brand = header.querySelector("strong");
-    if (brand) brand.textContent = "Tioumpa";
+    if (brand) brand.textContent = "Tioumpa.org";
     window.ensureTioumpaNotificationInlineIcon();
   }
 
@@ -5157,7 +5172,7 @@ html[data-theme="dark"] .tioumpa-notification-panel {
     content.innerHTML = `
       <div class="home openai-home">
         <section class="oa-hero">
-          <div class="oa-eyebrow">Λεξικό</div>
+          <div class="oa-eyebrow">TIOUMPA ΛΕΞΙΚΟ</div>
           <h1>Το λεξικό<br><span class="soft">του Teosty.</span></h1>
           <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
 
@@ -5290,6 +5305,227 @@ html[data-theme="dark"] .tioumpa-notification-panel {
   #list .letter,
   .sidebar .letter {
     font-size: 18px !important;
+  }
+}
+</style>
+
+
+
+<!-- Restore original dictionary-entry detail view from the first version -->
+<style id="tioumpa-original-entry-view-restore">
+/* When a word is opened, keep the page exactly like the original dictionary view. */
+#content:has(> .entry),
+#content:has(> .back-btn + .entry) {
+  padding: 36px !important;
+}
+
+#content > .back-btn {
+  position: sticky !important;
+  top: 0 !important;
+  float: right !important;
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 9px 14px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 0 !important;
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  font-family: var(--oa-font, Inter, Arial, sans-serif) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+#content > .back-btn:hover {
+  background: var(--accent-soft) !important;
+  color: var(--text) !important;
+}
+
+#content > .entry {
+  animation: entryIn .45s ease !important;
+  max-width: 980px !important;
+  min-height: 100% !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+#content > .entry .entry-title {
+  font-family: "Linux Libertine", "Linux Libertine O", "Linux Libertine Display", Georgia, "Times New Roman", serif !important;
+  font-size: 34px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  margin: 0 0 12px !important;
+  color: var(--text) !important;
+}
+
+#content > .entry .star {
+  cursor: pointer !important;
+  font-size: 25px !important;
+  margin-left: 12px !important;
+  vertical-align: middle !important;
+  color: var(--text) !important;
+  line-height: 1 !important;
+}
+
+#content > .entry .entry-divider {
+  display: block !important;
+  height: 1px !important;
+  background: #2a445c !important;
+  margin: 0 0 20px !important;
+  border: 0 !important;
+}
+
+html[data-theme="light"] #content > .entry .entry-divider {
+  background: var(--border-soft) !important;
+}
+
+#content > .entry .entry-meta {
+  display: inline-flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin: 0 0 20px !important;
+}
+
+#content > .entry .meta-pill {
+  padding: 8px 12px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 0 !important;
+  background: var(--surface-soft) !important;
+  color: var(--text) !important;
+  font-family: var(--oa-font, Inter, Arial, sans-serif) !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+}
+
+#content > .entry .entry-body,
+#content > .entry .entry-body *:not(table):not(th):not(td):not(button):not(.meta-pill) {
+  font-family: Arial, sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+#content > .entry .entry-body {
+  white-space: pre-wrap !important;
+  line-height: 1.68 !important;
+  font-size: 17px !important;
+  color: var(--text) !important;
+}
+
+#content > .entry .entry-ref,
+#content > .entry .entry-custom-link {
+  color: var(--accent) !important;
+  font-style: normal !important;
+  cursor: pointer !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 3px !important;
+}
+
+#content > .entry .entry-ref:hover,
+#content > .entry .entry-custom-link:hover {
+  text-decoration: underline !important;
+  opacity: .85 !important;
+}
+
+#content > .entry .entry-body iframe {
+  display: block !important;
+  margin-top: 30px !important;
+  max-width: 760px !important;
+  width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  border-radius: 14px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+#content > .entry .entry-images {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  gap: 14px !important;
+  margin-top: 26px !important;
+  width: 100% !important;
+}
+
+#content > .entry .entry-images img {
+  max-width: min(320px, 45%) !important;
+  border-radius: 0 !important;
+  border: 1px solid rgba(255,255,255,.12) !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,.35) !important;
+}
+
+#content > .entry .declension-box {
+  margin-top: 22px !important;
+  margin-left: auto !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  padding: 10px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 0 !important;
+  background: var(--surface-soft) !important;
+  box-shadow: none !important;
+}
+
+#content > .entry .declension-title {
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+  color: var(--accent) !important;
+}
+
+#content > .entry .declension-box table {
+  font-family: Arial, sans-serif !important;
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 14px !important;
+}
+
+#content > .entry .declension-box th,
+#content > .entry .declension-box td {
+  border: 1px solid var(--border) !important;
+  padding: 6px 9px !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+#content > .entry .declension-box th {
+  color: var(--muted-2) !important;
+}
+
+@media (max-width: 850px) {
+  #content:has(> .entry),
+  #content:has(> .back-btn + .entry) {
+    padding: 24px 18px !important;
+  }
+
+  #content > .entry .entry-title {
+    font-size: 27px !important;
+  }
+
+  #content > .entry .entry-images img {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  #content > .entry .declension-box {
+    width: 100% !important;
+    margin-left: 0 !important;
+    overflow-x: auto !important;
   }
 }
 </style>
