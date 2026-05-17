@@ -6,7 +6,7 @@
 
 <title>tioumpa.org - λεξικό</title>
 
-<meta name="description" content="tioumpa.org — Το λεξικό του Teosty. Όλες οι ατάκες, λέξεις, φράσεις κ.λ.π. σε ένα site.">
+<meta name="description" content="tioumpa.org — λεξικό του Teosty.">
 
 <meta name="keywords" content="tioumpa, tioumpa.org, Teosty, λεξικό Teosty, ατάκες Teosty, λιγδας, ligdas, λιγειρος, booyah tv, booyah, μπουγια, hacky, χακι, τιουμπα, τουμπα, θεσσαλονικη, youtube, tiktok, instagram, insta, τικτοκ, τεοστυ, θοδωρης, αγορινα, clips, kick, κικ, drestvlog, its only, ιτς ονλυ">
 
@@ -1680,8 +1680,8 @@ function loadData() {
   .then(text => init(text))
   .catch(err => {
     document.getElementById("content").innerHTML = `
-      <h2>  ${getDataFile()}</h2>
-      <p>error loading <b>${getDataFile()}</b> ℹ️ Restart your browser.</p>
+      <h2>Δεν φορτώθηκε το ${getDataFile()}</h2>
+      <p>loading <b>${getDataFile()}</b> ℹ️ Try restart page.</p>
     `;
     console.error(err);
   });
@@ -1899,6 +1899,35 @@ function renderList() {
   });
 }
 
+
+function getRedirectTargetTitle(entry) {
+  if (!entry || !entry.full) return "";
+
+  const lines = String(entry.full).split(/\r?\n/);
+  lines.shift();
+  const body = lines.join("\n").trim();
+
+  const match = body.match(/^\s*(?:Περιγραφή\s*:|Περγιφραφή\s*:)?\s*ανακ\.\s*([^\r\n]+)/i);
+  if (!match) return "";
+
+  return match[1]
+    .replace(/<[^>]+>/g, "")
+    .replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, "$1")
+    .replace(/[.!;:,]+$/g, "")
+    .trim();
+}
+
+function findRedirectTargetEntry(targetTitle) {
+  const target = String(targetTitle || "").trim();
+  if (!target) return null;
+
+  const direct = findEntryByAnyKey(target);
+  if (direct) return direct;
+
+  const normalizedTarget = normalizeSearchValue(target);
+  return entries.find(e => normalizeSearchValue(e.title) === normalizedTarget) || null;
+}
+
 function route() {
   const key = decodeURIComponent(location.hash.replace("#", ""));
 
@@ -1916,7 +1945,22 @@ function route() {
   }
 
   currentEntryId = entry.id || null;
-  openEntry(entry);
+
+  const redirectTargetTitle = getRedirectTargetTitle(entry);
+  if (redirectTargetTitle) {
+    const redirectEntry = findRedirectTargetEntry(redirectTargetTitle);
+    if (redirectEntry && entryKey(redirectEntry) !== entryKey(entry)) {
+      sessionStorage.setItem("tioumpaRedirectFrom", entry.title);
+      currentEntryId = redirectEntry.id || null;
+      location.replace("#" + entryHash(redirectEntry));
+      return;
+    }
+  }
+
+  const redirectedFromTitle = sessionStorage.getItem("tioumpaRedirectFrom") || "";
+  if (redirectedFromTitle) sessionStorage.removeItem("tioumpaRedirectFrom");
+
+  openEntry(entry, redirectedFromTitle);
 }
 
 function showHome() {
@@ -2289,7 +2333,7 @@ function linkReferences(text, currentTitle) {
   return result;
 }
 
-function openEntry(entry) {
+function openEntry(entry, redirectedFromTitle = "") {
   const key = entryKey(entry);
   clicks[key] = (clicks[key] || 0) + 1;
   localStorage.setItem("clicks", JSON.stringify(clicks));
@@ -2326,6 +2370,8 @@ function openEntry(entry) {
       </div>
 
       <div class="entry-divider"></div>
+
+      ${redirectedFromTitle ? `<div class="entry-redirect-note">Ανακατεύθυνση από ${escapeHTML(redirectedFromTitle)}</div>` : ""}
 
       ${buildMeta(entry.title, entry.full)}
 
@@ -4412,7 +4458,7 @@ html[data-theme="dark"] .oa-command {
     if (logo) logo.remove();
 
     const brand = header.querySelector("strong");
-    if (brand) brand.textContent = "Tioumpa.org";
+    if (brand) brand.textContent = "Tioumpa Λεξικό";
 
     let nav = header.querySelector(".oa-nav");
     if (!nav && brand) {
@@ -4580,7 +4626,7 @@ html[data-theme="dark"] .oa-command {
       <div class="home openai-home">
         <section class="oa-hero">
           <div class="oa-eyebrow">TIOUMPA ΛΕΞΙΚΟ</div>
-          <h1>Το λεξικό<br><span class="soft">του Teosty</span></h1>
+          <h1>Το λεξικό<br><span class="soft">του Teosty.</span></h1>
           <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
 
           <div class="oa-command">
@@ -5146,7 +5192,7 @@ html[data-theme="dark"] .tioumpa-notification-panel {
     const logo = header.querySelector(":scope > img");
     if (logo) logo.remove();
     const brand = header.querySelector("strong");
-    if (brand) brand.textContent = "Tioumpa.org";
+    if (brand) brand.textContent = "Tioumpa Λεξικό";
     window.ensureTioumpaNotificationInlineIcon();
   }
 
@@ -5174,6 +5220,7 @@ html[data-theme="dark"] .tioumpa-notification-panel {
         <section class="oa-hero">
           <div class="oa-eyebrow">TIOUMPA ΛΕΞΙΚΟ</div>
           <h1>Το λεξικό<br><span class="soft">του Teosty</span></h1>
+          <p class="oa-author-line">Γ. ΜΠΑΜΠΙΝΙΩΤΗ</p>
           <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
 
           <div class="oa-command">
@@ -5527,6 +5574,42 @@ html[data-theme="light"] #content > .entry .entry-divider {
     margin-left: 0 !important;
     overflow-x: auto !important;
   }
+}
+</style>
+
+
+<!-- Yellow internal entry links + Wikipedia-style redirect note -->
+<style id="tioumpa-yellow-entry-refs-and-redirect-note">
+#content > .entry .entry-ref {
+  color: #ffd84d !important;
+  text-decoration: none !important;
+  text-underline-offset: 0 !important;
+  text-decoration-thickness: 0 !important;
+  cursor: pointer !important;
+}
+
+#content > .entry .entry-ref:hover {
+  color: #ffe98a !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+}
+
+#content > .entry .entry-redirect-note {
+  margin: -8px 0 18px !important;
+  color: var(--muted-2) !important;
+  font-family: var(--oa-font, Inter, Arial, sans-serif) !important;
+  font-size: 13px !important;
+  line-height: 1.35 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+html[data-theme="light"] #content > .entry .entry-ref {
+  color: #9a6a00 !important;
+}
+
+html[data-theme="light"] #content > .entry .entry-ref:hover {
+  color: #6f4b00 !important;
 }
 </style>
 
