@@ -563,3 +563,6 @@
 
 Ατάκα186: Εσύ ότι πεις +τραγούδι
 Περιγραφή: Τραγούδι της Ρίτας Σακελλαρίου. <iframe width="560" height="315" src="https://www.youtube.com/embed/cFzdlXz9T6A?si=ioV_gtspMJFNjsls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Ατάκα187: ξόφαλτσα +επίρρημα
+Περιγραφή: Επιφανειακά, ακροθιγώς, ή μόλις και μετά βίας. Χρησιμοποιείται για να περιγράψει ένα χτύπημα που ξύρισε, μια σφαίρα που πέρασε ξυστά, ή μια συζήτηση που έμεινε στην επιφάνεια χωρίς να εμβαθύνει.
