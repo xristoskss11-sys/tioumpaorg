@@ -541,4 +541,4 @@
 Περιγραφή: Χρησιμοποιειται όταν αδιαφορούμε ή για να επιβεβαιώσουμε μια συντριπτική υπεροχή.
 
 Ατάκα179: Άλλααα +ατάκα
-Περιγραφή: Παρεμφερές του τιούμπα; Συνοδεύεται κυρίως μετά απο ρέψιμο. Προέρχεται από τον Μοσχοτέλη. https://youtu.be/1TPR1SDMQCY?si=qkabEe06igu2k8vV&t=495
+Περιγραφή: Παρεμφερές του τιούμπα; Συνοδεύεται κυρίως μετά απο ρέψιμο. Προέρχεται από τον Μοσχοτέλη. <iframe width="560" height="315" src="https://www.youtube.com/embed/1TPR1SDMQCY?si=dbq3lwrsEyS7rdAa&amp;start=494" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
