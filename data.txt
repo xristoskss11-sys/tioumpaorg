@@ -579,8 +579,8 @@
 Ατάκα191: Παλιό-υγρασίες +φράση
 Περιγραφή: Προέρχεται από τον Τόλη Βοσκόπουλο. <iframe width="560" height="315" src="https://www.youtube.com/embed/ha2o9WjI4TY?si=5xPxBDPpca_5A6eK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Ατάκα192:  
-Περιγραφή:  
+Ατάκα192: Κράτος / Χώρα των Βαλκανίων +φράση
+Περιγραφή: Χώρα που βρίσκεται στα Βαλκάνια, στη προκειμένη περίπτωση η Ελλάδα. https://orthodoxia.info/news/wp-content/uploads/2024/10/Balkan-map.jpg
 
 Ατάκα193: άθλημα +ουσιαστικό
 Περιγραφή: Ένα πράγμα, αντικείμενο, εξειδικευμένη γνώση.
@@ -606,5 +606,3 @@
 
 Ατάκα200: μέζεα +ουσιαστικό
 Περιγραφή: Το γεννητικό όργανο του ανδρός, το πέος,
-
-Ατάκα201: 
