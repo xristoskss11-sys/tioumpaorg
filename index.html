@@ -21,6 +21,23 @@
      crossorigin="anonymous"></script>
 
 <style>
+/* LOCAL SF PRO DISPLAY FONT - added only */
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("./SFPRO DISPLAY REGULAR.woff2") format("woff2");
+  font-weight: 100 699;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("./SF-Pro-Display-Heavy.woff2") format("woff2");
+  font-weight: 700 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
 * { box-sizing: border-box; }
 
 :root {
@@ -2584,7 +2601,7 @@ html[data-theme="dark"] {
   --oa-muted: rgba(245,242,234,.52);
   --oa-line: rgba(245,242,234,.14);
   --oa-line-strong: rgba(245,242,234,.24);
-  --oa-card: rgba(255,255,255,.02);
+  --oa-card: rgba(255,255,255,.065);
   --oa-card-strong: rgba(255,255,255,.105);
   --oa-elevated: #171716;
   --oa-hover: rgba(255,255,255,.08);
@@ -3673,7 +3690,7 @@ body {
   gap: 7px !important;
   font-size: 11px !important;
   font-weight: 700 !important;
-  letter-spacing: .02em !important;
+  letter-spacing: .06em !important;
 }
 
 .oa-eyebrow::before {
@@ -5580,7 +5597,7 @@ html[data-theme="light"] #content > .entry .entry-divider {
 <!-- Yellow internal entry links + Wikipedia-style redirect note -->
 <style id="tioumpa-yellow-entry-refs-and-redirect-note">
 #content > .entry .entry-ref {
-  color: #00ff77 !important;
+  color: #ffd84d !important;
   text-decoration: none !important;
   text-underline-offset: 0 !important;
   text-decoration-thickness: 0 !important;
@@ -5609,136 +5626,6 @@ html[data-theme="light"] #content > .entry .entry-ref {
 
 html[data-theme="light"] #content > .entry .entry-ref:hover {
   color: #6f4b00 !important;
-}
-</style>
-
-
-
-<style id="sf-pro-display-local-fix">
-/* SF Pro Display local fonts — added last so it wins without editing your existing Arial/Linux Libertine rules */
-@font-face {
-  font-family: "SF Pro Display Local";
-  src: url("./SFPRODISPLAYREGULAR.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display Local";
-  src: url("./SFPRODISPLAYREGULAR.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display Local";
-  src: url("./SFPRODISPLAYREGULAR.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display Local";
-  src: url("./SFPRODISPLAYREGULAR.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display Local";
-  src: url("./SFPRODISPLAYREGULAR.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display Local";
-  src: url("./SFPRODISPLAYREGULAR.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display Local";
-  src: url("./SF-Pro-Display-Heavy.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display Local";
-  src: url("./SF-Pro-Display-Heavy.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF Pro Display Local";
-  src: url("./SF-Pro-Display-Heavy.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-:root {
-  --oa-font: "SF Pro Display Local", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-}
-
-html,
-body {
-  font-family: "SF Pro Display Local", Roboto Flex, Arial, "Segoe UI", sans-serif !important;
-}
-
-button,
-select,
-textarea,
-.header,
-.theme-control,
-.theme-simple,
-.theme-simple-btn,
-.lang-control,
-.lang-simple,
-.lang-simple-btn,
-.filter-box,
-.filter-btn,
-.filter-toggle,
-.letter,
-.word,
-.home,
-.search-wrapper select,
-.search-wrapper button,
-.home-toggle-section button,
-.mobile-dictionary-toggle,
-.home-results,
-.home-result-item,
-.home-result-empty,
-.bubble,
-.meta-pill,
-.back-btn,
-.social,
-.left-ad,
-.entry-ad-wrap {
-  font-family: "SF Pro Display Local", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-}
-
-b,
-strong {
-  font-family: inherit !important;
-  font-weight: 800 !important;
-}
-
-.entry-title,
-#content > .entry .entry-title {
-  font-family: "Linux Libertine", "Linux Libertine O", "Linux Libertine Display", Georgia, "Times New Roman", serif !important;
-}
-
-.entry-body,
-#content > .entry .entry-body,
-#content > .entry .entry-body *:not(table):not(th):not(td):not(button):not(.meta-pill),
-.search-main input,
-.declension-box table,
-#content > .entry .declension-box table {
-  font-family: Arial, sans-serif !important;
 }
 </style>
 
