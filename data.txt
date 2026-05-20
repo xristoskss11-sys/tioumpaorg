@@ -624,3 +624,6 @@
 
 Ατάκα206: απ'εδώ +φράση
 Περιγραφή: Από εδώ, σε αυτό το σημείο [λαϊκιστί]
+
+Ατάκα207: Στο άπειρο, κι ακόμα παραπέρα +ατάκα
+Περιγραφή: Ατάκα του αστροναύτη Buzz Lightyear από τις ταινίες κινουμένων σχεδίων Toy Story της Pixar. https://static.wikia.nocookie.net/disney/images/7/74/Profile_-_Buzz_Lightyear.jpeg
