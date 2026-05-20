@@ -6,7 +6,7 @@
 
 <title>tioumpa.org - λεξικό</title>
 
-<meta name="description" content="tioumpa.org — ένα καθαρό, premium community dictionary για ατάκες, λέξεις, φράσεις και ορισμούς.">
+<meta name="description" content="tioumpa.org — λεξικό για ατάκες, λέξεις, φράσεις και ορισμούς από τον Teosty.">
 
 <meta name="keywords" content="tioumpa, tioumpa.org, Teosty, λεξικό Teosty, ατάκες Teosty, λιγδας, ligdas, λιγειρος, booyah tv, booyah, μπουγια, hacky, χακι, τιουμπα, τουμπα, θεσσαλονικη, youtube, tiktok, instagram, insta, τικτοκ, τεοστυ, θοδωρης, αγορινα, clips, kick, κικ, drestvlog, its only, ιτς ονλυ">
 
@@ -1471,7 +1471,7 @@ const translations = {
   el: {
     colorTheme: "Θέμα", language: "Γλώσσα", auto: "Auto", dark: "Dark", light: "Light", filters: "filters",
     searchPlaceholder: "Αναζήτηση...", clean: "Clean", trends: "🔥 Trends", favorites: "⭐ Favorites", randomWords: "ΤΥΧΑΙΕΣ ΛΕΞΕΙΣ",
-    noTrending: "Δεν υπάρχουν ακόμα δεδομένα", noFavorites: "-",
+    noTrending: "", noFavorites: "-",
     dataTitle: "load data.txt", dataText: "load... <b>data.txt</b> load... index.html.",
     micUnsupported: "mic not supported on this browser.", back: "← Back", declension: "Κλίση",
     case: "Πτώση", singular: "Ενικός αριθμός", plural: "Πληθυντικός αριθμός", nominative: "Ονομαστική", genitive: "Γενική", accusative: "Αιτιατική", vocative: "Κλητική",
@@ -3404,7 +3404,7 @@ html[data-theme="light"] .mic-img {
   window.showHome = function() {
     const count = getEntriesCount();
     const titleA = rebrandText("Το λεξικό", "The dictionary");
-    const titleB = rebrandText("του Teosty.", "for the community.");
+    const titleB = rebrandText("του community.", "for the community.");
     const subhead = rebrandText(
       `Αναζήτησε ${count} όρους, ατάκες και inside jokes με καθαρό, γρήγορο, premium interface.`,
       `Search ${count} words, quotes and inside jokes with a clean, fast, premium interface.`
@@ -4458,7 +4458,7 @@ html[data-theme="dark"] .oa-command {
     if (logo) logo.remove();
 
     const brand = header.querySelector("strong");
-    if (brand) brand.textContent = "Tioumpa Λεξικό";
+    if (brand) brand.textContent = "Tioumpa.org";
 
     let nav = header.querySelector(".oa-nav");
     if (!nav && brand) {
@@ -4469,7 +4469,7 @@ html[data-theme="dark"] .oa-command {
     }
 
     if (nav) {
-      nav.innerHTML = `<a data-oa-nav="submit" href="mailto:${EMAIL}" onclick="event.stopPropagation()">Email</a>`;
+      nav.innerHTML = `<a data-oa-nav="submit" href="mailto:${EMAIL}" onclick="event.stopPropagation()">Email: tioumpagr@gmai.com</a>`;
     }
   }
 
@@ -4626,7 +4626,7 @@ html[data-theme="dark"] .oa-command {
       <div class="home openai-home">
         <section class="oa-hero">
           <div class="oa-eyebrow">ΤΟ ΛΕΞΙΚΟ ΤΟΥ TEOSTY</div>
-          <h1>Tioumpa.org<br><span class="soft">Λεξικό.</span></h1>
+          <h1>Tioumpa.org<br><span class="soft">Λεξικό</span></h1>
           <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
 
           <div class="oa-command">
@@ -5192,7 +5192,7 @@ html[data-theme="dark"] .tioumpa-notification-panel {
     const logo = header.querySelector(":scope > img");
     if (logo) logo.remove();
     const brand = header.querySelector("strong");
-    if (brand) brand.textContent = "Tioumpa Λεξικό";
+    if (brand) brand.textContent = "Tioumpa.org";
     window.ensureTioumpaNotificationInlineIcon();
   }
 
@@ -5219,14 +5219,15 @@ html[data-theme="dark"] .tioumpa-notification-panel {
       <div class="home openai-home">
         <section class="oa-hero">
           <div class="oa-eyebrow">ΤΟ ΛΕΞΙΚΟ ΤΟΥ TEOSTY</div>
-          <h1>Tioumpa.org<br><span class="soft">Λεξικό.</span></h1>
+          <h1>Tioumpa.org<br><span class="soft">Λεξικό</span></h1>
+          <p class="oa-author-line">Γ. ΜΠΑΜΠΙΝΙΩΤΗ</p>
           <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
 
           <div class="oa-command">
             <div class="search-wrapper">
               <div class="search-main">
                 ${SEARCH_SVG}
-                <input id="searchMain" placeholder="${escapeAttrSafe(textSafe("searchPlaceholder", "Search..."))}" value="${escapeAttrSafe(queryValue)}">
+                <input id="searchMain" placeholder="${escapeAttrSafe(textSafe("searchPlaceholder", "Αναζήτηση..."))}" value="${escapeAttrSafe(queryValue)}">
                 ${MIC_SVG}
               </div>
               <button onclick="clearSearch()">${textSafe("clean", "Clean")}</button>
@@ -5902,8 +5903,8 @@ html[data-theme="light"] #content > .entry a.entry-ref[href]:hover {
       .trim()
       .slice(0, 155);
 
-    document.title = title ? `${title} — Tioumpa Λεξικό` : "Tioumpa Λεξικό";
-    setMetaDescription(description || `Ορισμός για ${title} στο Tioumpa Λεξικό.`);
+    document.title = title ? `${title} — Tioumpa.org` : "Tioumpa.org";
+    setMetaDescription(description || `Ορισμός για ${title} στο Tioumpa.org`);
     setCanonical(canonicalEntryUrl(entry));
 
     removeEntryJsonLd();
@@ -5918,7 +5919,7 @@ html[data-theme="light"] #content > .entry a.entry-ref[href]:hover {
       "url": canonicalEntryUrl(entry),
       "inDefinedTermSet": {
         "@type": "DefinedTermSet",
-        "name": "Tioumpa Λεξικό",
+        "name": "Tioumpa.org",
         "url": window.location.origin + "/"
       }
     });
@@ -5926,7 +5927,7 @@ html[data-theme="light"] #content > .entry a.entry-ref[href]:hover {
   }
 
   function updateHomeSeo() {
-    document.title = "Tioumpa Λεξικό";
+    document.title = "Tioumpa.org";
     setMetaDescription("tioumpa.org — λεξικό του Teosty.");
     try { setCanonical(window.location.origin + "/"); } catch (e) { setCanonical("/"); }
     removeEntryJsonLd();
@@ -6357,6 +6358,376 @@ html[data-theme="light"] #content > .entry a.entry-ref[href]:hover {
   document.addEventListener("DOMContentLoaded", bootSeoWordsPass);
   window.addEventListener("load", bootSeoWordsPass);
   bootSeoWordsPass();
+})();
+</script>
+
+
+<!-- =========================================================
+  TIOUMPA — DIRECT /words URL + SPEED + PURE BLACK FIX
+========================================================== -->
+<style id="tioumpa-direct-words-speed-black-fix">
+html[data-theme="dark"] {
+  --oa-bg: #000000 !important;
+  --bg: #000000 !important;
+  --panel: rgba(0,0,0,.96) !important;
+  --panel-strong: rgba(0,0,0,.98) !important;
+}
+html[data-theme="dark"] body,
+html[data-theme="dark"] .app,
+html[data-theme="dark"] .content,
+html[data-theme="dark"] .header,
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .home.openai-home {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  background-image: none !important;
+}
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    --oa-bg: #000000 !important;
+    --bg: #000000 !important;
+    --panel: rgba(0,0,0,.96) !important;
+    --panel-strong: rgba(0,0,0,.98) !important;
+  }
+  html:not([data-theme="light"]) body,
+  html:not([data-theme="light"]) .app,
+  html:not([data-theme="light"]) .content,
+  html:not([data-theme="light"]) .header,
+  html:not([data-theme="light"]) .sidebar,
+  html:not([data-theme="light"]) .home.openai-home {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    background-image: none !important;
+  }
+}
+</style>
+
+<script id="tioumpa-direct-words-speed-fix-script">
+(function() {
+  const WORDS_PREFIX = "/words/";
+  let slugCache = null;
+  let linkCache = null;
+
+  const seq = [["αι","ai"],["ει","ei"],["οι","oi"],["ου","ou"],["υι","yi"],["αυ","av"],["ευ","ev"],["ηυ","iv"],["γγ","ng"],["γκ","gk"],["γχ","nch"],["μπ","b"],["ντ","d"],["τσ","ts"],["τζ","tz"]];
+  const chr = {"α":"a","β":"v","γ":"g","δ":"d","ε":"e","ζ":"z","η":"i","θ":"th","ι":"i","κ":"k","λ":"l","μ":"m","ν":"n","ξ":"x","ο":"o","π":"p","ρ":"r","σ":"s","ς":"s","τ":"t","υ":"y","φ":"f","χ":"ch","ψ":"ps","ω":"o"};
+
+  function list() { try { return Array.isArray(entries) ? entries : []; } catch (e) { return []; } }
+  function keyOf(e) { try { return typeof entryKey === "function" ? entryKey(e) : (e && e.id ? "id-" + e.id : e.title); } catch (err) { return e && e.id ? "id-" + e.id : (e ? e.title : ""); } }
+  function esc(v) { return typeof escapeHTML === "function" ? escapeHTML(v) : String(v == null ? "" : v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;"); }
+  function escAttr(v) { return typeof escapeAttr === "function" ? escapeAttr(v) : esc(v).replace(/"/g,"&quot;"); }
+  function strip(v) { return String(v || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ς/g,"σ").replace(/Σ/g,"σ").toLocaleLowerCase("el-GR"); }
+  function norm(v) { return strip(v).replace(/\s+/g," ").trim(); }
+
+  function slugify(v) {
+    let s = strip(v).replace(/(^|\s)\+[^+\n.,;:!?]+/g," ").replace(/<[^>]+>/g," ").replace(/&[a-z0-9#]+;/gi," ");
+    seq.forEach(function(pair) { s = s.replace(new RegExp(pair[0], "g"), pair[1]); });
+    s = s.split("").map(function(c) { return chr[c] || c; }).join("");
+    return s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"") || "word";
+  }
+
+  function aliases(slug) {
+    const s = String(slug || "").toLowerCase();
+    return Array.from(new Set([
+      s,
+      s.replace(/th/g,"t"), s.replace(/th/g,"8"), s.replace(/8/g,"th"),
+      s.replace(/ch/g,"x"), s.replace(/x/g,"ch"),
+      s.replace(/ou/g,"u"), s.replace(/ei/g,"i"), s.replace(/oi/g,"i"), s.replace(/ai/g,"e")
+    ])).filter(Boolean);
+  }
+
+  function buildCache() {
+    const arr = list();
+    const cacheKey = arr.map(function(e) { return keyOf(e) + "|" + e.title; }).join("¬");
+    if (slugCache && slugCache.cacheKey === cacheKey) return slugCache;
+
+    const counts = Object.create(null);
+    arr.forEach(function(e) { const b = slugify(e.title); counts[b] = (counts[b] || 0) + 1; });
+
+    const seen = Object.create(null);
+    const slugByKey = new Map();
+    const entryBySlug = new Map();
+    const entryByNormTitle = new Map();
+
+    arr.forEach(function(e) {
+      const base = slugify(e.title);
+      seen[base] = (seen[base] || 0) + 1;
+      const id = String(e.id || "").trim();
+      const slug = counts[base] <= 1 ? base : (id ? base + "-" + id : base + "-" + seen[base]);
+      slugByKey.set(keyOf(e), slug);
+      entryBySlug.set(slug, e);
+      aliases(slug).forEach(function(a) { if (!entryBySlug.has(a)) entryBySlug.set(a, e); });
+      if (!entryByNormTitle.has(norm(e.title))) entryByNormTitle.set(norm(e.title), e);
+    });
+
+    slugCache = { cacheKey, arr, slugByKey, entryBySlug, entryByNormTitle };
+    linkCache = null;
+    return slugCache;
+  }
+
+  function slugFor(e) { return buildCache().slugByKey.get(keyOf(e)) || slugify(e && e.title ? e.title : "word"); }
+  function entryUrl(e) { return WORDS_PREFIX + encodeURIComponent(slugFor(e)); }
+
+  function extractSlug(v) {
+    let text = String(v || "").trim();
+    if (!text) return "";
+    try { text = new URL(text, window.location.origin).pathname || text; } catch (e) {}
+    text = decodeURIComponent(text).trim();
+    const i = text.indexOf(WORDS_PREFIX);
+    if (i !== -1) return text.slice(i + WORDS_PREFIX.length).replace(/^\/+|\/+$/g, "").toLowerCase();
+    if (/^words\//i.test(text)) return text.replace(/^words\//i, "").replace(/^\/+|\/+$/g, "").toLowerCase();
+    if (/^[a-z0-9-]+$/i.test(text)) return text.toLowerCase();
+    return "";
+  }
+
+  function findBySlug(v) { const s = extractSlug(v); return s ? (buildCache().entryBySlug.get(s) || null) : null; }
+  function findFromText(v) { return findBySlug(v) || buildCache().entryByNormTitle.get(norm(v)) || null; }
+  function isNew(e) { try { return typeof window.tioumpaIsEntryNew === "function" && window.tioumpaIsEntryNew(e); } catch (err) { return false; } }
+  function newBadge(cls) { return '<span class="tioumpa-new-badge ' + (cls || '') + '">ΝΕΟ</span>'; }
+  function label(e) { return (isNew(e) ? newBadge("") : "") + '<span>' + esc(e.title) + '</span>'; }
+
+  function navigate(e, replace) {
+    if (!e) return;
+    const url = entryUrl(e);
+    if (window.location.pathname !== url || window.location.hash) {
+      (replace ? history.replaceState : history.pushState).call(history, { tioumpaWord: keyOf(e) }, "", url);
+    }
+    if (typeof window.route === "function") window.route();
+  }
+
+  function filtered() {
+    const q = (() => { try { return String(searchQuery || "").trim(); } catch (e) { return ""; } })();
+    const slug = extractSlug(q);
+    if (slug) { const found = findBySlug(slug); return found ? [found] : []; }
+
+    return list().filter(function(e) {
+      let typeOK = true;
+      try { typeOK = activeFilter === "Όλα" || getEntryTypes(e).includes(activeFilter); } catch (err) {}
+      if (!typeOK) return false;
+      if (!q) return true;
+      const titleGreek = typeof normalizeSearchValue === "function" ? normalizeSearchValue(e.title) : norm(e.title);
+      const queryGreek = typeof normalizeSearchValue === "function" ? normalizeSearchValue(q) : norm(q);
+      const titleGreeklish = slugify(e.title).replace(/-/g," ");
+      const queryGreeklish = slugify(q).replace(/-/g," ");
+      return titleGreek.includes(queryGreek) || titleGreeklish.includes(queryGreeklish) || titleGreeklish.includes(queryGreek) || titleGreek.includes(queryGreeklish);
+    });
+  }
+
+  window.tioumpaSlugifyGreeklish = slugify;
+  window.tioumpaEntryUrl = entryUrl;
+  window.tioumpaFindEntryBySlug = findBySlug;
+  window.entryHash = entryHash = function(e) { return entryUrl(e); };
+  window.currentFilteredEntries = currentFilteredEntries = filtered;
+
+  window.openTioumpaWord = function(slugOrTitle) {
+    const e = findBySlug(slugOrTitle) || findFromText(slugOrTitle) || (typeof findEntryByAnyKey === "function" ? findEntryByAnyKey(slugOrTitle) : null);
+    if (e) navigate(e);
+  };
+
+  window.renderList = renderList = function() {
+    buildCache();
+    const sorted = filtered().sort(function(a,b) { return a.title.localeCompare(b.title, "el", { sensitivity: "base" }); });
+    const el = document.getElementById("list");
+    if (!el) return;
+    el.innerHTML = "";
+    let current = "";
+    sorted.forEach(function(item) {
+      const letter = typeof normalizeGreekLetter === "function" ? normalizeGreekLetter(item.title) : item.title.charAt(0).toUpperCase();
+      if (letter !== current) {
+        current = letter;
+        const l = document.createElement("div");
+        l.className = "letter";
+        l.textContent = letter;
+        el.appendChild(l);
+      }
+      const a = document.createElement("a");
+      a.className = "word" + (isNew(item) ? " has-new" : "");
+      a.href = entryUrl(item);
+      a.dataset.tioumpaWordSlug = slugFor(item);
+      a.innerHTML = label(item);
+      a.onclick = function(ev) { ev.preventDefault(); navigate(item); };
+      el.appendChild(a);
+    });
+  };
+
+  window.renderHomeResults = renderHomeResults = function() {
+    buildCache();
+    const box = document.getElementById("homeResults");
+    const toggle = document.getElementById("mobileDictionaryToggle");
+    if (!box) return;
+    const q = (() => { try { return String(searchQuery || "").trim(); } catch (e) { return ""; } })();
+    const shouldShow = q || (typeof activeFilter !== "undefined" && activeFilter !== "Όλα") || (typeof dictionaryOpen !== "undefined" && dictionaryOpen);
+    if (toggle && typeof t === "function") toggle.textContent = dictionaryOpen ? t("hideDictionary") : t("showDictionary");
+    if (!shouldShow) { box.classList.remove("open", "dictionary-open"); box.innerHTML = ""; return; }
+    const results = filtered().sort(function(a,b) { return a.title.localeCompare(b.title, "el", { sensitivity: "base" }); }).slice(0, (typeof dictionaryOpen !== "undefined" && dictionaryOpen && !q) ? list().length : 40);
+    box.classList.add("open");
+    try { box.classList.toggle("dictionary-open", dictionaryOpen); } catch(e) {}
+    if (!results.length) { box.innerHTML = '<div class="home-result-empty">' + (typeof t === "function" ? t("noResults") : "Δεν βρέθηκαν αποτελέσματα") + '</div>'; return; }
+    box.innerHTML = '<div class="home-results-title">' + (typeof t === "function" ? t("results") : "results") + '</div>' + results.map(function(item) {
+      return '<a class="home-result-item ' + (isNew(item) ? 'has-new' : '') + '" href="' + entryUrl(item) + '" data-tioumpa-word-slug="' + escAttr(slugFor(item)) + '">' + label(item) + '</a>';
+    }).join("");
+  };
+
+  window.renderBubbles = renderBubbles = function() {
+    buildCache();
+    const c = document.getElementById("bubbles");
+    if (!c || !list().length) return;
+    c.classList.remove("fade-in");
+    c.innerHTML = "";
+    [...list()].sort(function() { return Math.random() - 0.5; }).slice(0, 7).forEach(function(item) {
+      let fav = false;
+      try { fav = favorites.map(normalizeStoredKey).includes(keyOf(item)); } catch(e) {}
+      const a = document.createElement("a");
+      a.className = "bubble" + (isNew(item) ? " has-new" : "");
+      a.href = entryUrl(item);
+      a.dataset.tioumpaWordSlug = slugFor(item);
+      a.innerHTML = (isNew(item) ? newBadge("") : "") + (fav ? "⭐ " : "") + esc(item.title);
+      a.onclick = function(ev) { ev.preventDefault(); navigate(item); };
+      c.appendChild(a);
+    });
+    c.classList.add("fade-in");
+  };
+
+  window.getFavoritesHTML = getFavoritesHTML = function() {
+    buildCache();
+    let favs = [];
+    try { favs = favorites.map(normalizeStoredKey); } catch(e) {}
+    const html = favs.map(function(k) {
+      const e = typeof findEntryByAnyKey === "function" ? findEntryByAnyKey(k) : null;
+      const word = e ? e.title : (typeof displayWordFromKey === "function" ? displayWordFromKey(k) : k);
+      const url = e ? entryUrl(e) : "#" + encodeURIComponent(k);
+      return '<a class="home-list-item ' + (e && isNew(e) ? 'has-new' : '') + '" href="' + url + '" ' + (e ? 'data-tioumpa-word-slug="' + escAttr(slugFor(e)) + '"' : '') + '>' + (e ? label(e) : esc(word)) + '</a>';
+    }).join("");
+    return html || '<div class="home-list-item">' + (typeof t === "function" ? t("noFavorites") : "-") + '</div>';
+  };
+
+  function makeLinkCache() {
+    const cache = buildCache();
+    if (linkCache && linkCache.key === cache.cacheKey) return linkCache;
+    const arr = [...cache.arr].filter(function(e) { return e && e.title && e.title.length > 2; }).sort(function(a,b) { return b.title.length - a.title.length; });
+    const lookup = new Map();
+    arr.forEach(function(e) { lookup.set(norm(e.title), e); });
+    const pattern = arr.map(function(e) { return e.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).filter(Boolean).join("|");
+    const regex = pattern ? new RegExp("(^|[^\\p{L}\\p{N}_])(" + pattern + ")(?=$|[^\\p{L}\\p{N}_])", "giu") : null;
+    linkCache = { key: cache.cacheKey, lookup, regex };
+    return linkCache;
+  }
+
+  window.linkReferences = linkReferences = function(text, currentTitle) {
+    let result = String(text || "");
+    const protectedData = typeof protectHTMLParts === "function" ? protectHTMLParts(result) : { result: result, protectedParts: [] };
+    result = protectedData.result;
+    const data = makeLinkCache();
+    const currentNorm = norm(currentTitle);
+    if (data.regex) {
+      result = result.replace(data.regex, function(full, prefix, match) {
+        const e = data.lookup.get(norm(match));
+        if (!e || norm(e.title) === currentNorm) return full;
+        return prefix + '<a class="entry-ref" href="' + entryUrl(e) + '" data-tioumpa-word-slug="' + escAttr(slugFor(e)) + '">' + match + '</a>';
+      });
+    }
+    return typeof restoreHTMLParts === "function" ? restoreHTMLParts(result, protectedData.protectedParts) : result;
+  };
+
+  const prevOpenEntry = window.openEntry;
+  window.openEntry = openEntry = function(entry, redirectedFromTitle) {
+    if (typeof prevOpenEntry === "function") prevOpenEntry(entry, redirectedFromTitle || "");
+    try {
+      document.title = (entry && entry.title ? entry.title + " — " : "") + "Tioumpa.org";
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
+      canonical.href = window.location.origin + entryUrl(entry);
+    } catch(e) {}
+  };
+
+  window.route = route = function() {
+    buildCache();
+    const slug = extractSlug(window.location.pathname || "");
+    let e = slug ? findBySlug(slug) : null;
+    if (!e) {
+      const hash = decodeURIComponent(location.hash.replace("#", ""));
+      if (hash) e = (typeof findEntryByAnyKey === "function" ? findEntryByAnyKey(hash) : null) || findFromText(hash);
+    }
+    if (!e) {
+      const path = window.location.pathname || "/";
+      if (path !== "/" && !/\/index\.html$/i.test(path) && slug) {
+        try { searchQuery = decodeURIComponent(slug).replace(/-/g, " "); } catch(err) {}
+      } else {
+        try { currentEntryId = null; searchQuery = searchQuery || ""; } catch(err) {}
+      }
+      try { document.title = "Tioumpa.org"; } catch(err) {}
+      if (typeof showHome === "function") showHome();
+      if (typeof renderHomeResults === "function") renderHomeResults();
+      return;
+    }
+    try { currentEntryId = e.id || null; } catch(err) {}
+    const redirectTargetTitle = typeof getRedirectTargetTitle === "function" ? getRedirectTargetTitle(e) : "";
+    if (redirectTargetTitle) {
+      const redirectEntry = typeof findRedirectTargetEntry === "function" ? findRedirectTargetEntry(redirectTargetTitle) : null;
+      if (redirectEntry && keyOf(redirectEntry) !== keyOf(e)) {
+        try { sessionStorage.setItem("tioumpaRedirectFrom", e.title); } catch(err) {}
+        navigate(redirectEntry, true);
+        return;
+      }
+    }
+    let redirectedFrom = "";
+    try { redirectedFrom = sessionStorage.getItem("tioumpaRedirectFrom") || ""; if (redirectedFrom) sessionStorage.removeItem("tioumpaRedirectFrom"); } catch(err) {}
+    openEntry(e, redirectedFrom);
+  };
+
+  window.goHome = goHome = function() {
+    try { activeFilter = "Όλα"; searchQuery = ""; dictionaryOpen = false; currentEntryId = null; } catch(e) {}
+    history.pushState("", document.title, "/");
+    if (typeof renderList === "function") renderList();
+    if (typeof showHome === "function") showHome();
+  };
+
+  function maybeOpen(v) { const e = findFromText(v); if (!e) return false; navigate(e); return true; }
+
+  document.addEventListener("keydown", function(ev) {
+    if (ev.target && ev.target.id === "searchMain" && ev.key === "Enter" && maybeOpen(ev.target.value)) ev.preventDefault();
+  });
+  document.addEventListener("paste", function(ev) {
+    if (ev.target && ev.target.id === "searchMain") setTimeout(function() { maybeOpen(ev.target.value); }, 0);
+  });
+  document.addEventListener("input", function(ev) {
+    if (!(ev.target && ev.target.id === "searchMain")) return;
+    const s = extractSlug(ev.target.value);
+    if (!s) return;
+    const e = findBySlug(s);
+    if (e) setTimeout(function() { navigate(e); }, 80);
+  });
+  document.addEventListener("click", function(ev) {
+    const a = ev.target.closest && ev.target.closest('a[href^="/words/"]');
+    if (!a) return;
+    const e = findBySlug(a.dataset.tioumpaWordSlug || a.getAttribute("href"));
+    if (!e) return;
+    ev.preventDefault();
+    navigate(e);
+  }, true);
+  window.addEventListener("popstate", function() { route(); });
+
+  const prevInit = window.init;
+  if (typeof prevInit === "function") {
+    window.init = init = function(text) {
+      prevInit(text);
+      slugCache = null;
+      linkCache = null;
+      buildCache();
+      if (typeof renderList === "function") renderList();
+      route();
+    };
+  }
+
+  function boot() {
+    slugCache = null;
+    linkCache = null;
+    buildCache();
+    if (typeof renderList === "function") renderList();
+    route();
+  }
+  document.addEventListener("DOMContentLoaded", boot);
+  window.addEventListener("load", boot);
+  boot();
 })();
 </script>
 
