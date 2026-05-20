@@ -94,8 +94,8 @@
 Ατάκα31: Κλανοβαλβίδα +ουσιαστικό
 Περιγραφή: Η ροδέλα που υπάρχει όπισθεν κάθε ανθρώπου, από την οποία γίνεται η εξαγωγή χωνεύσιμης μάζας, βρώσιμου προϊόντος και εισαγωγή νωπής μάζας πρωτεϊνικού προϊόντος, κατά κύριο λόγο για αυτούς που αρέσκονται να τον τρώνε από πίσω. Συν: κωλοτρυπίδα
 
-Ατάκα32: Γραμμόφωνο (δεκατίας 80') +ουσιαστικό
-Περιγραφή: Συσκευή για την αναπαραγωγή ήχου από δίσκους, κατασκευάστηκε από τον Τόμας Έντισον το 1877. https://www.houseart.gr/images/res/autokollita-toichou/13.diafora/autokollhto-toixou-vintage-grammofwno-diafora-400x400.png
+Ατάκα32: Γραμμόφωνο +ουσιαστικό
+Περιγραφή: Συσκευή για την αναπαραγωγή ήχου από δίσκους, κατασκευάστηκε από τον Τόμας Έντισον το 1877. https://www.houseart.gr/images/res/autokollita-toichou/13.diafora/autokollhto-toixou-vintage-grammofwno-diafora-400x400.png <iframe width="560" height="315" src="https://www.youtube.com/embed/kBhp13nYGiI?si=-BtFaFPx0gWicm2V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Ατάκα33: Ουνί γαρυφαλο καπέλο +φράση
 Περιγραφή: Κακή κατάσταση προσώπου, πράγματος, ή κατάστασης.
