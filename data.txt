@@ -627,3 +627,9 @@
 
 Ατάκα207: Στο άπειρο, κι ακόμα παραπέρα +ατάκα
 Περιγραφή: Ατάκα του αστροναύτη Buzz Lightyear από τις ταινίες κινουμένων σχεδίων Toy Story της Pixar. https://static.wikia.nocookie.net/disney/images/7/74/Profile_-_Buzz_Lightyear.jpeg
+
+Ατάκα208: Αθλούμαι ρε, αθλούμαι +ατάκα
+Περιγραφή: Ατάκα του Κώστα Τσάκωνα από την ταινία "Φθηνά Τσιγάρα" (2000) <iframe width="560" height="315" src="https://www.youtube.com/embed/Va3dxjN4Ue8?si=q_-7dVIYUi6g0_26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  https://www.stradafilms.gr/wp-content/uploads/2016/03/Ftina_tsigara_05.jpg
+
+Ατάκα209: Κλασική περίπτωση βλάβης +ατάκα
+Περιγραφή: Ατάκα του Κώστα Τσάκωνα από την ταινία "Κλασική περίπτωση βλάβης" (1988) https://www.studio52.gr/cdimage52/5204245481999.jpg
