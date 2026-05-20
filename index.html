@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>tioumpa.org — OpenAI-inspired λεξικό</title>
+<title>tioumpa.org - λεξικό</title>
 
 <meta name="description" content="tioumpa.org — ένα καθαρό, premium community dictionary για ατάκες, λέξεις, φράσεις και ορισμούς.">
 
@@ -1473,7 +1473,7 @@ const translations = {
     searchPlaceholder: "Αναζήτηση...", clean: "Clean", trends: "🔥 Trends", favorites: "⭐ Favorites", randomWords: "ΤΥΧΑΙΕΣ ΛΕΞΕΙΣ",
     noTrending: "Δεν υπάρχουν ακόμα δεδομένα", noFavorites: "-",
     dataTitle: "load data.txt", dataText: "load... <b>data.txt</b> load... index.html.",
-    micUnsupported: "mic not supported on this browser.", back: "← Επιστροφή", declension: "Κλίση",
+    micUnsupported: "mic not supported on this browser.", back: "← Back", declension: "Κλίση",
     case: "Πτώση", singular: "Ενικός αριθμός", plural: "Πληθυντικός αριθμός", nominative: "Ονομαστική", genitive: "Γενική", accusative: "Αιτιατική", vocative: "Κλητική",
     derivatives: "Παράγωγα:", synonyms: "Συνώνυμα:", antonyms: "Αντώνυμα:", searchCopy: "Αναζήτηση {count} ορών από το λεξικό.",
     subtitle: "Λ Ε Ξ Ι Κ Ο", email: "Για οποιαδήποτε αλλαγή, προσθήκη, ή διόρθωση στείλτε στο: tioumpagr@gmail.com", showDictionary: "Εμφάνιση λεξικού", hideDictionary: "Απόκρυψη λεξικού", noResults: "Δεν βρέθηκαν αποτελέσματα", results: "results"
@@ -3404,7 +3404,7 @@ html[data-theme="light"] .mic-img {
   window.showHome = function() {
     const count = getEntriesCount();
     const titleA = rebrandText("Το λεξικό", "The dictionary");
-    const titleB = rebrandText("του community.", "for the community.");
+    const titleB = rebrandText("του Teosty.", "for the community.");
     const subhead = rebrandText(
       `Αναζήτησε ${count} όρους, ατάκες και inside jokes με καθαρό, γρήγορο, premium interface.`,
       `Search ${count} words, quotes and inside jokes with a clean, fast, premium interface.`
@@ -4625,8 +4625,8 @@ html[data-theme="dark"] .oa-command {
     content.innerHTML = `
       <div class="home openai-home">
         <section class="oa-hero">
-          <div class="oa-eyebrow">TIOUMPA ΛΕΞΙΚΟ</div>
-          <h1>Το λεξικό<br><span class="soft">του Teosty.</span></h1>
+          <div class="oa-eyebrow">ΤΟ ΛΕΞΙΚΟ ΤΟΥ TEOSTY</div>
+          <h1>Tioumpa.org<br><span class="soft">Λεξικό.</span></h1>
           <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
 
           <div class="oa-command">
@@ -5218,16 +5218,15 @@ html[data-theme="dark"] .tioumpa-notification-panel {
     content.innerHTML = `
       <div class="home openai-home">
         <section class="oa-hero">
-          <div class="oa-eyebrow">TIOUMPA ΛΕΞΙΚΟ</div>
-          <h1>Το λεξικό<br><span class="soft">του Teosty.</span></h1>
-          <p class="oa-author-line">Γ. ΜΠΑΜΠΙΝΙΩΤΗ</p>
+          <div class="oa-eyebrow">ΤΟ ΛΕΞΙΚΟ ΤΟΥ TEOSTY</div>
+          <h1>Tioumpa.org<br><span class="soft">Λεξικό.</span></h1>
           <p class="oa-subhead">Αναζήτηση ${count} όρων.</p>
 
           <div class="oa-command">
             <div class="search-wrapper">
               <div class="search-main">
                 ${SEARCH_SVG}
-                <input id="searchMain" placeholder="${escapeAttrSafe(textSafe("searchPlaceholder", "Αναζήτηση..."))}" value="${escapeAttrSafe(queryValue)}">
+                <input id="searchMain" placeholder="${escapeAttrSafe(textSafe("searchPlaceholder", "Search..."))}" value="${escapeAttrSafe(queryValue)}">
                 ${MIC_SVG}
               </div>
               <button onclick="clearSearch()">${textSafe("clean", "Clean")}</button>
