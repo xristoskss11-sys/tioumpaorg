@@ -21,7 +21,7 @@
      crossorigin="anonymous"></script>
 
 <style>
-/* LOCAL SF PRO DISPLAY FONT - added only */
+
 @font-face {
   font-family: "Roboto Flex";
   src: url("./SFPRO DISPLAY REGULAR.woff2") format("woff2");
@@ -734,7 +734,7 @@ body {
   }
 }
 
-/* LIGHT MODE FIX - πρόσθετο χωρίς αλλαγή στον υπάρχοντα κώδικα */
+
 html[data-theme="light"] .search-main input,
 html[data-theme="light"] .search-wrapper select,
 html[data-theme="light"] .search-wrapper button,
@@ -753,7 +753,7 @@ html[data-theme="light"] .search-icon {
   opacity: .6;
 }
 
-/* Όταν είναι στο Auto και το σύστημα είναι light mode */
+
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) .search-main input,
   :root:not([data-theme="dark"]) .search-wrapper select,
@@ -774,7 +774,7 @@ html[data-theme="light"] .search-icon {
   }
 }
 
-/* COMPACT FILTERS + ANIMATED CONTROLS */
+
 .filter-box {
   border: 1px solid var(--border-soft);
   border-radius: 22px;
@@ -935,8 +935,6 @@ html[data-theme="light"] .search-icon {
   }
 }
 
-
-/* SEARCH RESULTS UNDER SEARCH BAR */
 .home-results {
   display: none;
   width: min(760px, 94%);
@@ -1007,7 +1005,6 @@ html[data-theme="light"] .search-icon {
 }
 
 
-/* MOBILE DICTIONARY TOGGLE UNDER SEARCH */
 .mobile-dictionary-toggle {
   display: none;
   width: min(760px, 94%);
@@ -1038,8 +1035,6 @@ html[data-theme="light"] .search-icon {
   }
 }
 
-
-/* RIGHT DICTIONARY PANEL + FILTER FIX */
 .sidebar {
   border-right: none;
   border-left: 1px solid var(--border-soft);
@@ -1087,7 +1082,6 @@ html[data-theme="light"] .search-icon {
   border-radius: 999px;
 }
 
-/* COLOR THEME CONCEPT */
 .theme-concept {
   display: inline-flex;
   align-items: center;
@@ -1204,8 +1198,6 @@ html[data-theme="light"] .search-icon {
   }
 }
 
-
-/* CUSTOM DATA.TXT FORMATTING */
 .entry-small-notes {
   margin-top: 26px;
   padding-top: 12px;
@@ -1231,7 +1223,6 @@ html[data-theme="light"] .search-icon {
 }
 
 
-/* SIMPLE UI / SQUARE CORNERS / UPDATED DARK TONE */
 html[data-theme="dark"],
 :root {
   --bg: #101418;
@@ -1332,7 +1323,6 @@ textarea,
 }
 
 
-/* ENTRY PAGE TYPOGRAPHY ONLY */
 .entry-title {
   font-family: "Linux Libertine", "Linux Libertine O", "Linux Libertine Display", Georgia, "Times New Roman", serif;
 }
@@ -1342,7 +1332,6 @@ textarea,
 }
 
 
-/* MICROPHONE IMAGE ICON */
 .mic-img {
   width: 18px;
   height: 18px;
@@ -1361,7 +1350,6 @@ html[data-theme="light"] .mic-img {
 }
 
 
-/* ADS - added only, keeps your existing code unchanged */
 .left-ad {
   width: 180px;
   min-width: 180px;
@@ -1411,7 +1399,6 @@ html[data-theme="light"] .mic-img {
 
 
 
-/* FINAL FIX: smaller dictionary entry title */
 .entry-title {
   font-size: clamp(26px, 3.8vw, 42px) !important;
   line-height: 1.08 !important;
@@ -2504,7 +2491,7 @@ function escapeAttr(str) {
 
 
 <script>
-/* ADS - added only, keeps your existing functions unchanged */
+
 function tioumpaPushAds() {
   setTimeout(() => {
     document.querySelectorAll("ins.adsbygoogle:not([data-adsbygoogle-status])").forEach(ad => {
@@ -2554,9 +2541,7 @@ function tioumpaEntryAdHTML() {
 </script>
 
 
-<!-- =========================================================
 
-========================================================== -->
 <style id="tioumpa-openai-inspired-rebrand">
 :root {
   --oa-bg: #f4f2ee;
@@ -3513,10 +3498,6 @@ html[data-theme="light"] .mic-img {
 </script>
 
 
-
-<!-- =========================================================
-
-========================================================== -->
 <style id="tioumpa-compact-openai-pass">
 :root,
 html[data-theme="dark"],
@@ -4078,16 +4059,7 @@ html[data-theme="light"] .oa-command {
 
 
 
-<!-- =========================================================
-  TIOUMPA — FINAL CLEANUP PASS
-  Requested changes:
-  - neutral/white dark-mode lighting
-  - wordmark: Tioumpa Λεξικό
-  - header nav: Email only
-  - Greek hero copy updates
-  - remove highlight cards and filters
-  - notification center from notif.txt
-========================================================== -->
+
 <style id="tioumpa-final-cleanup-pass">
 :root,
 html[data-theme="dark"],
@@ -4751,15 +4723,6 @@ html[data-theme="dark"] .oa-command {
 
 
 
-<!-- =========================================================
-  TIOUMPA — NO-GLOW + NOTIFICATION/SYSTEM THEME FIX
-  Requested changes:
-  - no dark-mode light effects / glows
-  - reliable inline notification icon
-  - search/mic icons inherit theme color
-  - add author line Γ. ΜΠΑΜΠΙΝΙΩΤΗ
-  - Auto theme follows browser/OS preference
-========================================================== -->
 <style id="tioumpa-no-glow-fix-pass">
 :root,
 html[data-theme="dark"],
@@ -5323,9 +5286,9 @@ html[data-theme="dark"] .tioumpa-notification-panel {
 
 
 
-<!-- Final typography tuning: entry fonts + larger alphabetical list headers -->
+ 
 <style id="tioumpa-entry-fonts-and-list-letters-fix">
-/* Keep the entire UI in Inter, but use the requested dictionary-reading fonts only inside entries. */
+ 
 .entry .entry-title {
   font-family: "Linux Libertine", "Linux Libertine O", "Linux Libertine Display", Georgia, "Times New Roman", serif !important;
   font-weight: 700 !important;
@@ -5342,7 +5305,6 @@ html[data-theme="dark"] .tioumpa-notification-panel {
   font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif !important;
 }
 
-/* Bigger alphabet section headers in the dictionary list/sidebar. */
 #list .letter,
 .sidebar .letter {
   font-family: var(--oa-font) !important;
@@ -5366,9 +5328,8 @@ html[data-theme="dark"] .tioumpa-notification-panel {
 
 
 
-<!-- Restore original dictionary-entry detail view from the first version -->
 <style id="tioumpa-original-entry-view-restore">
-/* When a word is opened, keep the page exactly like the original dictionary view. */
+
 #content:has(> .entry),
 #content:has(> .back-btn + .entry) {
   padding: 36px !important;
@@ -5585,7 +5546,6 @@ html[data-theme="light"] #content > .entry .entry-divider {
 </style>
 
 
-<!-- Yellow internal entry links + Wikipedia-style redirect note -->
 <style id="tioumpa-yellow-entry-refs-and-redirect-note">
 #content > .entry .entry-ref {
   color: #ffd84d !important;
