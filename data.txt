@@ -555,8 +555,8 @@
 Ατάκα183: φούστα-μπλόυζα
 Περιγραφή: Χρησιμοποιείται μεταφορικά για να περιγράψει μια βιαστική, πρόχειρη, απλή ή ατημέλητη εμφάνιση.
 
-Ατάκα184: Γιατί το φωνάζεις; +ατάκα
-Περιγραφή: Ατάκα γνωστού καράφλα αμισθί creator.
+Ατάκα184: 
+Περιγραφή:  
 
 Ατάκα185: Αλί, αλί και τρισαλί +τραγούδι
 Περιγραφή: Τραγούδι του Πάνου Γαβαλά. <iframe width="560" height="315" src="https://www.youtube.com/embed/DVVg637lYhQ?si=jRhJweB6hmNaTGuC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
