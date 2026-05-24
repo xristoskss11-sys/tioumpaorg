@@ -660,3 +660,6 @@
 
 Ατάκα217: μπακαλίστικα +επίρρημα
 Περιγραφή: Χρησιμοποιείται μεταφορικά για να περιγράψει οτιδήποτε γίνεται πρόχειρα, εμπειρικά και χωρίς επιστημονική ή ακριβή μέθοδο.
+
+Ατάκα218: Γιατί το φωνάζεις; +ατάκα
+Περιγραφή: Ατάκα καλοκαιρινού φρούτου όπου αποτελείται από 91% νερό και περιλαμβάνει σάκχαρα, φυτικές ίνες, βιταμίνες (όπως Α και C) και πολύτιμα αντιοξειδωτικά όπως το λυκοπένιο. <iframe width="560" height="315" src="https://www.youtube.com/embed/5EKtWiFjyY8?si=iQVPkafthAnaFoGN&amp;start=490" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
