@@ -664,5 +664,8 @@
 Ατάκα218: Γιατί το φωνάζεις; +ατάκα
 Περιγραφή: Ατάκα καλοκαιρινού φρούτου όπου αποτελείται από 91% νερό και περιλαμβάνει σάκχαρα, φυτικές ίνες, βιταμίνες (όπως Α και C) και πολύτιμα αντιοξειδωτικά όπως το λυκοπένιο. <iframe width="560" height="315" src="https://www.youtube.com/embed/5EKtWiFjyY8?si=iQVPkafthAnaFoGN&amp;start=490" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Ατακα219: μωρός +επίθετο
+Ατάκα219: μωρός +επίθετο
 Περιγραφή: Ο ανόητος, ο χαζός.
+
+Ατάκα220: Κόλπα, ιστορίες +φράση
+Περιγραφή: Και τα λοιπά, και ό,τι άλλο παρόμοιο ή και άλλα τέτοια. Χρησιμοποιείται στο τέλος μιας απαρίθμησης για να δείξει ότι υπάρχουν και άλλα στοιχεία που παραλείπονται επειδή είναι αυτονόητα ή παρόμοια με αυτά που ήδη αναφέρθηκαν.
