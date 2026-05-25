@@ -556,7 +556,7 @@
 Περιγραφή: Χρησιμοποιείται μεταφορικά για να περιγράψει μια βιαστική, πρόχειρη, απλή ή ατημέλητη εμφάνιση.
 
 Ατάκα184: YouTubιο +όνομα
-Περιγραφή: Το Youtube, η πλατφόρμα όπου είναι ένας ιστότοπος κοινοποίησης, αποθήκευσης, αναζήτησης και αναπαραγωγής ψηφιακών βίντεο και ψηφιακών ταινιών. https://upload.wikimedia.org/wikipedia/commons/6/62/YouTube_social_white_square_%282024%29.svg
+Περιγραφή: Το Youtube, η πλατφόρμα όπου είναι ένας ιστότοπος κοινοποίησης, αποθήκευσης, αναζήτησης και αναπαραγωγής ψηφιακών βίντεο και ψηφιακών ταινιών. https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/YouTube_social_white_square_%282024%29.svg/1280px-YouTube_social_white_square_%282024%29.svg.png
 
 Ατάκα185: Αλί, αλί και τρισαλί +τραγούδι
 Περιγραφή: Τραγούδι του Πάνου Γαβαλά. <iframe width="560" height="315" src="https://www.youtube.com/embed/DVVg637lYhQ?si=jRhJweB6hmNaTGuC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -672,3 +672,6 @@
 
 Ατάκα221: Kickιο +όνομα
 Περιγραφή: Το Kick, η πλατφόρμα ζωντανής μετάδοσης (live streaming), η οποία δημιουργήθηκε το 2022 ως ο βασικός ανταγωνιστής του Twitch. https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kick.com_icon_logo.svg/3840px-Kick.com_icon_logo.svg.png
+
+Ατάκα222: δέουσα +επίθετο
+Περιγραφή: που πρέπει, που αρμόζει, που κάποιος οφείλει
