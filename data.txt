@@ -555,8 +555,8 @@
 Ατάκα183: φούστα-μπλόυζα
 Περιγραφή: Χρησιμοποιείται μεταφορικά για να περιγράψει μια βιαστική, πρόχειρη, απλή ή ατημέλητη εμφάνιση.
 
-Ατάκα184: 
-Περιγραφή:  
+Ατάκα184: YouTubιο +όνομα
+Περιγραφή: Το Youtube, η πλατφόρμα όπου είναι ένας ιστότοπος κοινοποίησης, αποθήκευσης, αναζήτησης και αναπαραγωγής ψηφιακών βίντεο και ψηφιακών ταινιών. https://upload.wikimedia.org/wikipedia/commons/6/62/YouTube_social_white_square_%282024%29.svg
 
 Ατάκα185: Αλί, αλί και τρισαλί +τραγούδι
 Περιγραφή: Τραγούδι του Πάνου Γαβαλά. <iframe width="560" height="315" src="https://www.youtube.com/embed/DVVg637lYhQ?si=jRhJweB6hmNaTGuC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -669,3 +669,6 @@
 
 Ατάκα220: Κόλπα, ιστορίες +φράση
 Περιγραφή: Και τα λοιπά, και ό,τι άλλο παρόμοιο ή και άλλα τέτοια. Χρησιμοποιείται στο τέλος μιας απαρίθμησης για να δείξει ότι υπάρχουν και άλλα στοιχεία που παραλείπονται επειδή είναι αυτονόητα ή παρόμοια με αυτά που ήδη αναφέρθηκαν.
+
+Ατάκα221: Kickιο +όνομα
+Περιγραφή: Το Kick, η πλατφόρμα ζωντανής μετάδοσης (live streaming), η οποία δημιουργήθηκε το 2022 ως ο βασικός ανταγωνιστής του Twitch. https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kick.com_icon_logo.svg/3840px-Kick.com_icon_logo.svg.png
