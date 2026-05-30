@@ -687,3 +687,6 @@
 
 Ατάκα226: κολυμπηθρόξυλο +ουσιαστικό
 Περιγραφή: Χρησιμοποιείται μεταφορικά για να δηλώσει ολοκληρωτική καταστροφή ή διάλυση. Σημαίνει ότι τίποτα δεν θα μείνει όρθιο, προερχόμενο από την παλιά αντίληψη για τα απομεινάρια ενός ναυαγίου.
+
+Ατάκα227: και αν το τηλέφωνο χτυπάει +τραγούδι
+Περιγραφή: Τραγούδι του Χρήστου Κυπριανίδη <iframe width="560" height="315" src="https://www.youtube.com/embed/wERdN5h6QFs?si=n1X3htC6Yw1fCc5P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
