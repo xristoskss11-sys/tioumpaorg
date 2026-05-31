@@ -730,3 +730,6 @@
 
 Ατάκα240: τσουράπω +ουσιαστικό
 Περιγραφή: Η χωριάτισσα, η επαρχιώτισσα, όχι τόσο ως προς την καταγωγή, όσο ως προς την νοοτροπία.
+
+Ατάκα241: Μάθε μπαλίτσα στον άρχοντα +ατάκα
+Περιγραφή: Ατάκα του Νίκου Αλέφαντου (πρώην ποδοσφαιριστής και προπονητής). <iframe width="560" height="315" src="https://www.youtube.com/embed/tIhhLXmnQVM?si=RyV8zUNAHV_EANnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
