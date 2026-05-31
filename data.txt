@@ -724,3 +724,6 @@
 
 Ατάκα238: εντερίζει +ρήμα
 Περιγραφή: Η διάσπαση της τροφής για απορρόφηση θρεπτικών συστατικών και αποβολή των υπολειμμάτων.
+
+Ατάκα239: Πατώνετε; +τραγούδι
+Περιγραφή: Τραγούδι του Βάρδου (Νικόλαος Ζακυνθινός) <iframe width="560" height="315" src="https://www.youtube.com/embed/utWImWHCVF8?si=objNqXHp0K7hASic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
