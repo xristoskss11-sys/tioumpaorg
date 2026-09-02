@@ -750,7 +750,7 @@
 Ατάκα245: Πράσινη Εταιρεία +όνομα
 Περιγραφή: Η γνωστή εταιρεία κινητής τηλεφωνίας COSMOTE (T-mobile). Λέγεται πράσινη λόγο του πράσινου χρώματος στο παλιό λογότυπό της. https://iconape.com/wp-content/files/ie/362901/png/362901.png
 
-Ατάκα246: Χωρίς νερό μπορώ, χωρίς εσένα... Είμαι στον άνεμο φτερό... φύλλο ξερό στο περω..το.βερόχι +τραγούδι
+Ατάκα246: Χωρίς νερό μπορώ, χωρίς εσένα όχι, είμαι στον άνεμο φτερό, φύλλο ξερό στο πρωτοβρόχι +τραγούδι
 Περιγραφή: Τραγούδι του Πάνου Κιάμου <iframe width="560" height="315" src="https://www.youtube.com/embed/b4PAvLKAQ3Y?si=CVzNyg05cMktuGtT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Ατάκα247: ταλαίπα +ουσιαστικό
