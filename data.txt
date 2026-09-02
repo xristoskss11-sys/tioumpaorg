@@ -761,3 +761,6 @@
 
 Ατάκα249: Κυρά Τένια, η ντομάτα με το καπάκι +ατάκα
 Περιγραφή: Ατάκα του κωμικού Μάρκου Σεφερλή από την παράσταση "Πηρε τόστ το Σαββατόβραδο" <iframe width="560" height="315" src="https://www.youtube.com/embed/a2b6h859DmE?si=cR59iLshBCJAmhNj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Ατάκα250: Κοίτα Σάββα κοίτα! +ατάκα
+Περιγραφή: Προέρχεται από μια ηλικιωμένη γυναίκα στην παραλία που όταν μια δημοσιογράφος την συνάντησε, έκπληκτη, φώναξε τον άντρα της, τον Σάββα, για να δει τι συμβαίνει. <iframe width="560" height="315" src="https://www.youtube.com/embed/QZiC48XbERs?si=Z34ktnBU4K94gXlF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
