@@ -764,3 +764,6 @@
 
 Ατάκα250: Κοίτα Σάββα κοίτα! +ατάκα
 Περιγραφή: Προέρχεται από μια ηλικιωμένη γυναίκα στην παραλία που όταν μια δημοσιογράφος την συνάντησε, έκπληκτη, φώναξε τον άντρα της, τον Σάββα, για να δει τι συμβαίνει. <iframe width="560" height="315" src="https://www.youtube.com/embed/QZiC48XbERs?si=Z34ktnBU4K94gXlF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Ατάκα251: Ιμιτασιόν +ουσιαστικό
+Περιγραφή: Η λέξη ιμιτασιόν (από το γαλλικό imitation) σημαίνει το ψεύτικο, το απομιμητικό, αυτό που μοιάζει με το γνήσιο αλλά δεν είναι. Χρησημοποιείται κυρίως από τον Teosty όταν κάποιο προϊόν/φαγητό/ποτό δεν είναι γνήσιο.
