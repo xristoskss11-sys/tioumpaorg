@@ -767,3 +767,6 @@
 
 Ατάκα251: Ιμιτασιόν +ουσιαστικό
 Περιγραφή: Η λέξη ιμιτασιόν (από το γαλλικό imitation) σημαίνει το ψεύτικο, το απομιμητικό, αυτό που μοιάζει με το γνήσιο αλλά δεν είναι. Χρησημοποιείται κυρίως από τον Teosty όταν κάποιο προϊόν/φαγητό/ποτό δεν είναι γνήσιο.
+
+Ατάκα252: Η καρδιά μου χτυπά μόνο για σένα! (Μόνο για σένα) + τραγούδι
+Περιγραφή: Τραγούδι του Σάκη Ρουβά <iframe width="560" height="315" src="https://www.youtube.com/embed/57eecStu-rg?si=F4wgInLGcku7XB21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
