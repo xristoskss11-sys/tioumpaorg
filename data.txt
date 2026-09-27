@@ -770,3 +770,6 @@
 
 Ατάκα252: Η καρδιά μου χτυπά μόνο για σένα! (Μόνο για σένα) + τραγούδι
 Περιγραφή: Τραγούδι του Σάκη Ρουβά <iframe width="560" height="315" src="https://www.youtube.com/embed/57eecStu-rg?si=F4wgInLGcku7XB21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Ατάκα253: άσβερκος +ουσιαστικό
+Περιγραφή: Ο μεγαλόσωμος, ο μυώδης και συχνά χοντρούλης άντρας ο οποίος έχει πολύ κοντό ή καθόλου εμφανή λαιμό, ο μπράβος.
