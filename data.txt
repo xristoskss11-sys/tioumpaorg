@@ -779,3 +779,8 @@
 
 Ατάκα255: Βαγγελη κοντινό, Τζουλη πάρτονε +ατάκα
 Περιγραφή: Ατάκα από την ταινία "Αυστηρώς Κατάλληλο (2008)" <iframe width="560" height="315" src="https://www.youtube.com/embed/IiKyMyVBFQQ?si=SuXfS0ZmJme01IWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Ατάκα256: Πώς μου κόβει εμένα +ατάκα
+Περιγραφή: Προέρχεται από τον Μάρκο Σεφερλή. <iframe width="560" height="315" src="https://www.youtube.com/embed/8nQXyxXjWJU?si=bh1FN3qJUHiwcj_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Ατάκα257:
